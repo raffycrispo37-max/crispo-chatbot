@@ -506,8 +506,7 @@ module.exports = async function handler(req, res) {
   } catch (error) {
     console.error("Aria API error:", error);
     return res.status(500).json({
-      error:
-        "Si è verificato un errore. Per assistenza contattaci al 081 827 1670 o su WhatsApp al 328 448 2654.",
+    error: "DEBUG: " + (error.message || String(error)),
     });
   }
 };
