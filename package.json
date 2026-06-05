@@ -1,0 +1,8 @@
+{
+  "name": "crispo-chatbot",
+  "version": "1.0.0",
+  "description": "Aria - Chatbot AI per Crispo Home",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.27.0"
+  }
+}
