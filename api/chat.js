@@ -496,7 +496,7 @@ module.exports = async function handler(req, res) {
     ];
 
     const response = await client.messages.create({
-      model: "claude-haiku-4-5-20251001",
+      model: "claude-3-5-haiku-20241022",
       max_tokens: 800,
       system: SYSTEM_PROMPT,
       messages,
@@ -506,7 +506,7 @@ module.exports = async function handler(req, res) {
   } catch (error) {
     console.error("Aria API error:", error);
     return res.status(500).json({
-    error: "DEBUG: " + (error.message || String(error)),
+    error: "Si è verificato un errore. Per assistenza contattaci al 081 827 1670 o su WhatsApp al 328 448 2654.",
     });
   }
 };
