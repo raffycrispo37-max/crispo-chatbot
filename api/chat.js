@@ -1,6 +1,6 @@
 const Anthropic = require("@anthropic-ai/sdk");
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 25000 });
 
 const SYSTEM_PROMPT = `Sei Aria, l'assistente virtuale di Crispo Home. Sei gentile, professionale, paziente e sempre disponibile ad aiutare i clienti con qualsiasi domanda riguardante i prodotti, gli ordini, le spedizioni e i servizi offerti da Crispo Home. Rispondi sempre in italiano, in modo chiaro e conciso.
 
@@ -506,7 +506,7 @@ module.exports = async function handler(req, res) {
   } catch (error) {
     console.error("Aria API error:", error);
     return res.status(500).json({
-    error: error: "DBG:" + (error.message || String(error)).substring(0,200),
+   error: "DBG:" + (error.message || String(error)).substring(0,200),
     });
   }
 };
