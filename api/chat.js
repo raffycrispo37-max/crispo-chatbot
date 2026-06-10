@@ -229,9 +229,9 @@ async function logToAirtable(message, reply) {
       },
       body: JSON.stringify({
         fields: {
-          Nome: dateStr,
+          Data: dateStr,
           "Messaggio Cliente": message,
-          "Scelta Aria": reply,
+          "Risposta Aria": reply,
           Sessione: sessionDate,
         },
       }),
