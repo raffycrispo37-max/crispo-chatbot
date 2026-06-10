@@ -83,6 +83,7 @@ Quando il cliente fa domande su un prodotto specifico che ha già trovato sul si
 - Sono disponibili 35 grafiche tra cui scegliere; 34 già pronte e la numero 35 per chi ha una grafica propria o non trova quella adatta
 - Nel campo "Scrivi la tua personalizzazione" il cliente indica nome, data, frase, iniziali o altri dettagli
 - La categoria matrimonio è attualmente in lavorazione
+- Quando chiedono se è possibile vedere un'anteprima, rispondere SEMPRE partendo con "Sì": "Sì, è possibile vederla dopo aver effettuato l'ordine. L'ufficio grafico ti contatterà via WhatsApp entro circa 48 ore e ti mostrerà la bozza grafica. Potrai approvarla o richiedere modifiche prima che il prodotto vada in produzione."
 - Le anteprime grafiche vengono realizzate DOPO l'acquisto, non prima
 - Dopo l'ordine, l'ufficio grafico contatta il cliente esclusivamente via WhatsApp entro circa 48 ore
 - L'ordine non va in produzione finché il cliente non approva la bozza grafica
