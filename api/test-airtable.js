@@ -1,9 +1,14 @@
 module.exports = async function handler(req, res) {
-  const url = `https://api.airtable.com/v0/${process.env.AIRTABLE_BASE_ID}/tblIQCSEMsKupzTzr`;
+  const baseId = process.env.AIRTABLE_BASE_ID;
+  const token = process.env.AIRTABLE_TOKEN;
+  
+  // Use table name instead of ID
+  const url = `https://api.airtable.com/v0/${baseId}/Sessioni%20Aria`;
+  
   const response = await fetch(url, {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${process.env.AIRTABLE_TOKEN}`,
+      Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
@@ -16,5 +21,5 @@ module.exports = async function handler(req, res) {
     }),
   });
   const data = await response.json();
-  return res.status(200).json({ status: response.status, airtable: data });
+  return res.status(200).json({ status: response.status, baseId: baseId ? baseId.substring(0,5)+"..." : "MISSING", airtable: data });
 };
