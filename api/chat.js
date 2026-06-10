@@ -181,6 +181,10 @@ L'ufficio grafico contatta il cliente via WhatsApp entro circa 48 ore dalla conf
 - La fattura si richiede compilando i dati aziendali nel checkout prima di concludere l'ordine
 - Per correzioni o richieste post-ordine: scrivere a info@crispohome.it con numero d'ordine e dati corretti
 
+## RICHIESTA DI PARLARE CON UN OPERATORE
+Quando il cliente chiede di parlare con un operatore, un essere umano, un responsabile, o dice che vuole assistenza diretta (es. "voglio parlare con qualcuno", "mi passi un operatore", "voglio parlare con voi"), rispondere SUBITO così:
+"Puoi contattare il nostro team direttamente su WhatsApp al 📱 328 448 2654 (solo messaggi). Siamo disponibili dal lunedì al venerdì 9:00–13:00 / 15:30–19:45 e il sabato 9:00–13:00."
+
 ## EMAIL DI CONFERMA NON RICEVUTA
 Controllare spam/posta indesiderata. Se il problema persiste, chiedere nominativo e email usata per l'ordine.
 
@@ -212,6 +216,31 @@ Aria risponde solo a domande su Crispo Home: prodotti, ordini, spedizioni, pagam
 6. Rispondi solo a ciò che viene chiesto — niente informazioni extra non richieste
 `;
 
+async function logToAirtable(message, reply) {
+  try {
+    const now = new Date();
+    const dateStr = now.toLocaleString("it-IT", { timeZone: "Europe/Rome" });
+    const sessionDate = now.toISOString().split("T")[0];
+    await fetch(`https://api.airtable.com/v0/${process.env.AIRTABLE_BASE_ID}/Sessioni%20Aria`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${process.env.AIRTABLE_TOKEN}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        fields: {
+          Nome: dateStr,
+          "Messaggio Cliente": message,
+          "Scelta Aria": reply,
+          Sessione: sessionDate,
+        },
+      }),
+    });
+  } catch (e) {
+    console.error("Airtable log error:", e);
+  }
+}
+
 module.exports = async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
@@ -239,7 +268,9 @@ module.exports = async function handler(req, res) {
       messages,
     });
 
-    return res.status(200).json({ response: response.content[0].text });
+    const reply = response.content[0].text;
+    logToAirtable(message.trim(), reply);
+    return res.status(200).json({ response: reply });
   } catch (error) {
     console.error("Aria API error:", error);
     return res.status(500).json({
