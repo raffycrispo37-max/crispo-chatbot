@@ -1,8 +1,13 @@
 {
   "version": 2,
   "functions": {
-    "api/chat.js": {
-      "maxDuration": 30
+    "api/chat.js": { "maxDuration": 30 },
+    "api/daily-report.js": { "maxDuration": 30 }
+  },
+  "crons": [
+    {
+      "path": "/api/daily-report",
+      "schedule": "0 7 * * *"
     }
-  }
+  ]
 }
