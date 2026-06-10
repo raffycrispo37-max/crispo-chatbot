@@ -24,7 +24,7 @@ module.exports = async function handler(req, res) {
         <div style="margin-bottom:24px;padding:14px;border-left:4px solid #D4AF37;background:#fffdf0;border-radius:4px">
           <p style="margin:0 0 6px;color:#888;font-size:12px">${r.fields["Nome"] || ""}</p>
           <p style="margin:0 0 8px"><strong>👤 Cliente:</strong> ${r.fields["Messaggio Cliente"] || ""}</p>
-          <p style="margin:0"><strong>🤖 Aria:</strong> ${r.fields["Scelta Aria"] || ""}</p>
+          <p style="margin:0"><strong>🤖 Aria:</strong> ${r.fields["Risposta Aria"] || ""}</p>
         </div>`;
     });
 
