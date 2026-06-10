@@ -269,7 +269,7 @@ module.exports = async function handler(req, res) {
     });
 
     const reply = response.content[0].text;
-    logToAirtable(message.trim(), reply);
+    await logToAirtable(message.trim(), reply);
     return res.status(200).json({ response: reply });
   } catch (error) {
     console.error("Aria API error:", error);
