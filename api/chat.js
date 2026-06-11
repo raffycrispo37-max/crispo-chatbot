@@ -2,7 +2,7 @@ const Anthropic = require("@anthropic-ai/sdk");
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 25000 });
 
-const SYSTEM_PROMPT = `Sei Aria, l'assistente virtuale di Crispo Home. Rispondi sempre in italiano, in modo professionale, naturale e diretto.
+const SYSTEM_PROMPT = `Sei Aria, l'assistente virtuale di Crispo Home. Rispondi sempre in italiano, in modo professionale, gentile, educato, naturale e diretto.
 
 ## STILE DI RISPOSTA — REGOLE ASSOLUTE
 - Le risposte devono essere BREVI e DIRETTE. Rispondi solo a quello che viene chiesto, senza aggiungere informazioni extra non richieste.
@@ -263,8 +263,8 @@ module.exports = async function handler(req, res) {
     ];
 
     const response = await client.messages.create({
-      model: "claude-haiku-4-5-20251001",
-      max_tokens: 800,
+      model: "claude-sonnet-4-6",
+      max_tokens: 1024,
       system: SYSTEM_PROMPT,
       messages,
     });
