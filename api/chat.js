@@ -693,6 +693,47 @@ Aria risponde solo a domande su Crispo Home: prodotti, ordini, spedizioni, pagam
 6. Rispondi solo a ciò che viene chiesto — niente informazioni extra non richieste
 `;
 
+function buildSessionContext(history) {
+  if (!history || history.length < 2) return null;
+
+  const allText = history.map(m => m.content).join(' ').toLowerCase();
+  const facts = [];
+
+  // Tipo di evento
+  const eventi = [
+    [/matrimoni|matrimonio|sposarsi|sposi|nozze/, 'matrimonio'],
+    [/battesim|nascita|bimbo|bimba|bebè|neonato|bebè/, 'battesimo/nascita'],
+    [/comunion|cresima/, 'comunione/cresima'],
+    [/laurea|laureand|laureat/, 'laurea'],
+    [/compleanno|anni\b|birthday/, 'compleanno'],
+    [/party adulto|festa adulto|adulto/, 'party adulto'],
+  ];
+  for (const [pattern, label] of eventi) {
+    if (pattern.test(allText)) { facts.push(`Evento: ${label}`); break; }
+  }
+
+  // Genere per battesimo/nascita
+  if (/bimba|femminuccia|bambina|femmina/.test(allText)) facts.push('Genere: femmina');
+  else if (/bimbo|maschietto|bambino\b|maschio/.test(allText)) facts.push('Genere: maschio');
+
+  // Numero invitati
+  const guestMatch = allText.match(/(\d+)\s*(invitat|person|ospiti|guests?)/);
+  if (guestMatch) facts.push(`Invitati: circa ${guestMatch[1]}`);
+
+  // Colori menzionati
+  const colori = ['bianco','celeste','rosa','rosso','bordeaux','tortora','nude','verde','oro','argento','nero','lilla','malva','pesca'];
+  const coloriTrovati = colori.filter(c => allText.includes(c));
+  if (coloriTrovati.length > 0) facts.push(`Colori menzionati: ${coloriTrovati.join(', ')}`);
+
+  // Budget o prodotti già visti
+  if (/scatolin|bomboniere|scatola/.test(allText)) facts.push('Interesse: bomboniere/scatoline');
+  if (/confetti/.test(allText)) facts.push('Interesse: confetti');
+  if (/macarons|donuts/.test(allText)) facts.push('Interesse: macarons/donuts');
+
+  if (facts.length === 0) return null;
+  return facts.join(' | ');
+}
+
 async function logToAirtable(message, reply) {
   try {
     const now = new Date();
@@ -734,14 +775,19 @@ module.exports = async function handler(req, res) {
     }
 
     const messages = [
-      ...history.slice(-16),
+      ...history.slice(-20),
       { role: "user", content: message.trim() },
     ];
+
+    const sessionCtx = buildSessionContext(history);
+    const dynamicSystem = sessionCtx
+      ? SYSTEM_PROMPT + `\n\n## CONTESTO SESSIONE ATTUALE\nIl cliente ha già fornito queste informazioni durante questa conversazione — usale nelle risposte senza chiedere di nuovo:\n${sessionCtx}`
+      : SYSTEM_PROMPT;
 
     const response = await client.messages.create({
       model: "claude-sonnet-4-6",
       max_tokens: 1024,
-      system: SYSTEM_PROMPT,
+      system: dynamicSystem,
       messages,
     });
 
