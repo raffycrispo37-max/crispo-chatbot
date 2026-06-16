@@ -799,14 +799,24 @@ module.exports = async function handler(req, res) {
     ];
 
     const sessionCtx = buildSessionContext(history);
-    const dynamicSystem = sessionCtx
-      ? SYSTEM_PROMPT + `\n\n## CONTESTO SESSIONE ATTUALE\nIl cliente ha già fornito queste informazioni durante questa conversazione — usale nelle risposte senza chiedere di nuovo:\n${sessionCtx}`
-      : SYSTEM_PROMPT;
+
+    // Prompt caching: SYSTEM_PROMPT statico in cache, contesto sessione dinamico separato
+    const systemBlocks = [
+      {
+        type: "text",
+        text: SYSTEM_PROMPT,
+        cache_control: { type: "ephemeral" }
+      },
+      ...(sessionCtx ? [{
+        type: "text",
+        text: `## CONTESTO SESSIONE ATTUALE\nIl cliente ha già fornito queste informazioni durante questa conversazione — usale nelle risposte senza chiedere di nuovo:\n${sessionCtx}`
+      }] : [])
+    ];
 
     const response = await client.messages.create({
       model: "claude-opus-4-6",
       max_tokens: 1024,
-      system: dynamicSystem,
+      system: systemBlocks,
       messages,
     });
 
