@@ -2,6 +2,70 @@ const Anthropic = require("@anthropic-ai/sdk");
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 25000 });
 
+const WIX_SITE_ID = 'cab57c78-fb4a-41cc-afd4-1819342454c2';
+
+async function getWixOrder(orderNumber, customerName) {
+  const apiKey = process.env.WIX_API_KEY;
+  if (!apiKey) return { error: 'Configurazione API mancante' };
+
+  try {
+    const res = await fetch('https://www.wixapis.com/ecom/v1/orders/search', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${apiKey}`,
+        'wix-site-id': WIX_SITE_ID,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        filter: { number: parseInt(orderNumber) },
+        paging: { limit: 1 }
+      })
+    });
+
+    if (!res.ok) return { error: `Errore API Wix: ${res.status}` };
+
+    const data = await res.json();
+    const orders = data.orders || [];
+    if (orders.length === 0) return { found: false };
+
+    const o = orders[0];
+
+    // Verifica nome cliente se fornito
+    if (customerName) {
+      const buyerName = `${o.buyerInfo?.firstName || ''} ${o.buyerInfo?.lastName || ''}`.toLowerCase();
+      const parts = customerName.toLowerCase().split(' ');
+      const match = parts.some(p => p.length > 2 && buyerName.includes(p));
+      if (!match) return { found: false, reason: 'nome_non_corrisponde' };
+    }
+
+    const fulfillmentMap = {
+      NOT_FULFILLED: 'in preparazione, non ancora spedito',
+      FULFILLED: 'spedito',
+      PARTIALLY_FULFILLED: 'parzialmente spedito',
+    };
+
+    // Recupera tracking dai fulfillments
+    const trackingNumbers = (o.fulfillments || [])
+      .flatMap(f => f.trackingInfo ? [f.trackingInfo] : [])
+      .filter(t => t.trackingNumber)
+      .map(t => `${t.trackingNumber}${t.shippingProvider ? ' (' + t.shippingProvider + ')' : ''}`);
+
+    return {
+      found: true,
+      numero: o.number,
+      stato_pagamento: o.paymentStatus === 'PAID' ? 'pagato' : (o.paymentStatus || 'sconosciuto'),
+      stato_spedizione: fulfillmentMap[o.fulfillmentStatus] || o.fulfillmentStatus || 'sconosciuto',
+      spedito: o.fulfillmentStatus === 'FULFILLED' || o.fulfillmentStatus === 'PARTIALLY_FULFILLED',
+      tracking: trackingNumbers.length > 0 ? trackingNumbers.join(', ') : null,
+      data_ordine: o._createdDate ? new Date(o._createdDate).toLocaleDateString('it-IT') : null,
+      acquirente: `${o.buyerInfo?.firstName || ''} ${o.buyerInfo?.lastName || ''}`.trim(),
+    };
+
+  } catch (e) {
+    return { error: e.message };
+  }
+}
+
 const SYSTEM_PROMPT = `Sei Aria, l'assistente virtuale di Crispo Home. Rispondi sempre in italiano, in modo professionale, naturale e diretto.
 
 ## STILE DI RISPOSTA — REGOLE ASSOLUTE
@@ -652,8 +716,14 @@ I codici vanno inseriti nell'apposito campo nel carrello o checkout, prima di co
 Non creare mai preventivi o calcolare totali. Invitare il cliente ad aggiungere i prodotti al carrello per vedere il totale aggiornato. Per preventivi aziendali o grandi quantità: scrivere a info@crispohome.it con tutti i dettagli.
 
 ## STATO ORDINE E TRACKING
-- Per lo stato dell'ordine: chiedere sempre numero d'ordine e nominativo
-- Il tracking viene inviato via email da FedEx; se non trovato, controllare spam. Se il problema persiste, chiedere numero d'ordine e nominativo
+Aria può consultare direttamente il sistema degli ordini in tempo reale.
+
+Quando il cliente chiede lo stato del suo ordine, se è stato spedito, o vuole il numero di tracking:
+1. Se non ha fornito il numero d'ordine, chiederlo prima (es. "Puoi indicarmi il numero del tuo ordine?")
+2. Appena hai il numero d'ordine, consulta subito il sistema — non chiedere altre informazioni prima
+3. Comunica chiaramente il risultato: se in preparazione, se spedito, e il tracking FedEx se disponibile
+
+Se il tracking non è ancora disponibile: spiegare che viene inviato via email da FedEx al momento della spedizione. Se non trovato, controllare spam. Per urgenze: WhatsApp 328 448 2654.
 
 ## ORDINI URGENTI
 Non garantire mai consegne certe. Chiedere: data evento, prodotto, quantità e destinazione. Suggerire di contattare l'assistenza per verificare la fattibilità. Per urgenze: telefono 081 827 1670.
@@ -718,6 +788,27 @@ Aria risponde solo a domande su Crispo Home: prodotti, ordini, spedizioni, pagam
 5. Non proporre mai prodotti spontaneamente. Puoi rispondere a domande dirette su singoli prodotti (prezzo, composizione, disponibilità). Non creare preventivi o calcolare totali d'ordine
 6. Rispondi solo a ciò che viene chiesto — niente informazioni extra non richieste
 `;
+
+const ARIA_TOOLS = [
+  {
+    name: "lookup_order",
+    description: "Consulta il sistema ordini Crispo Home per recuperare informazioni reali su un ordine. Usa SOLO quando il cliente chiede lo stato del suo ordine, se è stato spedito, o vuole il numero di tracking. Richiede il numero d'ordine.",
+    input_schema: {
+      type: "object",
+      properties: {
+        order_number: {
+          type: "string",
+          description: "Numero dell'ordine (solo cifre, es. '26596')"
+        },
+        customer_name: {
+          type: "string",
+          description: "Nome o cognome del cliente per verifica sicurezza (opzionale)"
+        }
+      },
+      required: ["order_number"]
+    }
+  }
+];
 
 function buildSessionContext(history) {
   if (!history || history.length < 2) return null;
@@ -820,14 +911,51 @@ module.exports = async function handler(req, res) {
       }] : [])
     ];
 
-    const response = await client.messages.create({
-      model: "claude-opus-4-6",
-      max_tokens: 1024,
-      system: systemBlocks,
-      messages,
-    });
+    // Agentic loop per tool use (lookup ordini Wix)
+    let currentMessages = [...messages];
+    let reply = null;
 
-    const reply = response.content[0].text;
+    for (let i = 0; i < 3; i++) {
+      const response = await client.messages.create({
+        model: "claude-opus-4-6",
+        max_tokens: 1024,
+        system: systemBlocks,
+        messages: currentMessages,
+        tools: ARIA_TOOLS,
+      });
+
+      if (response.stop_reason === 'tool_use') {
+        const toolUseBlock = response.content.find(c => c.type === 'tool_use');
+        let toolResult;
+
+        if (toolUseBlock && toolUseBlock.name === 'lookup_order') {
+          toolResult = await getWixOrder(
+            toolUseBlock.input.order_number,
+            toolUseBlock.input.customer_name
+          );
+        } else {
+          toolResult = { error: 'Strumento non disponibile' };
+        }
+
+        currentMessages = [
+          ...currentMessages,
+          { role: 'assistant', content: response.content },
+          {
+            role: 'user',
+            content: [{
+              type: 'tool_result',
+              tool_use_id: toolUseBlock.id,
+              content: JSON.stringify(toolResult)
+            }]
+          }
+        ];
+      } else {
+        reply = response.content.find(c => c.type === 'text')?.text;
+        break;
+      }
+    }
+
+    if (!reply) reply = "Si è verificato un errore. Per assistenza contattaci al 081 827 1670 o su WhatsApp al 328 448 2654.";
     await logToAirtable(message.trim(), reply);
     return res.status(200).json({ response: reply });
   } catch (error) {
