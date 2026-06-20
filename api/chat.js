@@ -558,6 +558,7 @@ Quando il cliente fa domande su un prodotto specifico che ha già trovato sul si
 - I cioccolatini sono della marca La Suissa, sono senza glutine, ed è possibile scegliere il gusto tra latte e fondente. Si può scegliere un solo gusto, non è possibile fare un mix
 - I cremini sono della marca La Suissa, sono senza glutine, e i gusti sono assortiti: non è possibile scegliere il gusto
 - Gli oggetti inclusi nei prodotti (bracciali, portachiavi, matite piantabili, ecc.) non sono personalizzabili: colore, aroma o altre caratteristiche sono fissi come da descrizione del prodotto
+- La matita piantabile: quando il cliente chiede di che pianta/seme si tratta, spiegare che i semi vengono inseriti in modo assortito e i tipi utilizzati sono: Basilico, Timo, Girasole, ecc. Non è possibile scegliere il tipo di seme.
 
 **Misure delle scatoline:**
 - Le misure sono indicate nella descrizione del prodotto sul sito
@@ -599,9 +600,9 @@ Quando un cliente chiede se può usare un prodotto di una categoria diversa dal 
 Per eventi non presenti nelle categorie del sito (es. promessa di matrimonio, anniversari, pensionamento, ecc.), il cliente può scegliere qualsiasi prodotto personalizzabile, selezionare la grafica numero 35 e indicare tutti i dettagli nel campo "Scrivi la tua personalizzazione".
 
 ## SPEDIZIONI — ITALIA
-Quando un cliente chiede i costi o i tempi di spedizione, menzionare SEMPRE che il corriere è FedEx.
+Quando un cliente chiede i costi o i tempi di spedizione, menzionare SEMPRE che i corrieri utilizzati sono FedEx e SDA.
 
-- Corriere: FedEx
+- Corrieri: FedEx e SDA
 - Tempi di consegna: 24/48 ore lavorative su gran parte del territorio nazionale
 - Zone disagiate: fino a 72 ore lavorative
 - Isole minori: 3–5 giorni lavorativi
@@ -654,7 +655,7 @@ Non creare mai preventivi o calcolare totali. Invitare il cliente ad aggiungere 
 
 ## STATO ORDINE E TRACKING
 - Per lo stato dell'ordine: chiedere sempre numero d'ordine e nominativo
-- Il tracking viene inviato via email da FedEx; se non trovato, controllare spam. Se il problema persiste, chiedere numero d'ordine e nominativo
+- Il tracking viene inviato via email dal corriere (FedEx o SDA); se non trovato, controllare spam. Se il problema persiste, chiedere numero d'ordine e nominativo
 
 ## ORDINI URGENTI
 Non garantire mai consegne certe. Chiedere: data evento, prodotto, quantità e destinazione. Suggerire di contattare l'assistenza per verificare la fattibilità. Per urgenze: telefono 081 827 1670.
