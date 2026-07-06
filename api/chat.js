@@ -67,10 +67,15 @@ Se il cliente chiede di un prodotto confetti specifico che esiste nel catalogo (
 - Indirizzare alla sezione confetti del sito
 Non entrare nei dettagli di gusti, colori o varianti in chat.
 
+## PREZZI — REGOLA FONDAMENTALE
+Quando un cliente chiede il prezzo di un prodotto specifico, usa SEMPRE lo strumento "cerca_prezzo_prodotto" per leggere il prezzo aggiornato dal negozio, invece di rispondere a memoria. Passa una o più parole chiave del nome del prodotto (es. "Disaronno", "macarons", "bracciale tennis"). Comunica al cliente il prezzo scontato restituito dallo strumento.
+- Se lo strumento restituisce più prodotti simili, elenca solo quelli pertinenti con il rispettivo prezzo.
+- Se lo strumento restituisce un errore o nessun risultato, puoi usare il prezzo indicativo del catalogo qui sotto oppure invitare il cliente a controllare la scheda prodotto sul sito.
+- Non calcolare mai totali d'ordine: rispondi solo con il prezzo del singolo prodotto richiesto.
+
 ## CATALOGO PRODOTTI COMPLETO
-Usa questo catalogo per rispondere a domande dirette su prodotti specifici.
+Usa questo catalogo per conoscere i prodotti esistenti e la loro composizione. I prezzi qui elencati sono solo indicativi e potrebbero non essere aggiornati: per i prezzi usa sempre lo strumento "cerca_prezzo_prodotto".
 NON elencare spontaneamente prodotti. Rispondi solo quando il cliente chiede di un prodotto specifico o chiede confronti/prezzi.
-I prezzi indicati sono già scontati (15% su bomboniere, 10% su confetti/macarons/donuts).
 
 ### SEZIONE LAUREA
 - Segnalibro sagomato: €1,02
@@ -954,6 +959,78 @@ async function logToAirtable(message, reply) {
   }
 }
 
+// Strumento che Aria può usare per leggere i prezzi aggiornati dal negozio Wix
+const TOOLS = [
+  {
+    name: "cerca_prezzo_prodotto",
+    description:
+      "Cerca il prezzo aggiornato dei prodotti nel negozio Wix di Crispo Home. " +
+      "Usa SEMPRE questo strumento quando il cliente chiede il prezzo di un prodotto specifico, " +
+      "invece di rispondere a memoria. Passa una o più parole chiave contenute nel nome del prodotto " +
+      "(es. 'Disaronno', 'macarons', 'bracciale tennis', 'scatola con 18 confetti').",
+    input_schema: {
+      type: "object",
+      properties: {
+        nome: {
+          type: "string",
+          description:
+            "Parola o parole chiave del nome del prodotto da cercare nel catalogo.",
+        },
+      },
+      required: ["nome"],
+    },
+  },
+];
+
+// Interroga il catalogo Wix (Stores Catalog V1) e restituisce nomi + prezzi
+async function cercaPrezzoWix(nome) {
+  try {
+    if (!process.env.WIX_API_KEY || !process.env.WIX_SITE_ID) {
+      return { errore: "Collegamento al listino non configurato." };
+    }
+    const res = await fetch(
+      "https://www.wixapis.com/stores/v1/products/query",
+      {
+        method: "POST",
+        headers: {
+          Authorization: process.env.WIX_API_KEY,
+          "wix-site-id": process.env.WIX_SITE_ID,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          query: {
+            filter: JSON.stringify({ name: { $contains: String(nome || "") } }),
+            paging: { limit: 10 },
+          },
+        }),
+      }
+    );
+    if (!res.ok) {
+      return { errore: "Impossibile leggere il listino in questo momento." };
+    }
+    const data = await res.json();
+    const visti = new Set();
+    const risultati = [];
+    for (const p of data.products || []) {
+      if (visti.has(p.name)) continue; // salta i duplicati per nome
+      visti.add(p.name);
+      const f = (p.priceData && p.priceData.formatted) || {};
+      risultati.push({
+        nome: p.name,
+        prezzo: f.discountedPrice || f.price || null,
+        prezzoPieno: f.price || null,
+      });
+    }
+    if (risultati.length === 0) {
+      return { risultati: [], nota: "Nessun prodotto trovato con questo nome." };
+    }
+    return { risultati };
+  } catch (e) {
+    console.error("Errore ricerca Wix:", e);
+    return { errore: "Impossibile leggere il listino in questo momento." };
+  }
+}
+
 module.exports = async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
@@ -1003,14 +1080,51 @@ module.exports = async function handler(req, res) {
       }
     ];
 
-    const response = await client.messages.create({
+    let convo = messages;
+    let response = await client.messages.create({
       model: "claude-opus-4-6",
       max_tokens: 1024,
       system: systemBlocks,
-      messages,
+      tools: TOOLS,
+      messages: convo,
     });
 
-    const reply = response.content[0].text;
+    // Ciclo tool use: se Aria chiede un prezzo, interroghiamo Wix e le passiamo il risultato
+    let giri = 0;
+    while (response.stop_reason === "tool_use" && giri < 3) {
+      giri++;
+      const toolResults = [];
+      for (const block of response.content) {
+        if (block.type === "tool_use" && block.name === "cerca_prezzo_prodotto") {
+          const risultato = await cercaPrezzoWix(block.input && block.input.nome);
+          toolResults.push({
+            type: "tool_result",
+            tool_use_id: block.id,
+            content: JSON.stringify(risultato),
+          });
+        }
+      }
+      convo = [
+        ...convo,
+        { role: "assistant", content: response.content },
+        { role: "user", content: toolResults },
+      ];
+      response = await client.messages.create({
+        model: "claude-opus-4-6",
+        max_tokens: 1024,
+        system: systemBlocks,
+        tools: TOOLS,
+        messages: convo,
+      });
+    }
+
+    const reply =
+      response.content
+        .filter((b) => b.type === "text")
+        .map((b) => b.text)
+        .join("")
+        .trim() ||
+      "Mi dispiace, non sono riuscita a rispondere. Contattaci al 081 827 1670 o su WhatsApp al 328 448 2654.";
     await logToAirtable(message.trim(), reply);
     return res.status(200).json({ response: reply });
   } catch (error) {
