@@ -1003,42 +1003,20 @@ module.exports = async function handler(req, res) {
       }
     ];
 
-    // Risposta in streaming (SSE): il testo arriva parola per parola
-    res.setHeader("Content-Type", "text/event-stream; charset=utf-8");
-    res.setHeader("Cache-Control", "no-cache, no-transform");
-    res.setHeader("Connection", "keep-alive");
-    res.setHeader("X-Accel-Buffering", "no"); // disabilita il buffering su proxy
-
-    let fullReply = "";
-
-    const stream = client.messages.stream({
+    const response = await client.messages.create({
       model: "claude-opus-4-6",
       max_tokens: 1024,
       system: systemBlocks,
       messages,
     });
 
-    stream.on("text", (textDelta) => {
-      fullReply += textDelta;
-      res.write(`data: ${JSON.stringify({ delta: textDelta })}\n\n`);
-    });
-
-    await stream.finalMessage();
-
-    // Log su Airtable prima di chiudere (in serverless la funzione si ferma a res.end())
-    await logToAirtable(message.trim(), fullReply);
-
-    res.write(`data: ${JSON.stringify({ done: true })}\n\n`);
-    return res.end();
+    const reply = response.content[0].text;
+    await logToAirtable(message.trim(), reply);
+    return res.status(200).json({ response: reply });
   } catch (error) {
     console.error("Aria API error:", error);
-    const errMsg =
-      "Si è verificato un errore. Per assistenza contattaci al 081 827 1670 o su WhatsApp al 328 448 2654.";
-    // Se lo streaming è già iniziato, gli header sono stati inviati: mando un evento di errore
-    if (res.headersSent) {
-      res.write(`data: ${JSON.stringify({ error: errMsg })}\n\n`);
-      return res.end();
-    }
-    return res.status(500).json({ error: errMsg });
+    return res.status(500).json({
+      error: "Si è verificato un errore. Per assistenza contattaci al 081 827 1670 o su WhatsApp al 328 448 2654.",
+    });
   }
 };
