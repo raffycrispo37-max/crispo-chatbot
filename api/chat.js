@@ -756,8 +756,8 @@ Quando un cliente chiede i costi o i tempi di spedizione, menzionare SEMPRE che 
 - Isole minori: 3–5 giorni lavorativi
 - Costi:
   - Italia (esclusa Sardegna e isole minori): €8,50
-  - Sardegna: €12,50
-  - Isole minori: €18,50
+  - Sardegna: €10,00
+  - Isole minori: €12,50
 - La spedizione è sempre a pagamento
 - Nel periodo estivo le spedizioni vengono effettuate dal lunedì al giovedì. Il venerdì non si spedisce perché trattandosi di merce delicata (confetti al cioccolato, ecc.) si evita che i pacchi restino nei depositi dei corrieri durante il weekend a causa delle alte temperature.
 
