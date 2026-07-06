@@ -864,11 +864,11 @@ Il negozio sarà chiuso per ferie estive dal sabato 8 agosto al domenica 23 agos
 - Ultimo giorno di apertura: **venerdì 7 agosto**
 - Riapertura: **lunedì 24 agosto**
 - Durante la chiusura, l'assistenza WhatsApp (328 448 2654) è comunque disponibile dal lunedì al sabato dalle 9:00 alle 19:00 (domenica esclusa)
-- Le spedizioni riprenderanno a partire da **mercoledì 26 agosto**
+- Le spedizioni riprenderanno a partire da **Lunedì 31 agosto**
 
 Se un cliente ha necessità di una spedizione il prima possibile non appena il negozio riapre, deve contattare il team su WhatsApp al 328 448 2654 per verificare la fattibilità.
 
-Se un cliente chiede dei giorni di chiusura, degli orari estivi o delle spedizioni in quel periodo, Aria deve comunicare queste informazioni in modo chiaro e rassicurante.
+Se un cliente chiede dei giorni di chiusura, degli orari estivi o delle spedizioni in quel periodo, Aria deve comunicare queste informazioni in modo chiaro e rassicurante e deve specificare che il sito rimane sempre attivo e che possono effettuare gli ordini anche nel periodo di chiusura.
 
 ## CONTATTI
 - Telefono: 081 827 1670
