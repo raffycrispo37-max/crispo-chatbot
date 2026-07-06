@@ -67,487 +67,482 @@ Se il cliente chiede di un prodotto confetti specifico che esiste nel catalogo (
 - Indirizzare alla sezione confetti del sito
 Non entrare nei dettagli di gusti, colori o varianti in chat.
 
-## PREZZI — REGOLA FONDAMENTALE
-Quando un cliente chiede il prezzo di un prodotto specifico, usa SEMPRE lo strumento "cerca_prezzo_prodotto" per leggere il prezzo aggiornato dal negozio, invece di rispondere a memoria. Passa una o più parole chiave del nome del prodotto (es. "Disaronno", "macarons", "bracciale tennis"). Comunica al cliente il prezzo scontato restituito dallo strumento.
-- Se lo strumento restituisce più prodotti simili, elenca solo quelli pertinenti con il rispettivo prezzo.
-- Se lo strumento restituisce un errore o nessun risultato, puoi usare il prezzo indicativo del catalogo qui sotto oppure invitare il cliente a controllare la scheda prodotto sul sito.
-- Non calcolare mai totali d'ordine: rispondi solo con il prezzo del singolo prodotto richiesto.
-
 ## CATALOGO PRODOTTI COMPLETO
-Usa questo catalogo per conoscere i prodotti esistenti e la loro composizione. I prezzi qui elencati sono solo indicativi e potrebbero non essere aggiornati: per i prezzi usa sempre lo strumento "cerca_prezzo_prodotto".
+Usa questo catalogo per rispondere a domande dirette su prodotti specifici.
 NON elencare spontaneamente prodotti. Rispondi solo quando il cliente chiede di un prodotto specifico o chiede confronti/prezzi.
+I prezzi indicati sono già scontati (15% su bomboniere, 10% su confetti/macarons/donuts).
 
 ### SEZIONE LAUREA
-- Segnalibro sagomato
-- Segnalibro sagomato con un cioccolatino
-- Tarallini personalizzati San Carlo 30gr
-- Arachidi personalizzati
-- Patatine personalizzate San Carlo 25gr
-- Nutellina personalizzata
-- Scatolina richiudibile
-- Scatolina bauletto
-- Scatolina pvc con 7 confetti
-- Pochette con 5 confetti
-- Scatolina tight con 3 cremini
-- Scatolina fiammifero con 5 confetti
-- Scatolina tight (7 confetti)
-- Scatolina mini libro con 9 confetti
-- Tavoletta di cioccolato personalizzata
-- Scatola esagonale
-- Cerchio oro con 5 confetti
-- Scatola porta penna con confetti
-- Scatolina con biscottini e confetti
-- Scatola con matita piantabile
-- Scatola con nutellina e confetti
-- Scatola fiammifero cioccolatini
-- Scatola libro con cremini e confetti
-- Scatola tight deluxe con 9 confetti
-- Tamburello personalizzato
-- Scatola con rosa in ceramica
-- Scatola con portachiavi tocco
-- Scatola con portachiavi gufo
-- Scatola con portachiavi portafortuna
-- Scatola deluxe con 9 confetti
-- Kit da 35 tag orlati
-- Scatola con bracciale rosario
-- Scatolina con confetti e calamita
-- Scatola deluxe con 3 cremini e 6 confetti
-- Scatola con bracciale tennis
-- Scatola con bracciale portafortuna
-- Scatola deluxe con 9 cremini
-- Scatola con liquore artigianale
-- Scatola con creme artigianali
-- Scatola con 18 confetti
-- Scatola libro con tamburello e confetti
-- Kit da 12 coppette piccole
-- Kit da 12 coni porta confetti
-- Scatola con Amaro Del Capo
-- Scatola con Absolute Vodka
-- Scatola con Disaronno
-- Scatola con Jägermeister
-- Scatola con Disaronno White
-- Scatola con Gin Bombay
-- Scatola con Jack Daniel's
-- Kit da 15 stelle scintillanti
-- Scatola luxury con liquore artigianale
-- Scatola con confetti e cremini
-- Scatola personalizzata con 36 confetti
-- Kit da 32 cremini personalizzati
-- Kit da 54 cioccolatini personalizzati
-- Scatola cilindrica con 60 confetti
-- Scatola cilindrica con 54 cioccolatini
-- Scatola con cioccolatini personalizzata
+- Segnalibro sagomato: €1,02
+- Segnalibro sagomato con un cioccolatino: €1,45
+- Tarallini personalizzati San Carlo 30gr: €1,36
+- Arachidi personalizzati: €1,36
+- Patatine personalizzate San Carlo 25gr: €1,70
+- Nutellina personalizzata: €2,30
+- Scatolina richiudibile: €2,13
+- Scatolina bauletto: €2,13
+- Scatolina pvc con 7 confetti: €2,38
+- Pochette con 5 confetti: €2,47
+- Scatolina tight con 3 cremini: €2,55
+- Scatolina fiammifero con 5 confetti: €2,98
+- Scatolina tight (7 confetti): €2,98
+- Scatolina mini libro con 9 confetti: €2,98
+- Tavoletta di cioccolato personalizzata: €3,83
+- Scatola esagonale: €3,23
+- Cerchio oro con 5 confetti: €3,40
+- Scatola porta penna con confetti: €3,40
+- Scatolina con biscottini e confetti: €3,91
+- Scatola con matita piantabile: €4,93
+- Scatola con nutellina e confetti: €4,85
+- Scatola fiammifero cioccolatini: €5,10
+- Scatola libro con cremini e confetti: €5,10
+- Scatola tight deluxe con 9 confetti: €5,10
+- Tamburello personalizzato: €5,10
+- Scatola con rosa in ceramica: €5,27
+- Scatola con portachiavi tocco: €5,27
+- Scatola con portachiavi gufo: €5,27
+- Scatola con portachiavi portafortuna: €5,27
+- Scatola deluxe con 9 confetti: €5,78
+- Kit da 35 tag orlati: €5,53
+- Scatola con bracciale rosario: €5,95
+- Scatolina con confetti e calamita: €5,95
+- Scatola deluxe con 3 cremini e 6 confetti: €6,29
+- Scatola con bracciale tennis: €6,38
+- Scatola con bracciale portafortuna: €6,38
+- Scatola deluxe con 9 cremini: €7,23
+- Scatola con liquore artigianale: €7,57
+- Scatola con creme artigianali: €8,08
+- Scatola con 18 confetti: €8,50
+- Scatola libro con tamburello e confetti: €8,50
+- Kit da 12 coppette piccole: €8,93
+- Kit da 12 coni porta confetti: €8,93
+- Scatola con Amaro Del Capo: €9,35
+- Scatola con Absolute Vodka: €9,35
+- Scatola con Disaronno: €9,35
+- Scatola con Jägermeister: €9,35
+- Scatola con Disaronno White: €9,78
+- Scatola con Gin Bombay: €10,20
+- Scatola con Jack Daniel's: €10,20
+- Kit da 15 stelle scintillanti: €10,20
+- Scatola luxury con liquore artigianale: €11,05
+- Scatola con confetti e cremini: €12,33
+- Scatola personalizzata con 36 confetti: €20,40
+- Kit da 32 cremini personalizzati: €24,23
+- Kit da 54 cioccolatini personalizzati: €25,50
+- Scatola cilindrica con 60 confetti: €32,30
+- Scatola cilindrica con 54 cioccolatini: €34,00
+- Scatola con cioccolatini personalizzata: €34,00
 
 ### SEZIONE COMUNIONE E CRESIMA
-- Invito Classico
-- Segnalibro sagomato
-- Menu cornice
-- Menu sagomato
-- Menu tondo
-- Segnalibro sagomato con un cioccolatino
-- Invito Extension
-- Invito Shield
-- Nutellina personalizzata
-- Scatolina richiudibile
-- Scatolina bauletto
-- Scatolina pvc con 7 confetti
-- Patatine personalizzate
-- Scatolina fiammifero con 5 confetti
-- Scatolina tight (7 confetti)
-- Tavoletta di cioccolato personalizzata
-- Scatola esagonale
-- Cerchio oro con 5 confetti
-- Scatola Invito
-- Scatola con matita piantabile
-- Scatola con nutellina e confetti
-- Scatola libro con confetti (12 confetti)
-- Scatola libro con cremini
-- Scatola fiammifero con cioccolatini
-- Kit da 35 tag orlati
-- Scatola con confetti e cremini
-- Scatola con confetti e biscotti
-- Lecca lecca personalizzati (kit 10pz)
-- Scatola con collana pendente crocetta
-- Scatola con collana portafortuna
-- Scatola libro con tamburello e confetti
-- Kit da 12 coppette piccole
-- Kit da 12 coni porta confetti
-- Kit da 54 cioccolatini personalizzati
-- Kit da 32 cremini personalizzati
-- Scatola personalizzata con 36 confetti
-- Scatola con cioccolatini personalizzata
+- Invito Classico: €1,28
+- Segnalibro sagomato: €1,02
+- Menu cornice: €1,02
+- Menu sagomato: €1,02
+- Menu tondo: €1,02
+- Segnalibro sagomato con un cioccolatino: €1,45
+- Invito Extension: €1,96
+- Invito Shield: €2,04
+- Nutellina personalizzata: €2,30
+- Scatolina richiudibile: €2,13
+- Scatolina bauletto: €2,13
+- Scatolina pvc con 7 confetti: €2,38
+- Patatine personalizzate: €1,70
+- Scatolina fiammifero con 5 confetti: €2,98
+- Scatolina tight (7 confetti): €2,98
+- Tavoletta di cioccolato personalizzata: €3,83
+- Scatola esagonale: €3,23
+- Cerchio oro con 5 confetti: €3,40
+- Scatola Invito: €4,08
+- Scatola con matita piantabile: €4,93
+- Scatola con nutellina e confetti: €4,85
+- Scatola libro con confetti (12 confetti): €5,10
+- Scatola libro con cremini: €5,10
+- Scatola fiammifero con cioccolatini: €5,10
+- Kit da 35 tag orlati: €5,53
+- Scatola con confetti e cremini: €9,52
+- Scatola con confetti e biscotti: €10,20
+- Lecca lecca personalizzati (kit 10pz): €11,90
+- Scatola con collana pendente crocetta: €12,75
+- Scatola con collana portafortuna: €12,75
+- Scatola libro con tamburello e confetti: €8,50
+- Kit da 12 coppette piccole: €8,93
+- Kit da 12 coni porta confetti: €8,93
+- Kit da 54 cioccolatini personalizzati: €25,50
+- Kit da 32 cremini personalizzati: €19,95
+- Scatola personalizzata con 36 confetti: €20,40
+- Scatola con cioccolatini personalizzata: €34,00
 
 ### SEZIONE NASCITA E BATTESIMO
 (Molti prodotti disponibili in versione bimbo e in versione bimba)
-- Segnalibro sagomato
-- Segnalibro sagomato con un cioccolatino
-- Patatine personalizzate
-- Nutellina personalizzata
-- Scatolina richiudibile
-- Scatolina bauletto
-- Scatolina pvc con 7 confetti
-- Pochette con 5 confetti
-- Scatolina fiammifero con 5 confetti
-- Scatolina tight (7 confetti)
-- Scatolina mini libro con 9 confetti
-- Scatolina stella portaconfetti
-- Segnalibro con matita piantabile
-- Scatola esagonale
-- Scatolina con biscottini e confetti
-- Scatola con matita piantabile
-- Scatola con nutellina e confetti
-- Scatola libro con cremini
-- Scatola libro con confetti
-- Scatola fiammifero con cioccolatini
-- Scatola con 18 confetti
-- Scatola libro con tamburello e confetti
-- Scatola con confetti e biscotti
-- Kit da 15 stelle scintillanti
-- Lecca lecca personalizzati (kit 10pz)
-- Scatola cilindrica con 15 muffin al cioccolato
-- Scatola personalizzata con 36 confetti
-- Kit da 48 biscottini personalizzati
-- Kit da 32 cremini personalizzati
-- Torta lecca lecca personalizzata
-- Kit da 54 cioccolatini personalizzati
-- Scatola cilindrica con 60 confetti
-- Scatola cilindrica con 48 biscotti
-- Scatola cilindrica con 54 cioccolatini
-- Scatola con cioccolatini personalizzata
+- Segnalibro sagomato: €1,02
+- Segnalibro sagomato con un cioccolatino: €1,45
+- Patatine personalizzate: €1,70
+- Nutellina personalizzata: €2,30
+- Scatolina richiudibile: €2,13
+- Scatolina bauletto: €2,13
+- Scatolina pvc con 7 confetti: €2,38
+- Pochette con 5 confetti: €2,47
+- Scatolina fiammifero con 5 confetti: €2,98
+- Scatolina tight (7 confetti): €2,98
+- Scatolina mini libro con 9 confetti: €2,98
+- Scatolina stella portaconfetti: €2,98
+- Segnalibro con matita piantabile: €3,23
+- Scatola esagonale: €3,23
+- Scatolina con biscottini e confetti: €3,91
+- Scatola con matita piantabile: €4,93
+- Scatola con nutellina e confetti: €4,85
+- Scatola libro con cremini: €5,10
+- Scatola libro con confetti: €5,10
+- Scatola fiammifero con cioccolatini: €5,10
+- Scatola con 18 confetti: €8,50
+- Scatola libro con tamburello e confetti: €8,50
+- Scatola con confetti e biscotti: €10,20
+- Kit da 15 stelle scintillanti: €10,20
+- Lecca lecca personalizzati (kit 10pz): €11,90
+- Scatola cilindrica con 15 muffin al cioccolato: €17,00
+- Scatola personalizzata con 36 confetti: €20,40
+- Kit da 48 biscottini personalizzati: €23,80
+- Kit da 32 cremini personalizzati: €24,23
+- Torta lecca lecca personalizzata: €25,08
+- Kit da 54 cioccolatini personalizzati: €25,50
+- Scatola cilindrica con 60 confetti: €32,30
+- Scatola cilindrica con 48 biscotti: €34,00
+- Scatola cilindrica con 54 cioccolatini: €34,00
+- Scatola con cioccolatini personalizzata: €34,00
 
 ### SEZIONE PARTY ADULTO / COMPLEANNO
-- Segnalibro sagomato
-- Segnalibro sagomato con un cioccolatino
-- Patatine personalizzate
-- Nutellina personalizzata
-- Scatolina richiudibile
-- Scatolina bauletto
-- Scatolina pvc con 7 confetti
-- Scatolina fiammifero con 5 confetti
-- Scatolina tight (7 confetti)
-- Scatolina mini libro con 9 confetti
-- Tavoletta di cioccolato personalizzata
-- Scatola esagonale
-- Scatola con nutellina e confetti
-- Scatola libro con cremini
-- Scatola libro con confetti
-- Scatola fiammifero con cioccolatini
-- Scatola deluxe con 9 confetti
-- Scatola con portachiavi fashion
-- Scatola con portachiavi make up
-- Scatola con portachiavi arcobaleno
-- Scatola con portachiavi poker
-- Scatola con bracciale rosario
-- Scatola con portachiavi borsetta
-- Scatola con bracciale tennis
-- Scatola con bracciale portafortuna
-- Scatola con portachiavi carillon
-- Scatola con liquore artigianale
-- Scatola con creme artigianali
-- Scatola con 18 confetti
-- Scatola libro con tamburello e confetti
-- Scatola con Amaro Del Capo
-- Scatola con Disaronno
-- Scatola con Jägermeister
-- Scatola con Absolute Vodka
-- Scatola con Disaronno White
-- Scatola con Gin Bombay
-- Scatola con Jack Daniel's
-- Lecca lecca personalizzati (kit 10pz)
-- Scatola con confetti e cremini
-- Kit da 32 cremini personalizzati
-- Kit da 54 cioccolatini personalizzati
-- Scatola con cioccolatini personalizzata
+- Segnalibro sagomato: €1,02
+- Segnalibro sagomato con un cioccolatino: €1,45
+- Patatine personalizzate: €1,70
+- Nutellina personalizzata: €2,30
+- Scatolina richiudibile: €2,13
+- Scatolina bauletto: €2,13
+- Scatolina pvc con 7 confetti: €2,38
+- Scatolina fiammifero con 5 confetti: €2,98
+- Scatolina tight (7 confetti): €2,98
+- Scatolina mini libro con 9 confetti: €2,98
+- Tavoletta di cioccolato personalizzata: €3,83
+- Scatola esagonale: €3,23
+- Scatola con nutellina e confetti: €4,85
+- Scatola libro con cremini: €5,10
+- Scatola libro con confetti: €5,10
+- Scatola fiammifero con cioccolatini: €5,10
+- Scatola deluxe con 9 confetti: €5,78
+- Scatola con portachiavi fashion: €5,78
+- Scatola con portachiavi make up: €5,78
+- Scatola con portachiavi arcobaleno: €5,78
+- Scatola con portachiavi poker: €5,78
+- Scatola con bracciale rosario: €5,95
+- Scatola con portachiavi borsetta: €6,38
+- Scatola con bracciale tennis: €6,38
+- Scatola con bracciale portafortuna: €6,38
+- Scatola con portachiavi carillon: €6,63
+- Scatola con liquore artigianale: €7,57
+- Scatola con creme artigianali: €8,08
+- Scatola con 18 confetti: €8,50
+- Scatola libro con tamburello e confetti: €8,50
+- Scatola con Amaro Del Capo: €9,35
+- Scatola con Disaronno: €9,35
+- Scatola con Jägermeister: €9,35
+- Scatola con Absolute Vodka: €9,35
+- Scatola con Disaronno White: €9,78
+- Scatola con Gin Bombay: €10,20
+- Scatola con Jack Daniel's: €10,20
+- Lecca lecca personalizzati (kit 10pz): €11,90
+- Scatola con confetti e cremini: €12,33
+- Kit da 32 cremini personalizzati: €24,23
+- Kit da 54 cioccolatini personalizzati: €25,50
+- Scatola con cioccolatini personalizzata: €34,00
 
 ### CONFETTI CRISPO (prezzo scontato al 10%)
 **Kit Degustazione:**
-- Kit Degustazione Confetti Crispo – 16 Gusti
-- Kit Degustazione Confetti Maxtris – 16 Gusti
+- Kit Degustazione Confetti Crispo – 16 Gusti: €20,25
+- Kit Degustazione Confetti Maxtris – 16 Gusti: €20,25
 
 **CiocoSoft (confezione da 900gr):**
-- CiocoSoft Cookies 900gr
-- CiocoSoft Caramello Salato 900gr
-- CiocoSoft alla Nocciola 900gr
-- CiocoSoft Variegato all'Amarena 900gr
-- CiocoSoft Panna e Cioccolato 900gr
-- CiocoSoft Pistacchio 900gr
-- CiocoSoft Red Velvet 900gr
-- CiocoSoft Yogurt e Frutti Rossi 900gr
-- CiocoSoft Cheesecake ai Frutti di Bosco 900gr
+- CiocoSoft Cookies 900gr: €13,95
+- CiocoSoft Caramello Salato 900gr: €13,95
+- CiocoSoft alla Nocciola 900gr: €13,95
+- CiocoSoft Variegato all'Amarena 900gr: €13,95
+- CiocoSoft Panna e Cioccolato 900gr: €13,95
+- CiocoSoft Pistacchio 900gr: €13,95
+- CiocoSoft Red Velvet 900gr: €13,95
+- CiocoSoft Yogurt e Frutti Rossi 900gr: €13,95
+- CiocoSoft Cheesecake ai Frutti di Bosco 900gr: €13,95
 
 **Tenerelli (confezione da 500gr):**
-- Tenerelli alla Nocciola Assortiti 500gr
-- Tenerelli Bianchi 500gr
-- Tenerelli Rossi 500gr
-- Tenerelli Celeste 500gr
-- Tenerelli Rosa 500gr
+- Tenerelli alla Nocciola Assortiti 500gr: €12,15
+- Tenerelli Bianchi 500gr: €12,15
+- Tenerelli Rossi 500gr: €12,60
+- Tenerelli Celeste 500gr: €12,15
+- Tenerelli Rosa 500gr: €12,15
 
 **Krixi (confezione da 900gr):**
-- Crispo Krixi Colori Assortiti 900gr
-- Crispo Krixi Bianco 900gr
-- Crispo Krixi Rossi 900gr
-- Crispo Krixi Celeste 900gr
-- Crispo Krixi Rosa 900gr
+- Crispo Krixi Colori Assortiti 900gr: €14,40
+- Crispo Krixi Bianco 900gr: €14,40
+- Crispo Krixi Rossi 900gr: €14,85
+- Crispo Krixi Celeste 900gr: €14,40
+- Crispo Krixi Rosa 900gr: €14,40
 
 **Top Five (confezione da 1kg):**
-- Crispo Top Five Bianco 1kg
-- Crispo Top Five Rosso 1kg
-- Crispo Top Five Verde 1kg
-- Crispo Top Five Celeste 1kg
-- Crispo Top Five Rosa 1kg
+- Crispo Top Five Bianco 1kg: €13,05
+- Crispo Top Five Rosso 1kg: €13,50
+- Crispo Top Five Verde 1kg: €13,50
+- Crispo Top Five Celeste 1kg: €13,05
+- Crispo Top Five Rosa 1kg: €13,05
 
 **CiocoPassion Selection Color (confezione da 1kg):**
-- CiocoPassion Selection Color Celesti 1kg
-- CiocoPassion Selection Color Rosa 1kg
+- CiocoPassion Selection Color Celesti 1kg: €14,40
+- CiocoPassion Selection Color Rosa 1kg: €14,40
 
 **CiocoPassion Mix (confezione da 1kg):**
-- CiocoPassion Mix Patisserie 1kg
-- CiocoPassion Mix Patisserie Celeste 1kg
-- CiocoPassion Mix Patisserie Rosa 1kg
-- CiocoPassion Colori Assortiti 1kg
+- CiocoPassion Mix Patisserie 1kg: €11,52
+- CiocoPassion Mix Patisserie Celeste 1kg: €11,52
+- CiocoPassion Mix Patisserie Rosa 1kg: €11,52
+- CiocoPassion Colori Assortiti 1kg: €11,52
 
 **CiocoPassion gusti (confezione da 1kg):**
-- CiocoPassion Latte 1kg
-- CiocoPassion Rosso 1kg
-- CiocoPassion Celeste 1kg
-- CiocoPassion Rosa 1kg
-- CiocoPassion Mojito 1kg
-- CiocoPassion Negroni 1kg
-- CiocoPassion Gin Tonic 1kg
-- CiocoPassion Caffè e Caramello 1kg
-- CiocoPassion Caramello e Biscotto 1kg
-- CiocoPassion Gianduia 1kg
-- CiocoPassion Triplo Cioccolato 1kg
-- CiocoPassion Tiramisù 1kg
-- CiocoPassion Torta Caprese 1kg
-- CiocoPassion Babà e Panna 1kg
-- CiocoPassion Caramello Salato 1kg
-- CiocoPassion Cereali 1kg
-- CiocoPassion Ricotta e Pera e Cioccolato 1kg
-- CiocoPassion Arancia e Cioccolato 1kg
-- CiocoPassion Stracciatella 1kg
-- CiocoPassion Pistacchio 1kg
-- CiocoPassion Cannolo Siciliano 1kg
-- CiocoPassion Tradizione Napoletana 1kg
-- CiocoPassion Delizia al Limone 1kg
-- CiocoPassion Ricotta e Pera 1kg
-- CiocoPassion Meringa e Frutti di Bosco 1kg
-- CiocoPassion Crema Chantilly 1kg
-- CiocoPassion Mandorle e Amarene 1kg
-- CiocoPassion Noci & Fichi 1kg
-- CiocoPassion Caffè 1kg
-- CiocoPassion Cocco 1kg
-- CiocoPassion Fragola 1kg
-- CiocoPassion Amarena 1kg
+- CiocoPassion Latte 1kg: €11,52
+- CiocoPassion Rosso 1kg: €11,70
+- CiocoPassion Celeste 1kg: €11,52
+- CiocoPassion Rosa 1kg: €11,52
+- CiocoPassion Mojito 1kg: €11,52
+- CiocoPassion Negroni 1kg: €11,52
+- CiocoPassion Gin Tonic 1kg: €11,52
+- CiocoPassion Caffè e Caramello 1kg: €11,52
+- CiocoPassion Caramello e Biscotto 1kg: €11,52
+- CiocoPassion Gianduia 1kg: €12,60
+- CiocoPassion Triplo Cioccolato 1kg: €11,52
+- CiocoPassion Tiramisù 1kg: €11,52
+- CiocoPassion Torta Caprese 1kg: €11,52
+- CiocoPassion Babà e Panna 1kg: €11,52
+- CiocoPassion Caramello Salato 1kg: €11,52
+- CiocoPassion Cereali 1kg: €11,52
+- CiocoPassion Ricotta e Pera e Cioccolato 1kg: €11,52
+- CiocoPassion Arancia e Cioccolato 1kg: €11,52
+- CiocoPassion Stracciatella 1kg: €11,52
+- CiocoPassion Pistacchio 1kg: €11,52
+- CiocoPassion Cannolo Siciliano 1kg: €11,52
+- CiocoPassion Tradizione Napoletana 1kg: €11,52
+- CiocoPassion Delizia al Limone 1kg: €11,52
+- CiocoPassion Ricotta e Pera 1kg: €11,52
+- CiocoPassion Meringa e Frutti di Bosco 1kg: €11,52
+- CiocoPassion Crema Chantilly 1kg: €11,52
+- CiocoPassion Mandorle e Amarene 1kg: €11,52
+- CiocoPassion Noci & Fichi 1kg: €11,52
+- CiocoPassion Caffè 1kg: €11,52
+- CiocoPassion Cocco 1kg: €11,52
+- CiocoPassion Fragola 1kg: €11,52
+- CiocoPassion Amarena 1kg: €11,52
 
 **Confetti Snob al cioccolato al latte (colorati, confezione da 500gr):**
-- Confetti Snob Latte Verde Inglese 500gr
-- Confetti Snob Latte Salvia 500gr
-- Confetti Snob Latte Ottanio 500gr
-- Confetti Snob Latte Rosso 500gr
-- Confetti Snob Latte Bordeaux 500gr
-- Confetti Snob Latte Rosa Chiaro 500gr
-- Confetti Snob Latte Celeste Polvere 500gr
-- Confetti Snob al cioccolato al latte Blu Galaxy 500gr
-- Confetti Snob al cioccolato al latte Nero 500gr
-- Confetti Snob Latte Mocha Mousse 500gr
-- Confetti Snob al cioccolato al latte Terracotta 500gr
+- Confetti Snob Latte Verde Inglese 500gr: €9,00
+- Confetti Snob Latte Salvia 500gr: €9,00
+- Confetti Snob Latte Ottanio 500gr: €9,00
+- Confetti Snob Latte Rosso 500gr: €9,00
+- Confetti Snob Latte Bordeaux 500gr: €9,00
+- Confetti Snob Latte Rosa Chiaro 500gr: €9,00
+- Confetti Snob Latte Celeste Polvere 500gr: €9,00
+- Confetti Snob al cioccolato al latte Blu Galaxy 500gr: €9,00
+- Confetti Snob al cioccolato al latte Nero 500gr: €9,00
+- Confetti Snob Latte Mocha Mousse 500gr: €9,00
+- Confetti Snob al cioccolato al latte Terracotta 500gr: €9,00
 
 **Confetti Snob Selection Color e Mix:**
-- Selection Color Snob Verde 1kg
-- Snob Mix Patisserie Bianco 1kg
-- Snob Mix Patisserie Celeste 1kg
-- Snob Mix Patisserie Rosa 1kg
-- Snob Mix Fruit Bianco 1kg
-- Confetti Snob Cioccolato Fondente 1kg
-- Confetti Snob Cioccolato Bianco 1kg
+- Selection Color Snob Verde 1kg: €15,30
+- Snob Mix Patisserie Bianco 1kg: €15,30
+- Snob Mix Patisserie Celeste 1kg: €15,30
+- Snob Mix Patisserie Rosa 1kg: €15,30
+- Snob Mix Fruit Bianco 1kg: €15,30
+- Confetti Snob Cioccolato Fondente 1kg: €15,30
+- Confetti Snob Cioccolato Bianco 1kg: €15,30
 
 **Confetti Snob gusti (confezione da 500gr):**
-- Confetti Snob Waffle Triplo Cioccolato 500gr
-- Confetti Snob Burro di Arachidi e Caramello 500gr
-- Confetti Snob Torta Caprese 500gr
-- Confetti Snob Gianduia 500gr
-- Confetti Snob Tiramisù 500gr
-- Confetti Snob Creme Brûlée 500gr
-- Confetti Snob Ricotta e Noci 500gr
-- Confetti Snob Zuppa Inglese 500gr
-- Confetti Snob Crema Chantilly 500gr
-- Confetti Snob Ricotta e Pera 500gr
-- Confetti Snob Pastiera Napoletana 500gr
-- Confetti Snob Babà e Panna 500gr
-- Confetti Snob al Limone 500gr
-- Confetti Snob Stracciatella 500gr
-- Confetti Snob al Pistacchio 500gr
-- Confetti Snob Espresso Napoletano 500gr
-- Confetti Snob Banana 500gr
-- Confetti Snob Amarena 500gr
-- Confetti Snob Cocco e Lampone 500gr
-- Confetti Snob Cocco e Caramello 500gr
-- Confetti Snob Melone & Anguria 500gr
-- Confetti Snob alla Fragola 500gr
-- Confetti Snob Vaniglia, Mango e Cocco 500gr
-- Confetti Snob al Rhum 500gr
+- Confetti Snob Waffle Triplo Cioccolato 500gr: €8,55
+- Confetti Snob Burro di Arachidi e Caramello 500gr: €8,55
+- Confetti Snob Torta Caprese 500gr: €8,55
+- Confetti Snob Gianduia 500gr: €8,73
+- Confetti Snob Tiramisù 500gr: €8,55
+- Confetti Snob Creme Brûlée 500gr: €8,55
+- Confetti Snob Ricotta e Noci 500gr: €8,55
+- Confetti Snob Zuppa Inglese 500gr: €8,55
+- Confetti Snob Crema Chantilly 500gr: €8,55
+- Confetti Snob Ricotta e Pera 500gr: €8,55
+- Confetti Snob Pastiera Napoletana 500gr: €8,55
+- Confetti Snob Babà e Panna 500gr: €8,55
+- Confetti Snob al Limone 500gr: €8,55
+- Confetti Snob Stracciatella 500gr: €8,55
+- Confetti Snob al Pistacchio 500gr: €8,55
+- Confetti Snob Espresso Napoletano 500gr: €8,55
+- Confetti Snob Banana 500gr: €8,55
+- Confetti Snob Amarena 500gr: €8,55
+- Confetti Snob Cocco e Lampone 500gr: €8,55
+- Confetti Snob Cocco e Caramello 500gr: €8,55
+- Confetti Snob Melone & Anguria 500gr: €8,55
+- Confetti Snob alla Fragola 500gr: €8,55
+- Confetti Snob Vaniglia, Mango e Cocco 500gr: €8,55
+- Confetti Snob al Rhum 500gr: €8,55
 
 **Confetti Dubai Chocolate Crispo (confezione da 500gr):**
-- Confetti Crispo al gusto Dubai Chocolate bianco 500gr
-- Confetti Crispo al gusto Dubai Chocolate rosso 500gr
+- Confetti Crispo al gusto Dubai Chocolate bianco 500gr: €14,85
+- Confetti Crispo al gusto Dubai Chocolate rosso 500gr: €14,85
 
 **Confetti alla Mandorla Crispo (confezione da 1kg):**
-- Crispo Elisir d'Amore Serie Oro 1kg
-- Promessi Sposi Crispo 1kg
-- Confetti alla Mandorla Intera Pelata Extra 1kg
-- Confetti Crispo 25 anni di Felicità – Mandorla argento 500gr
-- Crispo Sweet Love Fidanzamento 1kg
-- Felicità è…Laurea 1kg
-- Crispo 50 Anni di Felicità Cuoricini Mignon 500gr
-- Crispo 25 Anni di Felicità Cuoricini Mignon 500gr
+- Crispo Elisir d'Amore Serie Oro 1kg: €40,50
+- Promessi Sposi Crispo 1kg: €18,00
+- Confetti alla Mandorla Intera Pelata Extra 1kg: €14,40
+- Confetti Crispo 25 anni di Felicità – Mandorla argento 500gr: €15,30
+- Crispo Sweet Love Fidanzamento 1kg: €14,85
+- Felicità è…Laurea 1kg: €14,85
+- Crispo 50 Anni di Felicità Cuoricini Mignon 500gr: €17,10
+- Crispo 25 Anni di Felicità Cuoricini Mignon 500gr: €15,30
 
 **Pelatina Etna Crispo (confezione da 400gr):**
-- Pelatina Etna Bianco 400gr
-- Pelatina Etna Rosso 400gr
-- Pelatina Etna Celeste 400gr
-- Pelatina Etna Rosa 400gr
-- Pelatina Etna Verde 400gr
+- Pelatina Etna Bianco 400gr: €6,75
+- Pelatina Etna Rosso 400gr: €7,20
+- Pelatina Etna Celeste 400gr: €6,75
+- Pelatina Etna Rosa 400gr: €6,75
+- Pelatina Etna Verde 400gr: €7,20
 
 **Lieto Evento Crispo (confetti incartati singolarmente, confezione da 500gr):**
-- Lieto Evento Snob Bianco 500gr
-- Lieto Evento Snob Rosso 500gr
-- Lieto Evento Snob Celeste 500gr
-- Lieto Evento Snob Rosa 500gr
-- Lieto Evento Snob Verde 500gr
-- Lieto Evento CiocoPassion Bianco 500gr
-- Lieto Evento CiocoPassion Rosso 500gr
-- Lieto Evento CiocoPassion Celeste 500gr
-- Lieto Evento CiocoPassion Rosa 500gr
-- Lieto Evento CiocoPassion Verde 500gr
-- Lieto Evento Promessi Sposi Bianco 500gr
-- Lieto Evento Promessi Sposi Rosso 500gr
-- Lieto Evento Promessi Sposi Celeste 500gr
-- Lieto Evento Promessi Sposi Rosa 500gr
+- Lieto Evento Snob Bianco 500gr: €10,35
+- Lieto Evento Snob Rosso 500gr: €10,80
+- Lieto Evento Snob Celeste 500gr: €10,35
+- Lieto Evento Snob Rosa 500gr: €10,35
+- Lieto Evento Snob Verde 500gr: €10,80
+- Lieto Evento CiocoPassion Bianco 500gr: €10,53
+- Lieto Evento CiocoPassion Rosso 500gr: €10,80
+- Lieto Evento CiocoPassion Celeste 500gr: €10,53
+- Lieto Evento CiocoPassion Rosa 500gr: €10,53
+- Lieto Evento CiocoPassion Verde 500gr: €10,80
+- Lieto Evento Promessi Sposi Bianco 500gr: €13,05
+- Lieto Evento Promessi Sposi Rosso 500gr: €13,05
+- Lieto Evento Promessi Sposi Celeste 500gr: €13,05
+- Lieto Evento Promessi Sposi Rosa 500gr: €13,05
 
 ### CONFETTI MAXTRIS (prezzo scontato al 10%)
 **Two Milk Maxtris (confezione da 1kg):**
-- Two Milk Classico Bianco 1kg
-- Two Milk Cremino 1kg
-- Two Milk Cioccolato Bianco 1kg
-- Two Milk Bacio 1kg
-- Two Milk Red Velvet 1kg
-- Two Milk Crema Chantilly e Fragoline 1kg
-- Two Milk Limoncello 1kg
+- Two Milk Classico Bianco 1kg: €14,85
+- Two Milk Cremino 1kg: €14,85
+- Two Milk Cioccolato Bianco 1kg: €14,85
+- Two Milk Bacio 1kg: €14,85
+- Two Milk Red Velvet 1kg: €14,85
+- Two Milk Crema Chantilly e Fragoline 1kg: €14,85
+- Two Milk Limoncello 1kg: €14,85
 
 **Dubai Chocolate Maxtris (confezione da 500gr):**
-- Maxtris Dubai Pistacchio e Kadayif Celeste 500gr
-- Maxtris Dubai Pistacchio e Kadayif Rosa 500gr
+- Maxtris Dubai Pistacchio e Kadayif Celeste 500gr: €14,85
+- Maxtris Dubai Pistacchio e Kadayif Rosa 500gr: €14,85
 
 **Maxtris Classico e Enzo Miccio (mandorla, confezione da 1kg):**
-- Maxtris Classico Bianco 1kg
-- Maxtris Classico Rosso 1kg
-- Maxtris Classico Celeste 1kg
-- Maxtris Classico Rosa 1kg
-- Maxtris Enzo Miccio Nuance Tortora 1kg
-- Maxtris Enzo Miccio Nuance Carta da Zucchero 1kg
-- Maxtris Enzo Miccio Nuance Nude 1kg
+- Maxtris Classico Bianco 1kg: €19,35
+- Maxtris Classico Rosso 1kg: €19,35
+- Maxtris Classico Celeste 1kg: €19,35
+- Maxtris Classico Rosa 1kg: €19,35
+- Maxtris Enzo Miccio Nuance Tortora 1kg: €20,25
+- Maxtris Enzo Miccio Nuance Carta da Zucchero 1kg: €20,25
+- Maxtris Enzo Miccio Nuance Nude 1kg: €20,25
 
 **Maxtris gusti speciali (confezione da 1kg):**
-- Maxtris Nut 1kg
-- Maxtris i Tre Cioccolati 1kg
-- Maxtris Nocciolato Bianco 1kg
-- Maxtris Nougat 1kg
-- Maxtris Wafer 1kg
-- Maxtris Mandorla Salata e Caramello 1kg
-- Maxtris Speculoos 1kg
-- Maxtris Caramel e Fleur de Sel 1kg
-- Maxtris Ciocoliquirizia 1kg
-- Maxtris Liquore Strega 1kg
-- Maxtris Yogurt ai Frutti di Bosco 1kg
-- Maxtris Cristalli al Lampone 1kg
-- Maxtris Cristalli all'Arancia 1kg
-- Maxtris Cristalli a Limone 1kg
-- Maxtris Gin Tonic 1kg
-- Maxtris Mojito 1kg
-- Maxtris Spritz 1kg
+- Maxtris Nut 1kg: €19,35
+- Maxtris i Tre Cioccolati 1kg: €19,35
+- Maxtris Nocciolato Bianco 1kg: €19,35
+- Maxtris Nougat 1kg: €19,35
+- Maxtris Wafer 1kg: €19,35
+- Maxtris Mandorla Salata e Caramello 1kg: €19,35
+- Maxtris Speculoos 1kg: €19,35
+- Maxtris Caramel e Fleur de Sel 1kg: €19,35
+- Maxtris Ciocoliquirizia 1kg: €19,35
+- Maxtris Liquore Strega 1kg: €19,35
+- Maxtris Yogurt ai Frutti di Bosco 1kg: €19,35
+- Maxtris Cristalli al Lampone 1kg: €19,35
+- Maxtris Cristalli all'Arancia 1kg: €19,35
+- Maxtris Cristalli a Limone 1kg: €19,35
+- Maxtris Gin Tonic 1kg: €19,35
+- Maxtris Mojito 1kg: €19,35
+- Maxtris Spritz 1kg: €19,35
 
 **Bon Bon Cream Maxtris (confezione da 900gr):**
-- Bon Bon Cream Panna 900gr
-- Bon Bon Cream Cioccolato al Latte e Nocciola 900gr
-- Bon Bon Cream Caramello 900gr
-- Bon Bon Cream Pistacchio 900gr
-- Bon Bon Cream Cioccolato Fondente 900gr
-- Bon Bon Cream Rosa 900gr
-- Bon Bon Cream Celeste 900gr
-- Bon Bon Cream Rosso 900gr
-- Bon Bon Cream Nuance Foresta 900gr
-- Bon Bon Cream Nuance Tortora 900gr
-- Bon Bon Cream Nuance Nude 900gr
-- Bon Bon Cream Nuance Malva 900gr
-- Bon Bon Cream Nuance Blue 900gr
-- Bon Bon Cream Nuance Carta da Zucchero 900gr
-- Bon Bon Cream Nuance Bordeaux 900gr
-- Bon Bon Cream Nuance Black 900gr
+- Bon Bon Cream Panna 900gr: €18,45
+- Bon Bon Cream Cioccolato al Latte e Nocciola 900gr: €18,45
+- Bon Bon Cream Caramello 900gr: €18,45
+- Bon Bon Cream Pistacchio 900gr: €18,45
+- Bon Bon Cream Cioccolato Fondente 900gr: €18,45
+- Bon Bon Cream Rosa 900gr: €18,45
+- Bon Bon Cream Celeste 900gr: €18,45
+- Bon Bon Cream Rosso 900gr: €18,45
+- Bon Bon Cream Nuance Foresta 900gr: €18,45
+- Bon Bon Cream Nuance Tortora 900gr: €18,45
+- Bon Bon Cream Nuance Nude 900gr: €18,45
+- Bon Bon Cream Nuance Malva 900gr: €18,45
+- Bon Bon Cream Nuance Blue 900gr: €18,45
+- Bon Bon Cream Nuance Carta da Zucchero 900gr: €18,45
+- Bon Bon Cream Nuance Bordeaux 900gr: €18,45
+- Bon Bon Cream Nuance Black 900gr: €18,45
 
 **Maxtris Les Noisettes (nocciola, confezione da 1kg):**
-- Maxtris Les Noisettes Classic Bianco 1kg
-- Maxtris Les Noisettes Classic Rosa 1kg
-- Maxtris Les Noisettes Classic Celeste 1kg
-- Maxtris Les Noisettes Nuance Carta da Zucchero 1kg
-- Maxtris Les Noisettes Nuance Blue 1kg
-- Maxtris Les Noisettes Nuance Black 1kg
-- Maxtris Les Noisettes Nuance Rosso 1kg
-- Maxtris Les Noisettes Nuance Bordeaux 1kg
-- Maxtris Les Noisettes Nuance Salvia 1kg
-- Maxtris Les Noisettes Nuance Pea Green 1kg
-- Maxtris Les Noisettes Nuance Sun 1kg
-- Maxtris Les Noisettes Nuance Tortora 1kg
-- Maxtris Les Noisettes Nuance Nude 1kg
-- Maxtris Les Noisettes Nuance Pesca 1kg
-- Maxtris Les Noisettes Nuance Lilla 1kg
-- Maxtris Les Noisettes Nuance Malva 1kg
-- Maxtris Les Noisettes Gold Luxury Oro 500gr
-- Maxtris Les Noisettes Silver Luxury Argento 500gr
+- Maxtris Les Noisettes Classic Bianco 1kg: €20,25
+- Maxtris Les Noisettes Classic Rosa 1kg: €20,25
+- Maxtris Les Noisettes Classic Celeste 1kg: €20,25
+- Maxtris Les Noisettes Nuance Carta da Zucchero 1kg: €20,25
+- Maxtris Les Noisettes Nuance Blue 1kg: €20,25
+- Maxtris Les Noisettes Nuance Black 1kg: €20,25
+- Maxtris Les Noisettes Nuance Rosso 1kg: €20,25
+- Maxtris Les Noisettes Nuance Bordeaux 1kg: €20,25
+- Maxtris Les Noisettes Nuance Salvia 1kg: €20,25
+- Maxtris Les Noisettes Nuance Pea Green 1kg: €20,25
+- Maxtris Les Noisettes Nuance Sun 1kg: €20,25
+- Maxtris Les Noisettes Nuance Tortora 1kg: €20,25
+- Maxtris Les Noisettes Nuance Nude 1kg: €20,25
+- Maxtris Les Noisettes Nuance Pesca 1kg: €20,25
+- Maxtris Les Noisettes Nuance Lilla 1kg: €20,25
+- Maxtris Les Noisettes Nuance Malva 1kg: €20,25
+- Maxtris Les Noisettes Gold Luxury Oro 500gr: €21,15
+- Maxtris Les Noisettes Silver Luxury Argento 500gr: €19,80
 
 **Maxtris Avola (mandorla Avola, confezione da 1kg):**
-- Maxtris Avola 40 Gran Riserva 1kg
-- Maxtris Avola Pensiero D'Amore Bianco 1kg
-- Maxtris Avola Nuance Tortora 1kg
-- Maxtris Avola Nuance Nude 1kg
-- Maxtris Avola Nuance Carta Da Zucchero 1kg
-- Maxtris Avola Nuance Salvia 1kg
-- Maxtris Avola Nuance Bordeaux 1kg
+- Maxtris Avola 40 Gran Riserva 1kg: €56,70
+- Maxtris Avola Pensiero D'Amore Bianco 1kg: €29,70
+- Maxtris Avola Nuance Tortora 1kg: €24,30
+- Maxtris Avola Nuance Nude 1kg: €24,30
+- Maxtris Avola Nuance Carta Da Zucchero 1kg: €24,30
+- Maxtris Avola Nuance Salvia 1kg: €24,30
+- Maxtris Avola Nuance Bordeaux 1kg: €24,30
 
 **Maxtris Mandorla e Anniversari:**
-- Maxtris Sposa Novella Bianco 1kg
-- Maxtris Mandorla Royal Oro 500gr
-- Maxtris Mandorla Royal Argento 500gr
+- Maxtris Sposa Novella Bianco 1kg: €17,55
+- Maxtris Mandorla Royal Oro 500gr: €17,55
+- Maxtris Mandorla Royal Argento 500gr: €15,30
 
 **Maxtris Lamponì (confezione da 350gr):**
-- Maxtris Lamponì Bianco 350gr
-- Maxtris Lamponì Rosso 350gr
-- Maxtris Lamponì Celeste 350gr
-- Maxtris Lamponì Rosa 350gr
+- Maxtris Lamponì Bianco 350gr: €13,05
+- Maxtris Lamponì Rosso 350gr: €13,05
+- Maxtris Lamponì Celeste 350gr: €13,05
+- Maxtris Lamponì Rosa 350gr: €13,05
 
 **Maxtris Baby (confetti e vassoi per battesimo):**
-- Vassoio Dolce Arrivo Baby Rosa – 500gr
-- Vassoio Dolce Arrivo Baby Celeste – 500gr
-- Maxtris Latta Carillon Baby Rosa – 160g
-- Maxtris Latta Carillon Baby Celeste – 160g
+- Vassoio Dolce Arrivo Baby Rosa – 500gr: €15,30
+- Vassoio Dolce Arrivo Baby Celeste – 500gr: €15,30
+- Maxtris Latta Carillon Baby Rosa – 160g: €17,55
+- Maxtris Latta Carillon Baby Celeste – 160g: €17,55
 
 ### MACARONS MAXTRIS (prezzo scontato al 10%)
-- Macarons Nocciola - 15pz
-- Macarons Cioccolato - 15pz
-- Macarons Yogurt - 15pz
-- Macarons Vaniglia - 15pz
-- Macarons Pistacchio - 15pz
-- Macarons Cioccolato - 5pz
-- Macarons Yogurt - 5pz
-- Macarons Vaniglia - 5pz
-- Macarons Pistacchio - 5pz
+- Macarons Nocciola - 15pz: €14,85
+- Macarons Cioccolato - 15pz: €14,85
+- Macarons Yogurt - 15pz: €14,85
+- Macarons Vaniglia - 15pz: €14,85
+- Macarons Pistacchio - 15pz: €14,85
+- Macarons Cioccolato - 5pz: €4,95
+- Macarons Yogurt - 5pz: €4,95
+- Macarons Vaniglia - 5pz: €4,95
+- Macarons Pistacchio - 5pz: €4,95
 
 ### DONUTS MAXTRIS (prezzo scontato al 10%)
-- Donuts Panna - 6pz
-- Donuts Cacao - 6pz
-- Donuts Fragola - 6pz
-- Donuts Vaniglia - 6pz
-- Donuts Pistacchio - 6pz
+- Donuts Panna - 6pz: €6,03
+- Donuts Cacao - 6pz: €6,03
+- Donuts Fragola - 6pz: €6,03
+- Donuts Vaniglia - 6pz: €6,03
+- Donuts Pistacchio - 6pz: €6,03
 
 ## INFORMAZIONI SU PRODOTTI SPECIFICI
 Quando il cliente fa domande su un prodotto specifico che ha già trovato sul sito, Aria può fornire:
@@ -959,78 +954,6 @@ async function logToAirtable(message, reply) {
   }
 }
 
-// Strumento che Aria può usare per leggere i prezzi aggiornati dal negozio Wix
-const TOOLS = [
-  {
-    name: "cerca_prezzo_prodotto",
-    description:
-      "Cerca il prezzo aggiornato dei prodotti nel negozio Wix di Crispo Home. " +
-      "Usa SEMPRE questo strumento quando il cliente chiede il prezzo di un prodotto specifico, " +
-      "invece di rispondere a memoria. Passa una o più parole chiave contenute nel nome del prodotto " +
-      "(es. 'Disaronno', 'macarons', 'bracciale tennis', 'scatola con 18 confetti').",
-    input_schema: {
-      type: "object",
-      properties: {
-        nome: {
-          type: "string",
-          description:
-            "Parola o parole chiave del nome del prodotto da cercare nel catalogo.",
-        },
-      },
-      required: ["nome"],
-    },
-  },
-];
-
-// Interroga il catalogo Wix (Stores Catalog V1) e restituisce nomi + prezzi
-async function cercaPrezzoWix(nome) {
-  try {
-    if (!process.env.WIX_API_KEY || !process.env.WIX_SITE_ID) {
-      return { errore: "Collegamento al listino non configurato." };
-    }
-    const res = await fetch(
-      "https://www.wixapis.com/stores/v1/products/query",
-      {
-        method: "POST",
-        headers: {
-          Authorization: process.env.WIX_API_KEY,
-          "wix-site-id": process.env.WIX_SITE_ID,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          query: {
-            filter: JSON.stringify({ name: { $contains: String(nome || "") } }),
-            paging: { limit: 10 },
-          },
-        }),
-      }
-    );
-    if (!res.ok) {
-      return { errore: "Impossibile leggere il listino in questo momento." };
-    }
-    const data = await res.json();
-    const visti = new Set();
-    const risultati = [];
-    for (const p of data.products || []) {
-      if (visti.has(p.name)) continue; // salta i duplicati per nome
-      visti.add(p.name);
-      const f = (p.priceData && p.priceData.formatted) || {};
-      risultati.push({
-        nome: p.name,
-        prezzo: f.discountedPrice || f.price || null,
-        prezzoPieno: f.price || null,
-      });
-    }
-    if (risultati.length === 0) {
-      return { risultati: [], nota: "Nessun prodotto trovato con questo nome." };
-    }
-    return { risultati };
-  } catch (e) {
-    console.error("Errore ricerca Wix:", e);
-    return { errore: "Impossibile leggere il listino in questo momento." };
-  }
-}
-
 module.exports = async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
@@ -1080,57 +1003,42 @@ module.exports = async function handler(req, res) {
       }
     ];
 
-    let convo = messages;
-    let response = await client.messages.create({
+    // Risposta in streaming (SSE): il testo arriva parola per parola
+    res.setHeader("Content-Type", "text/event-stream; charset=utf-8");
+    res.setHeader("Cache-Control", "no-cache, no-transform");
+    res.setHeader("Connection", "keep-alive");
+    res.setHeader("X-Accel-Buffering", "no"); // disabilita il buffering su proxy
+
+    let fullReply = "";
+
+    const stream = client.messages.stream({
       model: "claude-opus-4-6",
       max_tokens: 1024,
       system: systemBlocks,
-      tools: TOOLS,
-      messages: convo,
+      messages,
     });
 
-    // Ciclo tool use: se Aria chiede un prezzo, interroghiamo Wix e le passiamo il risultato
-    let giri = 0;
-    while (response.stop_reason === "tool_use" && giri < 3) {
-      giri++;
-      const toolResults = [];
-      for (const block of response.content) {
-        if (block.type === "tool_use" && block.name === "cerca_prezzo_prodotto") {
-          const risultato = await cercaPrezzoWix(block.input && block.input.nome);
-          toolResults.push({
-            type: "tool_result",
-            tool_use_id: block.id,
-            content: JSON.stringify(risultato),
-          });
-        }
-      }
-      convo = [
-        ...convo,
-        { role: "assistant", content: response.content },
-        { role: "user", content: toolResults },
-      ];
-      response = await client.messages.create({
-        model: "claude-opus-4-6",
-        max_tokens: 1024,
-        system: systemBlocks,
-        tools: TOOLS,
-        messages: convo,
-      });
-    }
+    stream.on("text", (textDelta) => {
+      fullReply += textDelta;
+      res.write(`data: ${JSON.stringify({ delta: textDelta })}\n\n`);
+    });
 
-    const reply =
-      response.content
-        .filter((b) => b.type === "text")
-        .map((b) => b.text)
-        .join("")
-        .trim() ||
-      "Mi dispiace, non sono riuscita a rispondere. Contattaci al 081 827 1670 o su WhatsApp al 328 448 2654.";
-    await logToAirtable(message.trim(), reply);
-    return res.status(200).json({ response: reply });
+    await stream.finalMessage();
+
+    // Log su Airtable prima di chiudere (in serverless la funzione si ferma a res.end())
+    await logToAirtable(message.trim(), fullReply);
+
+    res.write(`data: ${JSON.stringify({ done: true })}\n\n`);
+    return res.end();
   } catch (error) {
     console.error("Aria API error:", error);
-    return res.status(500).json({
-      error: "Si è verificato un errore. Per assistenza contattaci al 081 827 1670 o su WhatsApp al 328 448 2654.",
-    });
+    const errMsg =
+      "Si è verificato un errore. Per assistenza contattaci al 081 827 1670 o su WhatsApp al 328 448 2654.";
+    // Se lo streaming è già iniziato, gli header sono stati inviati: mando un evento di errore
+    if (res.headersSent) {
+      res.write(`data: ${JSON.stringify({ error: errMsg })}\n\n`);
+      return res.end();
+    }
+    return res.status(500).json({ error: errMsg });
   }
 };
