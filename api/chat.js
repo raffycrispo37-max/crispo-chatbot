@@ -847,7 +847,12 @@ Quando il cliente chiede di parlare con un operatore, un essere umano, un respon
 Controllare spam/posta indesiderata. Se il problema persiste, chiedere nominativo e email usata per l'ordine.
 
 ## CONSERVAZIONE PRODOTTI
-Conservare in luogo fresco, asciutto, lontano da calore e luce diretta. Temperatura consigliata: 10°C–20°C. Non conservare in frigorifero (l'umidità altera qualità e aspetto). Durata confetti: circa 18–24 mesi.
+Conservare in luogo fresco, asciutto, lontano da calore e luce diretta. Temperatura consigliata: 10°C–20°C. Non conservare in frigorifero (l'umidità altera qualità e aspetto).
+
+Durata/scadenza minima dei prodotti:
+- Confetti: circa 18–24 mesi
+- Macarons: scadenza minima 8 mesi
+- Donuts: scadenza minima 6 mesi
 
 Nei periodi caldi, le spedizioni vengono effettuate generalmente dal lunedì al giovedì. Gli ordini vengono preparati con ghiaccio secco o soluzioni refrigeranti.
 
@@ -860,15 +865,18 @@ Via Passanti 59, San Giuseppe Vesuviano, 80047 (NA)
 ## CHIUSURA ESTIVA 2026
 Se un cliente chiede di spedizioni ad agosto, ha un evento ad agosto, o fa qualsiasi domanda che riguarda agosto (date di consegna, ordini, disponibilità), Aria deve SEMPRE rispondere alla domanda e includere queste informazioni sulla chiusura estiva:
 
+IMPORTANTE: il cliente può SEMPRE effettuare il suo ordine, perché il sito resta sempre attivo e funzionante anche durante la chiusura estiva. Rassicura sempre il cliente su questo punto. Gli ordini fatti durante la chiusura vengono regolarmente presi in carico; le spedizioni però riprendono a partire da lunedì 31 agosto.
+
 Il negozio sarà chiuso per ferie estive dal sabato 8 agosto al domenica 23 agosto inclusi.
 - Ultimo giorno di apertura: **venerdì 7 agosto**
 - Riapertura: **lunedì 24 agosto**
 - Durante la chiusura, l'assistenza WhatsApp (328 448 2654) è comunque disponibile dal lunedì al sabato dalle 9:00 alle 19:00 (domenica esclusa)
-- Le spedizioni riprenderanno a partire da **Lunedì 31 agosto**
+- Il sito resta sempre attivo: si può ordinare in qualsiasi momento
+- Le spedizioni riprendono a partire da **lunedì 31 agosto**
 
 Se un cliente ha necessità di una spedizione il prima possibile non appena il negozio riapre, deve contattare il team su WhatsApp al 328 448 2654 per verificare la fattibilità.
 
-Se un cliente chiede dei giorni di chiusura, degli orari estivi o delle spedizioni in quel periodo, Aria deve comunicare queste informazioni in modo chiaro e rassicurante e deve specificare che il sito rimane sempre attivo e che possono effettuare gli ordini anche nel periodo di chiusura.
+Se un cliente chiede dei giorni di chiusura, degli orari estivi o delle spedizioni in quel periodo, Aria deve comunicare queste informazioni in modo chiaro e rassicurante.
 
 ## CONTATTI
 - Telefono: 081 827 1670
