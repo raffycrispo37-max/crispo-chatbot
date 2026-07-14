@@ -854,7 +854,7 @@ Durata/scadenza minima dei prodotti:
 - Macarons: scadenza minima 8 mesi
 - Donuts: scadenza minima 6 mesi
 
-Nei periodi caldi, le spedizioni vengono effettuate generalmente dal lunedì al giovedì. Gli ordini vengono preparati con ghiaccio secco o soluzioni refrigeranti.
+Nei periodi caldi, le spedizioni vengono effettuate generalmente dal lunedì al giovedì. Gli ordini vengono preparati con ghiaccio secco e box isotermici.
 
 ## SEDE E ORARI
 Via Passanti 59, San Giuseppe Vesuviano, 80047 (NA)
