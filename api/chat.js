@@ -759,6 +759,7 @@ Quando un cliente chiede i costi o i tempi di spedizione, menzionare SEMPRE che 
   - Sardegna: €10,00
   - Isole minori: €12,50
 - La spedizione è sempre a pagamento
+- Spedizione in giornata: se l'ordine contiene SOLO confetti, macarons o donuts (senza prodotti personalizzati) e viene effettuato entro le 12:00, viene spedito lo stesso giorno. Questa regola vale esclusivamente per ordini di soli confetti, macarons o donuts; non si applica agli ordini che includono prodotti personalizzati (scatoline, bomboniere, ecc.).
 - Nel periodo estivo le spedizioni vengono effettuate dal lunedì al giovedì. Il venerdì non si spedisce perché trattandosi di merce delicata (confetti al cioccolato, ecc.) si evita che i pacchi restino nei depositi dei corrieri durante il weekend a causa delle alte temperature.
 
 ## SPEDIZIONI — EUROPA
@@ -854,7 +855,7 @@ Durata/scadenza minima dei prodotti:
 - Macarons: scadenza minima 8 mesi
 - Donuts: scadenza minima 6 mesi
 
-Nei periodi caldi, le spedizioni vengono effettuate generalmente dal lunedì al giovedì. Gli ordini vengono preparati con ghiaccio secco e box isotermici.
+Nei periodi caldi, le spedizioni vengono effettuate generalmente dal lunedì al giovedì. Gli ordini vengono preparati con ghiaccio secco e box isotermico.
 
 ## SEDE E ORARI
 Via Passanti 59, San Giuseppe Vesuviano, 80047 (NA)
@@ -984,7 +985,7 @@ module.exports = async function handler(req, res) {
 
     const sessionCtx = buildSessionContext(history);
 
-    // Data odierna in italiano (fuso orario Europa/Roma)
+    // Data e ora odierne in italiano (fuso orario Europa/Roma)
     const oggi = new Date().toLocaleDateString("it-IT", {
       timeZone: "Europe/Rome",
       weekday: "long",
@@ -992,9 +993,14 @@ module.exports = async function handler(req, res) {
       month: "long",
       day: "numeric"
     });
+    const oraAttuale = new Date().toLocaleTimeString("it-IT", {
+      timeZone: "Europe/Rome",
+      hour: "2-digit",
+      minute: "2-digit"
+    });
 
     // Prompt caching: SYSTEM_PROMPT statico in cache, contesto dinamico (data + sessione) separato
-    const dynamicParts = [`## DATA ODIERNA\nOggi è ${oggi}. Usa questa data per calcolare i giorni lavorativi quando un cliente chiede se riuscirà a ricevere l'ordine entro una certa data.`];
+    const dynamicParts = [`## DATA E ORA ODIERNE\nOggi è ${oggi} e sono le ${oraAttuale} (orario italiano). Usa la data per calcolare i giorni lavorativi quando un cliente chiede se riuscirà a ricevere l'ordine entro una certa data. Usa l'ora attuale per la regola della spedizione in giornata: se il cliente chiede se il suo ordine di soli confetti, macarons o donuts verrà spedito oggi, controlla l'ora — se sono prima delle 12:00 sì (verrà spedito in giornata), se sono le 12:00 o più tardi comunica semplicemente che, se effettua l'ordine in giornata, verrà spedito domani mattina.`];
     if (sessionCtx) {
       dynamicParts.push(`## CONTESTO SESSIONE ATTUALE\nIl cliente ha già fornito queste informazioni durante questa conversazione — usale nelle risposte senza chiedere di nuovo:\n${sessionCtx}`);
     }
