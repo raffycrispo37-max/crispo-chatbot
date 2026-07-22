@@ -294,11 +294,13 @@ I prezzi indicati sono già scontati (15% su bomboniere, 10% su confetti/macaron
 **CiocoPassion Selection Color (confezione da 1kg):**
 - CiocoPassion Selection Color Celesti 1kg: €14,40
 - CiocoPassion Selection Color Rosa 1kg: €14,40
+- CiocoPassion Selection Color Rosso 1kg: €14,40
 
 **CiocoPassion Mix (confezione da 1kg):**
 - CiocoPassion Mix Patisserie 1kg: €11,52
 - CiocoPassion Mix Patisserie Celeste 1kg: €11,52
 - CiocoPassion Mix Patisserie Rosa 1kg: €11,52
+- CiocoPassion Mix Patisserie Rosso 1kg: €11,70
 - CiocoPassion Colori Assortiti 1kg: €11,52
 
 **CiocoPassion gusti (confezione da 1kg):**
@@ -350,6 +352,9 @@ I prezzi indicati sono già scontati (15% su bomboniere, 10% su confetti/macaron
 
 **Confetti Snob Selection Color e Mix:**
 - Selection Color Snob Verde 1kg: €15,30
+- Selection Color Snob Rosso: €13,95
+- Selection Color Snob Celeste: €13,95
+- Selection Color Snob Rosa: €13,95
 - Snob Mix Patisserie Bianco 1kg: €15,30
 - Snob Mix Patisserie Celeste 1kg: €15,30
 - Snob Mix Patisserie Rosa 1kg: €15,30
@@ -397,6 +402,12 @@ I prezzi indicati sono già scontati (15% su bomboniere, 10% su confetti/macaron
 - Crispo 50 Anni di Felicità Cuoricini Mignon 500gr: €17,10
 - Crispo 25 Anni di Felicità Cuoricini Mignon 500gr: €15,30
 
+**Selection Color Cuoricini Mignon Crispo (confezione da 500gr):**
+- Selection Color Cuoricini Mignon Verde: €8,55
+- Selection Color Cuoricini Mignon Celeste: €8,55
+- Selection Color Cuoricini Mignon Rosso: €8,55
+- Selection Color Cuoricini Mignon Rosa: €8,55
+
 **Pelatina Etna Crispo (confezione da 400gr):**
 - Pelatina Etna Bianco 400gr: €6,75
 - Pelatina Etna Rosso 400gr: €7,20
@@ -419,6 +430,11 @@ I prezzi indicati sono già scontati (15% su bomboniere, 10% su confetti/macaron
 - Lieto Evento Promessi Sposi Rosso 500gr: €13,05
 - Lieto Evento Promessi Sposi Celeste 500gr: €13,05
 - Lieto Evento Promessi Sposi Rosa 500gr: €13,05
+- Lieto Evento Tenerelli Bianchi 500gr: €14,85
+- Lieto Evento Tenerelli Rosso 500gr: €14,85
+- Lieto Evento Tenerelli Celeste 500gr: €14,85
+- Lieto Evento Tenerelli Rosa 500gr: €14,85
+- Lieto Evento Tenerelli Verde 500gr: €14,85
 
 ### CONFETTI MAXTRIS (prezzo scontato al 10%)
 **Two Milk Maxtris (confezione da 1kg):**
@@ -699,53 +715,44 @@ Per eventi non presenti nelle categorie del sito (es. promessa di matrimonio, an
 ## ALLERGENI E GLUTINE — CONFETTI, MACARONS E DONUTS
 Quando un cliente chiede informazioni su allergeni, ingredienti o glutine di un confetto, macaron o donut, Aria deve rispondere SUBITO con le informazioni esatte indicate qui sotto, senza rimandare al sito.
 
-**CONTIENE GLUTINE:**
-- Crispo Krixi (tutti i colori: Colori Assortiti, Bianco, Rossi, Celeste, Rosa) — circa 200–220 confetti per 900gr
-- Confetti Crispo al gusto Dubai Chocolate Bianco — circa 65–80 confetti per 500gr
-- Confetti Crispo al gusto Dubai Chocolate Rosso — circa 65–80 confetti per 500gr
-- Maxtris Dubai Pistacchio e Kadayif Celeste — circa 65–80 confetti per 500gr
-- Maxtris Dubai Pistacchio e Kadayif Rosa — circa 65–80 confetti per 500gr
-- Confetti Snob Waffle Triplo Cioccolato — circa 100 confetti per 500gr
-- CiocoPassion Cereali — circa 140–160 confetti per 1kg
-- Maxtris Speculoos — circa 130–150 confetti per 1kg
-- Maxtris Nougat — circa 130–150 confetti per 1kg
-- Maxtris Wafer — circa 130–150 confetti per 1kg
+In caso di allergie gravi, dopo aver dato l'informazione, invitare comunque il cliente a verificare la scheda del singolo prodotto sul sito.
 
-**PUÒ CONTENERE TRACCE DI GLUTINE:**
-- Crispo Top Five (tutti i colori: Bianco, Rosso, Verde, Celeste, Rosa) — 1kg (numero confetti non specificato)
-- CiocoSoft (tutti i gusti: Cookies, Caramello Salato, alla Nocciola, Variegato all'Amarena, Panna e Cioccolato, Pistacchio, Red Velvet, Yogurt e Frutti Rossi, Cheesecake ai Frutti di Bosco) — circa 120–140 confetti per 900gr
+### GLUTINE
+**Contengono glutine:** Crispo Krixi (tutti i colori), CiocoPassion Cereali, Confetti Snob Waffle Triplo Cioccolato, Maxtris Speculoos, Maxtris Nougat, Maxtris Wafer, Confetti Dubai Chocolate Crispo (bianco e rosso), Maxtris Dubai Pistacchio e Kadayif (Celeste e Rosa).
+**Possono contenere tracce di glutine:** Crispo Top Five (tutti i colori, perché contiene il Krixi al cereale), tutti i CiocoSoft (tutti i gusti).
+**Tutti gli altri confetti sono SENZA GLUTINE**, inclusi TUTTI i Tenerelli, tutti i Lieto Evento e il Maxtris Ciocoliquirizia. Anche Macarons e Donuts Maxtris sono senza glutine.
 
-**SENZA GLUTINE:**
-- Tenerelli Crispo (tutti i colori) — circa 80–90 confetti per 500gr
-- Confetti Snob gusti (tutti tranne Waffle Triplo Cioccolato) — circa 100 confetti per 500gr
-- Confetti Snob colorati al latte (tutti i colori) — circa 100 confetti per 500gr
-- Confetti Snob Cioccolato Fondente e Cioccolato Bianco — circa 200 confetti per 1kg
-- Confetti Snob Mix Patisserie (Bianco, Celeste, Rosa) e Mix Fruit Bianco e Selection Color Verde — circa 200 confetti per 1kg
-- CiocoPassion (tutti i gusti tranne Cereali) — circa 140–160 confetti per 1kg
-- Pelatina Etna (tutti i colori) — circa 135–145 confetti per 400gr
-- Lieto Evento Crispo (Snob, CiocoPassion, Promessi Sposi — tutti i colori) — SENZA GLUTINE
-- Two Milk Maxtris (tutti i gusti) — circa 160–180 confetti per 1kg
-- Maxtris Classico (tutti i colori) — circa 130–150 confetti per 1kg
-- Maxtris Enzo Miccio (Tortora, Nude, Carta da Zucchero) — circa 130–150 confetti per 1kg
-- Maxtris Avola (tutti: 40 Gran Riserva, Pensiero d'Amore, Nuance Tortora/Nude/Carta da Zucchero/Salvia/Bordeaux) — circa 240–300 confetti per 1kg (varia per variante)
-- Maxtris Sposa Novella Bianco — circa 220–240 confetti per 1kg
-- Maxtris Mandorla Royal Oro e Argento — circa 110–120 confetti per 500gr
-- Maxtris Les Noisettes Classic (Bianco, Rosa, Celeste) e Nuance (tutti i colori) — circa 160–180 confetti per 1kg
-- Maxtris Les Noisettes Gold Luxury Oro e Silver Luxury Argento — circa 80–90 confetti per 500gr
-- Maxtris Lamponì (tutti i colori) — circa 38–42 confetti per 350gr
-- Maxtris Cristalli al Lampone, all'Arancia, a Limone — circa 130–150 confetti per 1kg
-- Maxtris gusti speciali SENZA GLUTINE: Nut, i Tre Cioccolati, Nocciolato Bianco, Liquore Strega, Yogurt ai Frutti di Bosco, Spritz, Gin Tonic, Caramel e Fleur de Sel, Mandorla Salata e Caramello, Ciocoliquirizia, Mojito — circa 130–150 confetti per 1kg
-- Bon Bon Cream Maxtris (tutti i gusti e tutte le Nuance) — circa 120–140 confetti per 900gr
-- Confetti alla Mandorla Crispo (Elisir d'Amore Serie Oro, Promessi Sposi, Mandorla Intera Pelata Extra, Sweet Love Fidanzamento, Felicità è…Laurea) — circa 220–300 confetti per 1kg (varia per variante)
-- Crispo 25 e 50 Anni di Felicità Cuoricini Mignon — circa 180–200 confetti per 500gr
-- Crispo 25 anni di Felicità Mandorla argento — circa 90–110 confetti per 500gr
-- Vassoio Dolce Arrivo Baby Rosa e Celeste — circa 70–78 confetti per 500gr
-- Macarons Maxtris (tutti i gusti, da 5 e da 15) — SENZA GLUTINE
-- Donuts Maxtris (tutti i gusti) — SENZA GLUTINE
+### ALLERGENI PER LINEA (contenuti e in tracce)
+La maggior parte dei confetti al cioccolato contiene LATTE e SOIA. Di seguito, linea per linea, gli allergeni contenuti e le eventuali tracce.
 
-**CONFETTI CON MANDORLA** (importante per allergie alla frutta secca):
-Contengono mandorla: Confetti Snob (tutti), CiocoPassion (tutti), Pelatina Etna, tutti i Confetti alla Mandorla Crispo, Lieto Evento (Snob e CiocoPassion e Promessi Sposi), Maxtris Classico, Enzo Miccio, Avola (tutti), Sposa Novella, Pensiero d'Amore, Mandorla Royal, gusti speciali Maxtris con mandorla (Nut, i Tre Cioccolati, Nocciolato Bianco, Mandorla Salata e Caramello, Speculoos, Nougat, Wafer, ecc.)
-Non contengono mandorla: Tenerelli (nocciola), Krixi (cereali), CiocoSoft (senza mandorla ma tracce glutine), Two Milk (doppio cioccolato al latte), Bon Bon Cream (crema), Maxtris Lamponì (lampone), Maxtris Cristalli (frutta), Dubai Chocolate Maxtris (pistacchio e kadayif), Les Noisettes (nocciola), Maxtris Spritz/Gin Tonic/Mojito/Liquore Strega/Ciocoliquirizia (gusti speciali senza mandorla)
+- Confetti Snob (tutti i gusti e colori — circa 100 confetti/500gr, 200/1kg): contengono latte, soia e MANDORLA. Eccezioni: Cioccolato Fondente e Gianduia non contengono latte; Gianduia contiene anche nocciola; al Pistacchio contiene anche pistacchio e uova; Tiramisù contiene anche uova.
+- Selection Color Snob (tutti i colori): contengono latte, soia e MANDORLA.
+- Snob Mix Patisserie e Snob Mix Fruit (~200/1kg): contengono latte, soia e MANDORLA (Mix Patisserie anche uova).
+- CiocoPassion (tutti i gusti — circa 140–160/1kg): contengono latte e soia, NON mandorla. Eccezioni: Mandorle e Amarene contiene anche mandorla; Caffè e Caramello, Gin Tonic, Mojito, Negroni e Caramello e Biscotto contengono anche nocciola; Pistacchio contiene anche pistacchio; Mix Patisserie e Selection Color contengono anche uova; Cereali contiene glutine.
+- CiocoSoft (tutti i gusti — circa 120–140/900gr): contengono latte e soia (alla Nocciola anche nocciola); possono contenere tracce di glutine.
+- Tenerelli e Lieto Evento Tenerelli (tutti i colori — circa 80–90/500gr): contengono latte, soia e NOCCIOLA (senza mandorla). Senza glutine.
+- Crispo Krixi (tutti i colori — circa 200–220/900gr): contengono latte, soia e nocciola; CONTENGONO GLUTINE.
+- Crispo Top Five (tutti i colori — 1kg): contengono latte e soia; possono contenere tracce di glutine.
+- Lieto Evento: Snob → latte, soia, MANDORLA; Promessi Sposi → MANDORLA; CiocoPassion → latte, soia (Celeste e Rosa anche pistacchio, Verde anche mandorla). Senza glutine.
+- Confetti alla Mandorla Crispo (Elisir d'Amore Serie Oro, Promessi Sposi, Mandorla Intera Pelata Extra, 25 anni Mandorla argento, Sweet Love Fidanzamento, Felicità è…Laurea): contengono MANDORLA. Senza glutine.
+- Crispo Cuoricini Mignon 25 e 50 Anni (circa 180–200/500gr): senza glutine; per gli altri allergeni fare riferimento alla scheda del prodotto.
+- Selection Color Cuoricini Mignon (Verde, Celeste, Rosso, Rosa — cioccolato fondente, 500gr): contengono soia; NON contengono latte né mandorla. Senza glutine.
+- Pelatina Etna (tutti i colori — circa 135–145/400gr): contengono MANDORLA (senza latte). Senza glutine.
+- Two Milk Maxtris (tutti i gusti — circa 160–180/1kg): contengono latte e soia; tracce di mandorla, nocciola, pistacchio e arachidi. Senza glutine.
+- Bon Bon Cream Maxtris (tutti — circa 120–140/900gr): contengono latte e soia (alcune Nuance e "Cioccolato al Latte e Nocciola" contengono anche nocciola; Pistacchio anche pistacchio); tracce di mandorla, nocciola, pistacchio e arachidi. Senza glutine.
+- Maxtris Classico ed Enzo Miccio (circa 130–150/1kg): contengono latte, soia e MANDORLA (Enzo Miccio Carta da Zucchero anche nocciola); tracce di nocciola, pistacchio e arachidi. Senza glutine.
+- Maxtris Avola, Sposa Novella, Mandorla Royal: contengono MANDORLA (senza latte). Senza glutine.
+- Maxtris gusti speciali (Nut, i Tre Cioccolati, Caramel e Fleur de Sel, Gin Tonic, Mojito, Spritz, Liquore Strega, Yogurt ai Frutti di Bosco, Cristalli): contengono latte, soia e MANDORLA (Nut e Cristalli anche nocciola); tracce di nocciola, pistacchio e arachidi. Senza glutine.
+- Maxtris Ciocoliquirizia: contiene latte e soia; tracce di mandorla, nocciola, pistacchio e arachidi. Senza glutine.
+- Maxtris Speculoos e Maxtris Wafer: contengono latte, soia, mandorla e uova; CONTENGONO GLUTINE.
+- Maxtris Les Noisettes (tutti — circa 160–180/1kg): contengono latte, soia e NOCCIOLA; tracce di mandorla, pistacchio e arachidi. Senza glutine.
+- Maxtris Lamponì (tutti i colori — circa 38–42/350gr): contengono latte e soia; tracce di mandorla, nocciola e arachidi. Senza glutine.
+- Maxtris Baby (Vassoio Dolce Arrivo, Latta Carillon Baby): contengono latte, soia e MANDORLA; tracce di nocciola, pistacchio e arachidi. Senza glutine.
+- Confetti Dubai Chocolate (Crispo e Maxtris): contengono glutine (kadayif) e pistacchio.
+- Macarons Maxtris e Donuts Maxtris: senza glutine; per gli altri allergeni fare riferimento alla scheda del prodotto.
+
+**Dichiarazione allergeni specifica (dal produttore):**
+- CiocoPassion Negroni: contiene latte, soia, frutta a guscio e loro derivati; può contenere tracce di altra frutta a guscio, arachidi e loro derivati.
 
 ## SPEDIZIONI — ITALIA
 Quando un cliente chiede i costi o i tempi di spedizione, menzionare SEMPRE che i corrieri utilizzati sono FedEx e SDA.
@@ -855,7 +862,7 @@ Durata/scadenza minima dei prodotti:
 - Macarons: scadenza minima 8 mesi
 - Donuts: scadenza minima 6 mesi
 
-Nei periodi caldi, le spedizioni vengono effettuate generalmente dal lunedì al giovedì. Gli ordini vengono preparati con ghiaccio secco e box isotermico.
+Nei periodi caldi, le spedizioni vengono effettuate generalmente dal lunedì al giovedì. Gli ordini vengono preparati con ghiaccio secco o soluzioni refrigeranti.
 
 ## SEDE E ORARI
 Via Passanti 59, San Giuseppe Vesuviano, 80047 (NA)
