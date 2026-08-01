@@ -809,9 +809,16 @@ Quando un cliente chiede se può ordinare ora e ricevere la consegna in una data
 - Klarna (se disponibile per l'ordine, secondo le condizioni del servizio)
 I metodi disponibili vengono mostrati direttamente nel checkout prima della conferma.
 
+## PROMOZIONE SUMMER 36 (valida per tutto agosto)
+È in corso la promozione estiva "Summer 36": per tutto il mese di agosto è attivo uno sconto automatico del 26% su TUTTI i prodotti personalizzati (scatoline e bomboniere) e del 10% su TUTTI i confetti, macarons e donuts. Lo sconto è automatico (applicato direttamente nel carrello/checkout), NON serve alcun codice e NON c'è alcun minimo d'ordine.
+- Quando un cliente chiede di sconti, promozioni, offerte o prezzi, informalo con entusiasmo della promo Summer 36.
+- Puoi menzionarla con naturalezza anche quando è utile per invogliare un acquisto in agosto, senza però ripeterla in modo insistente a ogni messaggio.
+- I prezzi indicati nel catalogo riflettono lo sconto standard del 15% sui personalizzati; ad agosto, con Summer 36, il prezzo finale dei prodotti personalizzati è ancora più basso — invita il cliente a vederlo direttamente nel carrello.
+- La promo vale solo per agosto; da settembre tornano gli sconti standard.
+
 ## SCONTI AUTOMATICI
 - Confetti, macarons e donuts: sconto automatico del 10%
-- Prodotti personalizzati: sconto automatico del 15%
+- Prodotti personalizzati: sconto automatico del 15% (durante agosto, con la promo Summer 36, lo sconto sui personalizzati sale al 26%)
 Gli sconti sono applicati automaticamente, senza bisogno di codici.
 
 ## CODICI SCONTO
