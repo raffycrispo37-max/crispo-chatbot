@@ -140,6 +140,9 @@ I prezzi indicati sono già scontati (15% su bomboniere, 10% su confetti/macaron
 - Scatola cilindrica con 60 confetti: €32,30
 - Scatola cilindrica con 54 cioccolatini: €34,00
 - Scatola con cioccolatini personalizzata: €34,00
+- Scatolina fiammifero con fermacarte: €5,53
+- Scatolina fiammifero con tagliacarte gufo: €5,53
+- Scatola con portachiavi medicina: €5,27
 
 ### SEZIONE COMUNIONE E CRESIMA
 - Invito Classico: €1,28
@@ -266,6 +269,26 @@ I prezzi indicati sono già scontati (15% su bomboniere, 10% su confetti/macaron
 **Kit Degustazione:**
 - Kit Degustazione Confetti Crispo – 16 Gusti: €20,25
 - Kit Degustazione Confetti Maxtris – 16 Gusti: €20,25
+
+**Novità Crispo (confetti speciali con cuore croccante, confettati al cioccolato al latte):**
+IMPORTANTE: queste novità sono attualmente in PREORDINE — saranno disponibili e verranno spedite a partire dal 24 agosto. Comunicalo sempre al cliente quando chiede di questi prodotti (Cioko Swag, Cioco Slay, Cioco Glow Up, Choco Bae): si possono già ordinare, ma la spedizione parte dal 24 agosto.
+Disponibili nei colori Bianco, Rosso, Rosa e Celeste. Cioko Swag: mini cookies ricoperti di cioccolato al latte. Cioco Slay: biscotto al cacao e vaniglia ricoperto di cioccolato al latte. Cioco Glow Up: amaretti ricoperti di cioccolato al latte. Choco Bae: meringhe ricoperte di cioccolato al latte.
+- Cioko Swag Bianco 500gr: €10,80
+- Cioko Swag Rosso 500gr: €10,80
+- Cioko Swag Rosa 500gr: €10,80
+- Cioko Swag Celeste 500gr: €10,80
+- Cioco Slay Bianco 500gr: €10,80
+- Cioco Slay Rosso 500gr: €10,80
+- Cioco Slay Rosa 500gr: €10,80
+- Cioco Slay Celeste 500gr: €10,80
+- Cioco Glow Up Bianco 400gr: €10,80
+- Cioco Glow Up Rosso 400gr: €10,80
+- Cioco Glow Up Rosa 400gr: €10,80
+- Cioco Glow Up Celeste 400gr: €10,80
+- Choco Bae Bianco 400gr: €10,80
+- Choco Bae Rosso 400gr: €10,80
+- Choco Bae Rosa 400gr: €10,80
+- Choco Bae Celeste 400gr: €10,80
 
 **CiocoSoft (confezione da 900gr):**
 - CiocoSoft Cookies 900gr: €13,95
@@ -726,7 +749,7 @@ Quando un cliente chiede informazioni su allergeni, ingredienti o glutine di un 
 In caso di allergie gravi, dopo aver dato l'informazione, invitare comunque il cliente a verificare la scheda del singolo prodotto sul sito.
 
 ### GLUTINE
-**Contengono glutine:** Crispo Krixi (tutti i colori), CiocoPassion Cereali, Confetti Snob Waffle Triplo Cioccolato, Maxtris Speculoos, Maxtris Nougat, Maxtris Wafer, Confetti Dubai Chocolate Crispo (bianco e rosso), Maxtris Dubai Pistacchio e Kadayif (Celeste e Rosa).
+**Contengono glutine:** Crispo Krixi (tutti i colori), CiocoPassion Cereali, Confetti Snob Waffle Triplo Cioccolato, Maxtris Speculoos, Maxtris Nougat, Maxtris Wafer, Confetti Dubai Chocolate Crispo (bianco e rosso), Maxtris Dubai Pistacchio e Kadayif (Celeste e Rosa), Cioko Swag (tutti i colori), Cioco Slay (tutti i colori), Choco Bae (tutti i colori).
 **Possono contenere tracce di glutine:** Crispo Top Five (tutti i colori, perché contiene il Krixi al cereale), tutti i CiocoSoft (tutti i gusti).
 **Tutti gli altri confetti sono SENZA GLUTINE**, inclusi TUTTI i Tenerelli, tutti i Lieto Evento e il Maxtris Ciocoliquirizia. Anche Macarons e Donuts Maxtris sono senza glutine.
 
@@ -758,6 +781,11 @@ La maggior parte dei confetti al cioccolato contiene LATTE e SOIA. Di seguito, l
 - Maxtris Baby (Vassoio Dolce Arrivo, Latta Carillon Baby): contengono latte, soia e MANDORLA; tracce di nocciola, pistacchio e arachidi. Senza glutine.
 - Confetti Dubai Chocolate (Crispo e Maxtris): contengono glutine (kadayif) e pistacchio.
 - Macarons Maxtris e Donuts Maxtris: senza glutine; per gli altri allergeni fare riferimento alla scheda del prodotto.
+
+- Novità Crispo — Cioko Swag (mini cookies, tutti i colori): contengono latte, soia e GLUTINE (frumento). Senza mandorla.
+- Novità Crispo — Cioco Slay (biscotto, tutti i colori): contengono latte, soia e GLUTINE (frumento). Senza mandorla.
+- Novità Crispo — Choco Bae (meringa, tutti i colori): contengono latte, soia, UOVA e GLUTINE (amido di frumento). Senza mandorla.
+- Novità Crispo — Cioco Glow Up (amaretti, tutti i colori): contengono latte, soia, MANDORLA e UOVA. Senza glutine.
 
 **Dichiarazione allergeni specifica (dal produttore):**
 - CiocoPassion Negroni: contiene latte, soia, frutta a guscio e loro derivati; può contenere tracce di altra frutta a guscio, arachidi e loro derivati.
