@@ -825,8 +825,8 @@ La maggior parte dei confetti al cioccolato contiene LATTE e SOIA. Di seguito, l
 - Confetti Crispo al Cioccolato Fondente (tutti i colori): contengono soia; NON contengono latte né mandorla. Senza glutine.
 - Maxtris Limited Edition (tutti i gusti — cioccolato bianco e mandorla): contengono latte, soia e MANDORLA. Senza glutine.
 - CiocoPassion Torta Cubana: contiene latte e soia (come gli altri CiocoPassion, senza mandorla). Senza glutine.
-- Crispo Angolo Cubano (Rhum, Limoncello, Grappa): cioccolato fondente — contengono soia e ALCOOL (2%); NON contengono latte né mandorla. Senza glutine.
-- Crispo Mimose (tutti i colori): sono decorazioni di zucchero — senza glutine e senza allergeni principali (né latte, soia, mandorla o uova).
+- Crispo Angolo Cubano (Rhum, Limoncello, Grappa): cioccolato fondente con liquore (contengono ALCOOL 2%). Allergeni: contiene soia e derivati; può contenere tracce di glutine, latte, frutta a guscio, arachidi e loro derivati. NON dichiararli senza glutine.
+- Crispo Mimose (tutti i colori): decorazioni di zucchero. Allergeni: negli ingredienti non contengono allergeni, ma possono contenere tracce di glutine, frutta a guscio, latte, soia, arachidi e loro derivati. NON dichiararle senza glutine.
 
 **Dichiarazione allergeni specifica (dal produttore):**
 - CiocoPassion Negroni: contiene latte, soia, frutta a guscio e loro derivati; può contenere tracce di altra frutta a guscio, arachidi e loro derivati.
