@@ -367,6 +367,13 @@ Disponibili nei colori Bianco, Rosso, Rosa e Celeste. Cioko Swag: mini cookies r
 - CiocoPassion Cocco 1kg: €11,52
 - CiocoPassion Fragola 1kg: €11,52
 - CiocoPassion Amarena 1kg: €11,52
+- CiocoPassion Torta Cubana 1kg: €11,52
+
+**Confetti Crispo al Cioccolato Fondente (confezione, colori Bianco/Rosso/Celeste/Rosa):**
+- Confetti Crispo al Cioccolato Fondente Bianco: €9,45
+- Confetti Crispo al Cioccolato Fondente Rosso: €9,45
+- Confetti Crispo al Cioccolato Fondente Celeste: €9,45
+- Confetti Crispo al Cioccolato Fondente Rosa: €9,45
 
 **Confetti Snob al cioccolato al latte (colorati, confezione da 500gr):**
 - Confetti Snob Latte Verde Inglese 500gr: €9,00
@@ -572,6 +579,19 @@ Disponibili nei colori Bianco, Rosso, Rosa e Celeste. Cioko Swag: mini cookies r
 - Vassoio Dolce Arrivo Baby Celeste – 500gr: €15,30
 - Maxtris Latta Carillon Baby Rosa – 160g: €17,55
 - Maxtris Latta Carillon Baby Celeste – 160g: €17,55
+
+**Maxtris Limited Edition (cioccolato bianco e mandorla, confezione da 500gr):**
+- Maxtris Limited Edition Nut 500gr: €11,25
+- Maxtris Limited Edition Ricotta e Pera 500gr: €11,25
+- Maxtris Limited Edition Amarena 500gr: €11,25
+- Maxtris Limited Edition Babà con Panna 500gr: €11,25
+- Maxtris Limited Edition Caffè Espresso Napoletano 500gr: €11,25
+- Maxtris Limited Edition Cocco e Nut 500gr: €11,25
+- Maxtris Limited Edition Mandorla Salata e Caramello 500gr: €11,25
+- Maxtris Limited Edition Pistacchio 500gr: €11,25
+- Maxtris Limited Edition Tiramisù 500gr: €11,25
+- Maxtris Limited Edition Torta Caprese 500gr: €11,25
+- Maxtris Limited Edition Yogurt ai Frutti di Bosco 500gr: €11,25
 
 ### MACARONS MAXTRIS (prezzo scontato al 10%)
 - Macarons Nocciola - 15pz: €14,85
@@ -788,6 +808,10 @@ La maggior parte dei confetti al cioccolato contiene LATTE e SOIA. Di seguito, l
 - Novità Crispo — Cioco Slay (biscotto, tutti i colori): contengono latte, soia e GLUTINE (frumento). Senza mandorla.
 - Novità Crispo — Choco Bae (meringa, tutti i colori): contengono latte, soia, UOVA e GLUTINE (amido di frumento). Senza mandorla.
 - Novità Crispo — Cioco Glow Up (amaretti, tutti i colori): contengono latte, soia, MANDORLA e UOVA. Senza glutine.
+
+- Confetti Crispo al Cioccolato Fondente (tutti i colori): contengono soia; NON contengono latte né mandorla. Senza glutine.
+- Maxtris Limited Edition (tutti i gusti — cioccolato bianco e mandorla): contengono latte, soia e MANDORLA. Senza glutine.
+- CiocoPassion Torta Cubana: contiene latte e soia (come gli altri CiocoPassion, senza mandorla). Senza glutine.
 
 **Dichiarazione allergeni specifica (dal produttore):**
 - CiocoPassion Negroni: contiene latte, soia, frutta a guscio e loro derivati; può contenere tracce di altra frutta a guscio, arachidi e loro derivati.
