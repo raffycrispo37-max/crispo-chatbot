@@ -375,6 +375,19 @@ Disponibili nei colori Bianco, Rosso, Rosa e Celeste. Cioko Swag: mini cookies r
 - Confetti Crispo al Cioccolato Fondente Celeste: €9,45
 - Confetti Crispo al Cioccolato Fondente Rosa: €9,45
 
+**Crispo Angolo Cubano (confetti al cioccolato fondente con liquore — contengono alcool):**
+- Crispo Angolo Cubano Rhum: €13,50
+- Crispo Angolo Cubano Limoncello: €13,50
+- Crispo Angolo Cubano Grappa: €13,50
+
+**Crispo Mimose (piccole decorazioni di zucchero per bomboniere, torte e confettate):**
+- Crispo Mimose Bianche: €5,85
+- Crispo Mimose Celesti: €5,85
+- Crispo Mimose Rosa: €5,85
+- Crispo Mimose Rosse: €5,85
+- Crispo Mimose Gialle: €5,85
+- Crispo Mimose Verdi: €5,85
+
 **Confetti Snob al cioccolato al latte (colorati, confezione da 500gr):**
 - Confetti Snob Latte Verde Inglese 500gr: €9,00
 - Confetti Snob Latte Salvia 500gr: €9,00
@@ -812,6 +825,8 @@ La maggior parte dei confetti al cioccolato contiene LATTE e SOIA. Di seguito, l
 - Confetti Crispo al Cioccolato Fondente (tutti i colori): contengono soia; NON contengono latte né mandorla. Senza glutine.
 - Maxtris Limited Edition (tutti i gusti — cioccolato bianco e mandorla): contengono latte, soia e MANDORLA. Senza glutine.
 - CiocoPassion Torta Cubana: contiene latte e soia (come gli altri CiocoPassion, senza mandorla). Senza glutine.
+- Crispo Angolo Cubano (Rhum, Limoncello, Grappa): cioccolato fondente — contengono soia e ALCOOL (2%); NON contengono latte né mandorla. Senza glutine.
+- Crispo Mimose (tutti i colori): sono decorazioni di zucchero — senza glutine e senza allergeni principali (né latte, soia, mandorla o uova).
 
 **Dichiarazione allergeni specifica (dal produttore):**
 - CiocoPassion Negroni: contiene latte, soia, frutta a guscio e loro derivati; può contenere tracce di altra frutta a guscio, arachidi e loro derivati.
