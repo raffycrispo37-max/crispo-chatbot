@@ -407,6 +407,12 @@ Disponibili nei colori Bianco, Rosso, Rosa e Celeste. Cioko Swag: mini cookies r
 - Crispo Mimose Gialle: €6,50
 - Crispo Mimose Verdi: €6,50
 
+**Crispo Trés Amour (confetti a forma di cuore con tre strati di cioccolato — fondente, bianco e al latte; eleganti e romantici; confezione da 1kg; colori Bianco/Rosa/Celeste/Verde Tiffany):**
+- Crispo Trés Amour Bianco: €16,00
+- Crispo Trés Amour Rosa: €16,00
+- Crispo Trés Amour Celeste: €16,00
+- Crispo Trés Amour Verde (Tiffany): €16,00
+
 **Confetti Snob al cioccolato al latte (colorati, confezione da 500gr):**
 - Confetti Snob Latte Verde Inglese 500gr: €10,00
 - Confetti Snob Latte Salvia 500gr: €10,00
@@ -847,6 +853,7 @@ La maggior parte dei confetti al cioccolato contiene LATTE e SOIA. Di seguito, l
 - CiocoPassion Torta Cubana: contiene latte e soia (come gli altri CiocoPassion, senza mandorla). Senza glutine.
 - Crispo Angolo Cubano (Rhum, Limoncello, Grappa): cioccolato fondente con liquore (contengono ALCOOL 2%). Allergeni: contiene soia e derivati; può contenere tracce di glutine, latte, frutta a guscio, arachidi e loro derivati. NON dichiararli senza glutine.
 - Crispo Mimose (tutti i colori): decorazioni di zucchero. Allergeni: negli ingredienti non contengono allergeni, ma possono contenere tracce di glutine, frutta a guscio, latte, soia, arachidi e loro derivati. NON dichiararle senza glutine.
+- Crispo Trés Amour (tutti i colori — cambia solo il colorante, la ricetta è identica): confetti a forma di cuore con tre strati di cioccolato (fondente, bianco e al latte), confezione da 1kg. Allergeni dichiarati: contengono LATTE e SOIA (lecitina di soia). PUÒ CONTENERE TRACCE DI GLUTINE. NON dichiararli senza glutine.
 
 **Dichiarazione allergeni specifica (dal produttore):**
 - CiocoPassion Negroni: contiene latte, soia, frutta a guscio e loro derivati; può contenere tracce di altra frutta a guscio, arachidi e loro derivati.
