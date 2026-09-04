@@ -553,6 +553,15 @@ Disponibili nei colori Bianco, Rosso, Rosa e Celeste. Cioko Swag: mini cookies r
 - Maxtris Gin Tonic 1kg: €21,50
 - Maxtris Mojito 1kg: €21,50
 - Maxtris Spritz 1kg: €21,50
+- Maxtris Delizia al Limone 1kg: €21,50
+- Maxtris Mix Marbled 1kg: €21,50
+- Maxtris Mix Delice 1kg: €21,50
+- Maxtris Torroncino 1kg: €21,50
+- Maxtris la Sicilianità 1kg: €21,50
+- Maxtris la Napoletanità 1kg: €21,50
+- Maxtris Foresta Nera 1kg: €21,50
+- Maxtris Amaretto 1kg: €21,50
+- Maxtris Pistacchio e Gianduia 1kg: €21,50
 
 **Bon Bon Cream Maxtris (confezione da 900gr):**
 - Bon Bon Cream Panna 900gr: €20,50
@@ -835,6 +844,8 @@ La maggior parte dei confetti al cioccolato contiene LATTE e SOIA. Di seguito, l
 - Maxtris Classico ed Enzo Miccio (circa 130–150/1kg): contengono latte, soia e MANDORLA (Enzo Miccio Carta da Zucchero anche nocciola); tracce di nocciola, pistacchio e arachidi. Senza glutine.
 - Maxtris Avola, Sposa Novella, Mandorla Royal: contengono MANDORLA (senza latte). Senza glutine.
 - Maxtris gusti speciali (Nut, i Tre Cioccolati, Caramel e Fleur de Sel, Gin Tonic, Mojito, Spritz, Liquore Strega, Yogurt ai Frutti di Bosco, Cristalli): contengono latte, soia e MANDORLA (Nut e Cristalli anche nocciola); tracce di nocciola, pistacchio e arachidi. Senza glutine.
+- Maxtris Delizia al Limone, Foresta Nera, Amaretto, Torroncino, la Napoletanità, la Sicilianità, Mix Marbled, Mix Delice (confezione da 1kg): contengono LATTE, SOIA e MANDORLA (mandorle tostate); possono contenere tracce di nocciole, noci, noci di pecan, anacardi, pistacchi e arachidi. Senza glutine (la maltodestrina non è fonte di glutine). NON dichiararli senza mandorla.
+- Maxtris Pistacchio e Gianduia (confezione da 1kg): contiene LATTE, SOIA, MANDORLA (mandorle tostate) e NOCCIOLA (gianduia); può contenere tracce di noci, noci di pecan, anacardi, pistacchi e arachidi. Senza glutine. NON dichiararlo senza mandorla né senza nocciola.
 - Maxtris Ciocoliquirizia: contiene latte e soia; tracce di mandorla, nocciola, pistacchio e arachidi. Senza glutine.
 - Maxtris Speculoos e Maxtris Wafer: contengono latte, soia, mandorla e uova; CONTENGONO GLUTINE.
 - Maxtris Les Noisettes (tutti — circa 160–180/1kg): contengono latte, soia e NOCCIOLA; tracce di mandorla, pistacchio e arachidi. Senza glutine.
