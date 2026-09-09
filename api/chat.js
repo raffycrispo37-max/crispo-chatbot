@@ -658,6 +658,29 @@ Disponibili nei colori Bianco, Rosso, Rosa e Celeste. Cioko Swag: mini cookies r
 - Donuts Vaniglia - 6pz: €6,70
 - Donuts Pistacchio - 6pz: €6,70
 
+### PAPA DONUTS (confezione da 222g, 6 ciambelline confezionate singolarmente; prezzo pieno di listino; -10% automatico al checkout)
+- Papa Donuts Bianchi Vaniglia - Confezione da 6: €7,50
+- Papa Donuts Vaniglia (celeste) - Confezione da 6: €7,50
+- Papa Donuts Pistacchio (verde) - Confezione da 6: €7,50
+- Papa Donuts Fragola (rosa) - Confezione da 6: €7,50
+- Papa Donuts Cacao - Confezione da 6: €7,50
+
+### PAPA MACARONS (confezione da 84g, 6 pezzi; meringhe alle mandorle farcite con crema; prezzo pieno di listino; -10% automatico al checkout)
+**Papa Macarons a Cuore:**
+- Papa Macarons Cuore Panna alla Vaniglia - Confezione da 6: €6,50
+- Papa Macarons Cuore Celesti alla Vaniglia - Confezione da 6: €6,50
+- Papa Macarons Cuore Rosa alla Fragola - Confezione da 6: €6,50
+**Papa Macaron (gusti):**
+- Papa Macaron Rossi al Vaniglia - Confezione da 6: €5,50
+- Papa Macaron al Pistacchio - Confezione da 6: €5,50
+- Papa Macaron al Limone - Confezione da 6: €5,50
+- Papa Macaron alla Fragola - Confezione da 6: €5,50
+- Papa Macaron al Cocco - Confezione da 6: €5,50
+- Papa Macaron al Cacao - Confezione da 6: €5,50
+- Papa Macaron Champagne - Confezione da 6: €5,50
+- Papa Macaron Al Caramello Salato - Confezione da 6: €5,50
+- Papa Macaron Celesti Alla Vaniglia - Confezione da 6: €5,50
+
 ## INFORMAZIONI SU PRODOTTI SPECIFICI
 Quando il cliente fa domande su un prodotto specifico che ha già trovato sul sito, Aria può fornire:
 
@@ -853,6 +876,10 @@ La maggior parte dei confetti al cioccolato contiene LATTE e SOIA. Di seguito, l
 - Maxtris Baby (Vassoio Dolce Arrivo, Latta Carillon Baby): contengono latte, soia e MANDORLA; tracce di nocciola, pistacchio e arachidi. Senza glutine.
 - Confetti Dubai Chocolate (Crispo e Maxtris): contengono glutine (kadayif) e pistacchio.
 - Macarons Maxtris e Donuts Maxtris: senza glutine; per gli altri allergeni fare riferimento alla scheda del prodotto.
+- Papa Macarons (tutti i gusti, sia i "Cuore" che i gusti singoli — confezione da 6, 84g; meringhe alle mandorle farcite con crema): contengono MANDORLE, UOVA, SOIA e LATTE. SENZA GLUTINE. NON dichiararli senza mandorla. (L'aroma di pistacchio del gusto Pistacchio è aroma, non frutta a guscio dichiarata.)
+- Papa Donuts (confezione da 222g, 6 ciambelline confezionate singolarmente; donuts al forno con glassa). Profilo: contengono UOVA, LATTE e SOIA; possono contenere mandorle, nocciole, noci e pistacchi (frutta a guscio); SENZA GLUTINE (amido di frumento deglutinato). Vale per Papa Donuts Fragola (rosa), Bianchi Vaniglia e Vaniglia (celeste).
+  - Papa Donuts Pistacchio (verde): contiene UOVA, LATTE, SOIA e PISTACCHIO (crema al pistacchio); può contenere tracce di mandorle, noci e nocciole. Senza glutine. NON dichiararlo senza frutta a guscio (contiene pistacchio).
+  - Papa Donuts Cacao: contiene UOVA, LATTE, SOIA e NOCCIOLE (glassa al cacao con nocciole); può contenere tracce di pistacchi, mandorle e noci. Senza glutine. NON dichiararlo senza frutta a guscio (contiene nocciole).
 
 - Novità Crispo — Cioko Swag (mini cookies, tutti i colori): contengono latte, soia e GLUTINE (frumento). Senza mandorla.
 - Novità Crispo — Cioco Slay (biscotto, tutti i colori): contengono latte, soia e GLUTINE (frumento). Senza mandorla.
