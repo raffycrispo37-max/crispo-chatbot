@@ -620,16 +620,16 @@ Disponibili nei colori Bianco, Rosso, Rosa e Celeste. Cioko Swag: mini cookies r
 - Maxtris Pistacchio e Gianduia 1kg: €21,50
 
 **Max Creamy Maxtris (confetti con cuore cremoso; confezione da 1kg, circa 160-180 confetti — il gusto Tiramisù circa 130-150; prezzo pieno di listino, -10% al checkout):**
-- Max Creamy Gianduja Salvia: €24,50
-- Max Creamy Gianduja Rosso: €24,50
-- Max Creamy Gianduja Rosa: €24,50
-- Max Creamy Gianduja Carta da Zucchero: €24,50
-- Max Creamy Gianduja Bianco: €23,50
-- Max Creamy Tiramisù: €23,50
-- Max Creamy Pistacchio: €23,50
-- Max Creamy Limone: €23,50
-- Max Creamy Fondente: €23,50
-- Max Creamy Caramello Salato: €23,50
+- Max Creamy Gianduja Salvia: €23,00
+- Max Creamy Gianduja Rosso: €23,00
+- Max Creamy Gianduja Rosa: €23,00
+- Max Creamy Gianduja Carta da Zucchero: €23,00
+- Max Creamy Gianduja Bianco: €22,20
+- Max Creamy Tiramisù: €22,20
+- Max Creamy Pistacchio: €22,20
+- Max Creamy Limone: €22,20
+- Max Creamy Fondente: €22,20
+- Max Creamy Caramello Salato: €22,20
 
 **Maxtris Mixology (confetti al cioccolato fondente con liquore — CONTENGONO ALCOOL; confezione da 500gr, circa 70-80 confetti; prezzo pieno di listino, -10% al checkout):**
 - Maxtris Mixology Gin Tonic: €19,00
