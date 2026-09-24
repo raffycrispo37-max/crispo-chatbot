@@ -440,7 +440,7 @@ Disponibili nei colori Bianco, Rosso, Rosa e Celeste. Cioko Swag: mini cookies r
 - CiocoPassion Amarena 1kg: €12,80
 - CiocoPassion Torta Cubana 1kg: €12,80
 
-**Confetti Crispo al Cioccolato Fondente (confezione, colori Bianco/Rosso/Celeste/Rosa):**
+**Confetti Crispo al Cioccolato Fondente (confezione da 1kg per TUTTI i colori — Bianco/Rosso/Celeste/Rosa; circa 140-160 confetti a confezione):**
 - Confetti Crispo al Cioccolato Fondente Bianco: €10,50
 - Confetti Crispo al Cioccolato Fondente Rosso: €10,50
 - Confetti Crispo al Cioccolato Fondente Celeste: €10,50
@@ -781,7 +781,7 @@ Disponibili nei colori Bianco, Rosso, Rosa e Celeste. Cioko Swag: mini cookies r
 - Marshmallow Bulgari Trecce Celeste - 900g: €10,00
 - Marshmallow Bulgari Trecce Rosa - 900g: €10,00
 - Marshmallow Bulgari Trecce Verdi - 900g: €10,00
-Nota: i Marshmallow sono una nuova categoria a sé sul sito. Allergeni: tutti i Marshmallow Bulgari sono SENZA GLUTINE. Per gli altri allergeni, se non indicati sulla scheda, non inventare: rimandare alla scheda del prodotto o all'assistenza (WhatsApp 328 448 2654 o info@crispohome.it). Spedizione: i marshmallow vengono spediti in 24/48 ore. NON si applica ai marshmallow la regola della spedizione in giornata entro le 12:00. Nel periodo estivo non si spedisce giovedì, venerdì e weekend.
+Nota: i Marshmallow sono una nuova categoria a sé sul sito. Allergeni: tutti i Marshmallow Bulgari sono SENZA GLUTINE. Per gli altri allergeni, se non indicati sulla scheda, non inventare: rimandare alla scheda del prodotto o all'assistenza (WhatsApp 328 448 2654 o info@crispohome.it). Spedizione: i marshmallow vengono spediti entro 24 ore lavorative come confetti/macarons/donuts (nessuna spedizione in giornata; nel periodo estivo non si spedisce giovedì, venerdì e weekend).
 
 ## INFORMAZIONI SU PRODOTTI SPECIFICI
 Quando il cliente fa domande su un prodotto specifico che ha già trovato sul sito, Aria può fornire:
@@ -905,6 +905,7 @@ IMPORTANTE — misura dell'OGGETTO contenuto vs misura della SCATOLA: le misure 
 - Coni porta confetti: il cono viene personalizzato su TUTTE le sue facce (non su una sola). La grafica scelta, con nome/data/dettagli, viene stampata su tutte le facciate del cono. Non dire mai che è personalizzabile una sola faccia.
 - Consegna montata di coni e coppette: sia i coni sia le coppette vengono consegnati GIÀ MONTATI. Differenza sulla chiusura: il CONO ha la chiusura (si può chiudere); le COPPETTE sono aperte e NON hanno chiusura.
 - Scatoline con i confetti: vengono consegnate GIÀ MONTATE, complete e PRONTE ALL'USO, esattamente come mostrato nella foto del prodotto sul sito. Il cliente le riceve pronte, non deve montarle né assemblarle.
+- Tamburello personalizzato — tipo di stampa: sul tamburello la stampa è realizzata su un CARTONCINO PREGIATO (non è una stampa UV diretta). Se un cliente chiede se la stampa sul tamburello è UV, spiegare che è una stampa su cartoncino pregiato di qualità.
 - Nel campo "Scrivi la tua personalizzazione" il cliente indica nome, data, frase, iniziali o altri dettagli
 - Personalizzazione INTERNA della scatolina: su ALCUNE scatoline personalizzate è possibile far scrivere una frase, una dedica o altro anche all'interno del coperchio/scatola (non solo sul coperchio esterno). NON è disponibile su tutte. Quindi, quando un cliente lo chiede, NON negarlo a priori: rispondere che su diversi prodotti è possibile e invitarlo a indicare la richiesta nel campo di personalizzazione oppure a segnalarla all'ufficio grafico via WhatsApp (328 448 2654), che confermerà la fattibilità sul prodotto scelto e la mostrerà nella bozza prima della produzione.
 - La categoria matrimonio è attualmente in lavorazione
@@ -1020,8 +1021,8 @@ Quando un cliente chiede i costi o i tempi di spedizione, spiegare che al checko
 - Per Basilicata, Puglia, Sardegna, Sicilia e zone disagiate, FedEx e UPS impiegano 48/72 ore lavorative per la consegna (non 24 ore)
 - Isole minori: 3–5 giorni lavorativi
 - La spedizione è sempre a pagamento
-- Spedizione in giornata: se l'ordine contiene SOLO confetti, macarons o donuts (senza prodotti personalizzati) e viene effettuato entro le 12:00, viene spedito lo stesso giorno. Questa regola vale esclusivamente per ordini di soli confetti, macarons o donuts; NON si applica ai marshmallow né agli ordini che includono prodotti personalizzati (scatoline, bomboniere, ecc.).
-- ATTENZIONE (priorità sulle regole di spedizione): nel periodo estivo (fino a fine settembre) NON si spedisce giovedì e venerdì. Questa regola PREVALE sulla spedizione in giornata: se un ordine di soli confetti/macarons/donuts viene effettuato di giovedì o venerdì (anche prima delle 12:00), NON parte lo stesso giorno ma il lunedì successivo. Stesso principio per il sabato e la domenica: si spedisce il lunedì. Quindi, quando calcoli quando parte un ordine, considera sempre prima i giorni in cui NON si spedisce (giovedì, venerdì e weekend nel periodo estivo) e indica il primo giorno utile di spedizione.
+- Tempi di partenza: gli ordini di soli confetti, macarons, donuts o marshmallow vengono spediti entro 24 ore lavorative. NON esiste la spedizione in giornata e non c'è alcuna regola delle 12:00: non promettere mai la spedizione "oggi stesso". Indica sempre come partenza il primo giorno utile di spedizione (vedi il blocco "GIORNO DI SPEDIZIONE GIÀ CALCOLATO" nel contesto data/ora, già pronto: usalo senza rifare i conti).
+- Giorni in cui NON si spedisce: sabato e domenica sempre; nel periodo estivo (fino a fine settembre) anche giovedì e venerdì. Un ordine effettuato in un giorno di stop parte il primo giorno utile successivo.
 - Nel periodo estivo (fino a fine settembre) gli ordini vengono evasi solo fino al MERCOLEDÌ: giovedì e venerdì NON si effettuano spedizioni. Trattandosi di merce delicata (confetti al cioccolato, ecc.), a causa delle alte temperature si evita che i pacchi restino fermi tutto il weekend nei depositi dei corrieri a temperature non idonee.
 - Imballaggio: le spedizioni vengono effettuate con ghiaccio secco e box isotermico, per far arrivare i prodotti in perfette condizioni anche con il caldo.
 - All'interno di ogni pacco viene inserito anche un foglio con le istruzioni su come conservare correttamente i confetti.
@@ -1271,8 +1272,36 @@ module.exports = async function handler(req, res) {
       minute: "2-digit"
     });
 
+    // Calcolo del PRIMO giorno utile di spedizione (fatto qui, non lasciato al modello)
+    // Regole: non si spedisce sabato e domenica; nel periodo estivo (giugno–settembre) neanche giovedì e venerdì.
+    const romeParts = Object.fromEntries(
+      new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Europe/Rome",
+        year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", hour12: false
+      }).formatToParts(new Date()).map(p => [p.type, p.value])
+    );
+    const romeY = parseInt(romeParts.year, 10);
+    const romeMo = parseInt(romeParts.month, 10);
+    const romeD = parseInt(romeParts.day, 10);
+    const romeH = parseInt(romeParts.hour, 10);
+    const baseMs = Date.UTC(romeY, romeMo - 1, romeD);
+    const isShippingDay = (ms) => {
+      const dow = new Date(ms).getUTCDay();          // 0=dom ... 6=sab
+      const m = new Date(ms).getUTCMonth() + 1;      // 1..12
+      if (dow === 0 || dow === 6) return false;      // sab/dom mai
+      const estate = (m >= 6 && m <= 9);             // periodo estivo: no gio/ven
+      if (estate && (dow === 4 || dow === 5)) return false;
+      return true;
+    };
+    // Nessuna "spedizione in giornata": si indica sempre il PRIMO giorno utile di spedizione a partire da domani.
+    let shipMs = baseMs + 86400000;
+    while (!isShippingDay(shipMs)) shipMs += 86400000;
+    const partenzaTxt = new Intl.DateTimeFormat("it-IT", {
+      timeZone: "UTC", weekday: "long", day: "numeric", month: "long"
+    }).format(new Date(shipMs));
+
     // Prompt caching: SYSTEM_PROMPT statico in cache, contesto dinamico (data + sessione) separato
-    const dynamicParts = [`## DATA E ORA ODIERNE\nOggi è ${oggi} e sono le ${oraAttuale} (orario italiano). Usa la data per calcolare i giorni lavorativi quando un cliente chiede se riuscirà a ricevere l'ordine entro una certa data.\n\nREGOLA SPEDIZIONE (per ordini di soli confetti, macarons o donuts, senza prodotti personalizzati; i marshmallow NON hanno la spedizione in giornata) — calcola il PRIMO giorno utile di spedizione così:\n1. Ricorda i giorni in cui NON si spedisce: sabato e domenica MAI; inoltre nel periodo estivo (fino a fine settembre) NON si spedisce giovedì e venerdì.\n2. Se oggi è un giorno di spedizione e sono prima delle 12:00 → l'ordine parte OGGI stesso.\n3. Se oggi è un giorno di spedizione ma sono già le 12:00 o più tardi → parte il PROSSIMO giorno utile di spedizione (non necessariamente domani: salta sabato, domenica e, in estate, giovedì e venerdì).\n4. Se oggi è un giorno in cui NON si spedisce (weekend sempre; giovedì o venerdì in estate) → parte il PROSSIMO giorno utile di spedizione, a prescindere dall'ora.\nEsempio: se oggi è giovedì nel periodo estivo, l'ordine NON parte oggi né venerdì, ma il LUNEDÌ successivo. Indica sempre il giorno reale di partenza (es. "lunedì"), mai "domani" se domani è un giorno in cui non si spedisce. Alla partenza aggiungi i tempi di consegna (24/48 ore lavorative; 48/72 per Basilicata, Puglia, Sardegna, Sicilia e zone disagiate).`];
+    const dynamicParts = [`## DATA E ORA ODIERNE\nOggi è ${oggi} e sono le ${oraAttuale} (orario italiano). Usa la data per calcolare i giorni lavorativi quando un cliente chiede se riuscirà a ricevere l'ordine entro una certa data.\n\n## GIORNO DI SPEDIZIONE GIÀ CALCOLATO (NON ricalcolarlo)\nPer un ordine di soli confetti, macarons, donuts o marshmallow (senza prodotti personalizzati) effettuato ORA, il primo giorno utile di spedizione è: ${partenzaTxt}. I prodotti vengono spediti entro 24 ore lavorative.\nUSA ESATTAMENTE questo dato quando il cliente chiede "se ordino oggi/adesso quando spedite/quando arriva": è già calcolato tenendo conto dei giorni in cui non si spedisce (sabato, domenica e, nel periodo estivo, giovedì e venerdì). NON esiste la spedizione in giornata e NON c'è alcuna regola delle 12:00: non promettere mai la spedizione "oggi stesso" né citare orari limite. NON fare calcoli sui giorni della settimana per conto tuo e non saltare giorni: limitati a comunicare questo giorno di partenza. Alla partenza aggiungi i tempi di consegna (24/48 ore lavorative; 48/72 per Basilicata, Puglia, Sardegna, Sicilia e zone disagiate). I prodotti personalizzati (scatoline, bomboniere) seguono invece i tempi di produzione ~10 giorni lavorativi + spedizione.`];
     if (sessionCtx) {
       dynamicParts.push(`## CONTESTO SESSIONE ATTUALE\nIl cliente ha già fornito queste informazioni durante questa conversazione — usale nelle risposte senza chiedere di nuovo:\n${sessionCtx}`);
     }
