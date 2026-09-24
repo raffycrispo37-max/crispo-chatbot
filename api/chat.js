@@ -619,6 +619,29 @@ Disponibili nei colori Bianco, Rosso, Rosa e Celeste. Cioko Swag: mini cookies r
 - Maxtris Amaretto 1kg: €21,50
 - Maxtris Pistacchio e Gianduia 1kg: €21,50
 
+**Max Creamy Maxtris (confetti con cuore cremoso; confezione da 1kg, circa 160-180 confetti — il gusto Tiramisù circa 130-150; prezzo pieno di listino, -10% al checkout):**
+- Max Creamy Gianduja Salvia: €24,50
+- Max Creamy Gianduja Rosso: €24,50
+- Max Creamy Gianduja Rosa: €24,50
+- Max Creamy Gianduja Carta da Zucchero: €24,50
+- Max Creamy Gianduja Bianco: €23,50
+- Max Creamy Tiramisù: €23,50
+- Max Creamy Pistacchio: €23,50
+- Max Creamy Limone: €23,50
+- Max Creamy Fondente: €23,50
+- Max Creamy Caramello Salato: €23,50
+
+**Maxtris Mixology (confetti al cioccolato fondente con liquore — CONTENGONO ALCOOL; confezione da 500gr, circa 70-80 confetti; prezzo pieno di listino, -10% al checkout):**
+- Maxtris Mixology Gin Tonic: €19,00
+- Maxtris Mixology Mojito: €19,00
+- Maxtris Mixology Moscow Mule: €19,00
+- Maxtris Mixology Negroni: €19,00
+- Maxtris Mixology Rum: €19,00
+- Maxtris Mixology Spritz: €19,00
+
+**Maxtris Stracciatella (confezione da 1kg, circa 160-180 confetti):**
+- Maxtris Stracciatella: €21,50
+
 **Bon Bon Cream Maxtris (confezione da 900gr):**
 - Bon Bon Cream Panna 900gr: €20,50
 - Bon Bon Cream Cioccolato al Latte e Nocciola 900gr: €20,50
@@ -880,6 +903,8 @@ IMPORTANTE — misura dell'OGGETTO contenuto vs misura della SCATOLA: le misure 
 **Personalizzazione:**
 - Sono disponibili 35 grafiche tra cui scegliere; 34 già pronte e la numero 35 per chi ha una grafica propria o non trova quella adatta
 - Coni porta confetti: il cono viene personalizzato su TUTTE le sue facce (non su una sola). La grafica scelta, con nome/data/dettagli, viene stampata su tutte le facciate del cono. Non dire mai che è personalizzabile una sola faccia.
+- Consegna montata di coni e coppette: sia i coni sia le coppette vengono consegnati GIÀ MONTATI. Differenza sulla chiusura: il CONO ha la chiusura (si può chiudere); le COPPETTE sono aperte e NON hanno chiusura.
+- Scatoline con i confetti: vengono consegnate GIÀ MONTATE, complete e PRONTE ALL'USO, esattamente come mostrato nella foto del prodotto sul sito. Il cliente le riceve pronte, non deve montarle né assemblarle.
 - Nel campo "Scrivi la tua personalizzazione" il cliente indica nome, data, frase, iniziali o altri dettagli
 - Personalizzazione INTERNA della scatolina: su ALCUNE scatoline personalizzate è possibile far scrivere una frase, una dedica o altro anche all'interno del coperchio/scatola (non solo sul coperchio esterno). NON è disponibile su tutte. Quindi, quando un cliente lo chiede, NON negarlo a priori: rispondere che su diversi prodotti è possibile e invitarlo a indicare la richiesta nel campo di personalizzazione oppure a segnalarla all'ufficio grafico via WhatsApp (328 448 2654), che confermerà la fattibilità sul prodotto scelto e la mostrerà nella bozza prima della produzione.
 - La categoria matrimonio è attualmente in lavorazione
@@ -954,6 +979,10 @@ La maggior parte dei confetti al cioccolato contiene LATTE e SOIA. Di seguito, l
 - Maxtris gusti speciali (Nut, i Tre Cioccolati, Caramel e Fleur de Sel, Gin Tonic, Mojito, Spritz, Liquore Strega, Yogurt ai Frutti di Bosco, Cristalli): contengono latte, soia e MANDORLA (Nut e Cristalli anche nocciola); tracce di nocciola, pistacchio e arachidi. Senza glutine.
 - Maxtris Delizia al Limone, Foresta Nera, Amaretto, Torroncino, la Napoletanità, la Sicilianità, Mix Marbled, Mix Delice (confezione da 1kg): contengono LATTE, SOIA e MANDORLA (mandorle tostate); possono contenere tracce di nocciole, noci, noci di pecan, anacardi, pistacchi e arachidi. Senza glutine (la maltodestrina non è fonte di glutine). NON dichiararli senza mandorla.
 - Maxtris Pistacchio e Gianduia (confezione da 1kg): contiene LATTE, SOIA, MANDORLA (mandorle tostate) e NOCCIOLA (gianduia); può contenere tracce di noci, noci di pecan, anacardi, pistacchi e arachidi. Senza glutine. NON dichiararlo senza mandorla né senza nocciola.
+- Max Creamy Maxtris — Gianduja (Salvia, Rosso, Rosa, Carta da Zucchero) e Pistacchio: contengono LATTE, SOIA, MANDORLA e NOCCIOLA (pasta di nocciola); possono contenere tracce di noci, noci di pecan, anacardi, pistacchi e arachidi. Senza glutine. NON dichiararli senza mandorla né senza nocciola.
+- Max Creamy Maxtris — Gianduja Bianco, Tiramisù, Limone, Fondente, Caramello Salato: contengono LATTE, SOIA e MANDORLA; possono contenere tracce di nocciole, noci, noci di pecan, anacardi, pistacchi e arachidi. Senza glutine. NON dichiararli senza mandorla.
+- Maxtris Mixology (Gin Tonic, Mojito, Moscow Mule, Negroni, Rum, Spritz): confetti al cioccolato fondente con liquore, CONTENGONO ALCOOL. Allergeni: contengono SOIA; possono contenere tracce di latte (incluso lattosio), mandorle, nocciole, noci, noci di pecan, anacardi, pistacchi e arachidi. Senza glutine.
+- Maxtris Stracciatella (cioccolato bianco e mandorla): contiene LATTE, SOIA e MANDORLA; può contenere tracce di nocciole, noci, noci di pecan, anacardi, pistacchi e arachidi. Senza glutine. NON dichiararlo senza mandorla.
 - Maxtris Ciocoliquirizia: contiene latte e soia; tracce di mandorla, nocciola, pistacchio e arachidi. Senza glutine.
 - Maxtris Speculoos e Maxtris Wafer: contengono latte, soia, mandorla e uova; CONTENGONO GLUTINE.
 - Maxtris Les Noisettes (tutti — circa 160–180/1kg): contengono latte, soia e NOCCIOLA; tracce di mandorla, pistacchio e arachidi. Senza glutine.
