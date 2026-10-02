@@ -469,6 +469,13 @@ Disponibili nei colori Bianco, Rosso, Rosa e Celeste. Cioko Swag: mini cookies r
 - Papa Confetti Marshmallow Frizz - 500g: €15,00
 (È SENZA GLUTINE. Per gli altri allergeni, se non indicati sulla scheda, non inventare: rimandare alla scheda prodotto o all'assistenza.)
 
+**Papa Cuor di Meringa (cuore di meringa avvolto da cioccolato fondente e cioccolato bianco al gusto crema chantilly; confezione da 700g):**
+- Papa Cuor di Meringa Bianco - 700g: €27,50
+- Papa Cuor di Meringa Rosa - 700g: €27,50
+- Papa Cuor di Meringa Rosso - 700g: €27,50
+- Papa Cuor di Meringa Carta da Zucchero - 700g: €27,50
+(Allergeni, tutti i colori: contengono LATTE e SOIA; possono contenere frutta a guscio (mandorle, nocciole, pistacchi e noci). SENZA GLUTINE. NON dichiararli senza frutta a guscio in modo assoluto.)
+
 **Confetti Snob al cioccolato al latte (colorati, confezione da 500gr):**
 - Confetti Snob Latte Verde Inglese 500gr: €10,00
 - Confetti Snob Latte Salvia 500gr: €10,00
@@ -811,6 +818,10 @@ Categoria di cioccolato fine: tavolette single origin, linea Antologia, formati 
 - Cubotto Napolitains Madagascar: €9,00
 - Cubotto Napolitains Colombia: €9,00
 
+**Cioccolatini (confezione da 6 pezzi):**
+- Cuor di Criollo - 6 Pezzi (cioccolatini a cuore, solo cacao Criollo e zucchero): €5,20
+- Giandujotti Classici Domori - 6 Pezzi (con Nocciola Piemonte IGP): €5,50
+
 **Cofanetti e cioccolatini regalo:**
 - Latta Cuore con Cuoricini Criollo 70%: €32,00
 - Latta Cremini Classici: €35,00
@@ -824,8 +835,8 @@ Categoria di cioccolato fine: tavolette single origin, linea Antologia, formati 
 - Quantum Cioccolato Fondente Maxi con tagliere e coltello 500g: €115,00
 
 **Allergeni L'arte del Cioccolato (dichiarazioni ufficiali):**
-- I fondenti "puri" (Single Origin 70%, Cubotti Napolitains, Confezione Single Origins Experience, Antologia 70/85/90% Criollo, Antologia Peperoncino, Quantum Fondente Tanzania e Quantum con tagliere): ingredienti pasta di cacao e zucchero; SENZA GLUTINE; possono contenere tracce di latte, soia e frutta a guscio.
-- Prodotti che CONTENGONO frutta a guscio (dichiarata): Antologia Nocciole Piemontesi, Antologia Mandorla e Miele (contiene anche LATTE), Antologia Bianco Caramello e Noci Pecan (LATTE e SOIA), Antologia Bianco e Pistacchi (LATTE e SOIA), Nocciole Supreme, Latta Cremini Classici (SOIA e LATTE), Quantum Latte e Nocciole (LATTE), Quantum Bianco e Pistacchi (LATTE e SOIA). Tutti SENZA GLUTINE.
+- I fondenti "puri" (Single Origin 70%, Cubotti Napolitains, Confezione Single Origins Experience, Antologia 70/85/90% Criollo, Antologia Peperoncino, Cuor di Criollo, Quantum Fondente Tanzania e Quantum con tagliere): ingredienti pasta di cacao e zucchero; SENZA GLUTINE; possono contenere tracce di latte, soia e frutta a guscio.
+- Prodotti che CONTENGONO frutta a guscio (dichiarata): Antologia Nocciole Piemontesi, Antologia Mandorla e Miele (contiene anche LATTE), Antologia Bianco Caramello e Noci Pecan (LATTE e SOIA), Antologia Bianco e Pistacchi (LATTE e SOIA), Giandujotti Classici Domori (nocciole), Nocciole Supreme, Latta Cremini Classici (SOIA e LATTE), Quantum Latte e Nocciole (LATTE), Quantum Bianco e Pistacchi (LATTE e SOIA). Tutti SENZA GLUTINE.
 - Prodotti al latte: Antologia 50% e 38% al Latte contengono LATTE (tracce di soia e frutta a guscio); senza glutine.
 - Regola: NON dichiarare senza frutta a guscio i prodotti con nocciola/mandorla/pistacchio/pecan. Per dettagli non presenti qui, rimandare alla scheda del prodotto sul sito.
 
