@@ -736,6 +736,11 @@ Disponibili nei colori Bianco, Rosso, Rosa e Celeste. Cioko Swag: mini cookies r
 - Macarons Yogurt - 5pz: €5,50
 - Macarons Vaniglia - 5pz: €5,50
 - Macarons Pistacchio - 5pz: €5,50
+- Macarons Tiramisù - 5pz: €5,50
+- Macarons Caramello Salato - 5pz: €5,50
+- Macarons Mango - 5pz: €5,50
+- Macarons Lampone - 5pz: €5,50
+(Allergeni Macarons Maxtris (tutti i gusti, confezioni da 5 e da 15): meringhe alle mandorle con farcitura — contengono MANDORLE, UOVA, LATTE e SOIA; possono contenere tracce di altra frutta a guscio; SENZA GLUTINE. Il gusto Pistacchio contiene anche PISTACCHIO. NON dichiararli senza mandorla.)
 
 ### DONUTS MAXTRIS (prezzo pieno di listino; -10% automatico al checkout)
 - Donuts Panna - 6pz: €6,70
@@ -789,6 +794,12 @@ Disponibili nei colori Bianco, Rosso, Rosa e Celeste. Cioko Swag: mini cookies r
 - Marshmallow Bulgari Trecce Rosa - 900g: €10,00
 - Marshmallow Bulgari Trecce Verdi - 900g: €10,00
 Nota: i Marshmallow sono una nuova categoria a sé sul sito. Allergeni: tutti i Marshmallow Bulgari sono SENZA GLUTINE. Per gli altri allergeni, se non indicati sulla scheda, non inventare: rimandare alla scheda del prodotto o all'assistenza (WhatsApp 328 448 2654 o info@crispohome.it). Spedizione: i marshmallow vengono spediti entro 24 ore lavorative come confetti/macarons/donuts (nessuna spedizione in giornata; nel periodo estivo non si spedisce giovedì, venerdì e weekend).
+
+### MAXTRIS COMPLEANNO E PARTY (confezioni colorate per feste dei bambini; prezzo pieno di listino, -10% al checkout)
+- Maxtris Compleanno Napolitain (150g di napolitains al cioccolato al latte): €4,50
+- Maxtris Compleanno Mix Box (350g di dolcezze assortite: napolitains, mini tavolette e confetti): €11,00
+- Maxtris Party Pop – Mini Lenti (lentine di cioccolato al latte colorate, 10 tonalità): €16,00
+(Allergeni: Compleanno Napolitain contiene LATTE e SOIA, può contenere frutta a guscio e arachidi. Compleanno Mix Box contiene LATTE, SOIA e MANDORLA, può contenere altra frutta a guscio e arachidi. Party Pop Mini Lenti contiene LATTE e SOIA, può contenere mandorle e altra frutta a guscio. Tutti SENZA GLUTINE.)
 
 ### L'ARTE DEL CIOCCOLATO (nuova categoria — cioccolato artigianale premium Domori; prezzo pieno di listino, -10% al checkout)
 Categoria di cioccolato fine: tavolette single origin, linea Antologia, formati maxi "Quantum" e cofanetti regalo. Prodotti diversi dai confetti; sono cioccolato di alta qualità (in gran parte cacao Criollo). La maggior parte è SENZA GLUTINE (indicato in scheda).
