@@ -812,12 +812,21 @@ Categoria di cioccolato fine: tavolette single origin, linea Antologia, formati 
 - Tavoletta Fondente Ecuador 70%: €5,00
 - Tavoletta Fondente Perù 70%: €5,00
 
+**Tavolette Linea Blend Criollo:**
+- Tavoletta Linea Blend Criollo 70%: €6,00
+- Tavoletta Linea Blend Criollo 80%: €6,00
+- Tavoletta Linea Blend Criollo 90%: €6,00
+- Tavoletta Linea Blend Criollo 100%: €6,00
+
+**Tavolette Linea Monovarietali:**
+- Tavoletta Monovarietali Criollo Chuao 70%: €8,50
+
 **Tavolette Antologia:**
-- Antologia Fondente e Nocciole Piemontesi IGP: €5,00
-- Antologia Fondente e Peperoncino Calabrese: €5,00
-- Antologia Cioccolato con Mandorla e Miele: €5,00
-- Antologia Bianco, Caramello e Noci Pecan: €5,00
-- Antologia Bianco e Pistacchi Siciliani Salati: €5,00
+- Antologia Fondente e Nocciole Piemontesi IGP: €5,20
+- Antologia Fondente e Peperoncino Calabrese: €5,20
+- Antologia Cioccolato con Mandorla e Miele: €5,20
+- Antologia Bianco, Caramello e Noci Pecan: €5,20
+- Antologia Bianco e Pistacchi Siciliani Salati: €5,20
 - Antologia 70% con Cacao Criollo: €4,50
 - Antologia 85% con Cacao Criollo: €4,50
 - Antologia 90% con Cacao Criollo (75g): €4,50
@@ -825,28 +834,28 @@ Categoria di cioccolato fine: tavolette single origin, linea Antologia, formati 
 - Antologia 38% al Latte con Cacao Criollo: €4,50
 
 **Cubotti Napolitains (70g):**
-- Cubotto Napolitains Perù: €9,00
-- Cubotto Napolitains Madagascar: €9,00
-- Cubotto Napolitains Colombia: €9,00
+- Cubotto Napolitains Perù: €8,00
+- Cubotto Napolitains Madagascar: €8,00
+- Cubotto Napolitains Colombia: €8,00
 
 **Cioccolatini (confezione da 6 pezzi):**
 - Cuor di Criollo - 6 Pezzi (cioccolatini a cuore, solo cacao Criollo e zucchero): €5,20
 - Giandujotti Classici Domori - 6 Pezzi (con Nocciola Piemonte IGP): €5,50
 
 **Cofanetti e cioccolatini regalo:**
-- Latta Cuore con Cuoricini Criollo 70%: €32,00
-- Latta Cremini Classici: €35,00
-- Nocciole Supreme - Cioccolatini Assortiti (gianduiotti, cremini, tartufi): €35,00
-- Confezione Regalo Single Origins Experience (48 napolitains, 6 origini): €29,50
+- Latta Cuore con Cuoricini Criollo 70%: €30,00
+- Latta Cremini Classici: €16,00
+- Nocciole Supreme - Cioccolatini Assortiti (gianduiotti, cremini, tartufi): €34,00
+- Confezione Regalo Single Origins Experience (48 napolitains, 6 origini): €29,00
 
 **Quantum (tavolette maxi 500g):**
-- Quantum Cioccolato Fondente Tanzania 68% 500g: €39,50
-- Quantum Cioccolato al Latte e Nocciole intere 500g: €39,50
-- Quantum Cioccolato Bianco e Pistacchi salati interi 500g: €52,50
-- Quantum Cioccolato Fondente Maxi con tagliere e coltello 500g: €115,00
+- Quantum Cioccolato Fondente Tanzania 68% 500g: €37,00
+- Quantum Cioccolato al Latte e Nocciole intere 500g: €37,00
+- Quantum Cioccolato Bianco e Pistacchi salati interi 500g: €48,00
+- Quantum Cioccolato Fondente Maxi con tagliere e coltello 500g: €110,00
 
 **Allergeni L'arte del Cioccolato (dichiarazioni ufficiali):**
-- I fondenti "puri" (Single Origin 70%, Cubotti Napolitains, Confezione Single Origins Experience, Antologia 70/85/90% Criollo, Antologia Peperoncino, Cuor di Criollo, Quantum Fondente Tanzania e Quantum con tagliere): ingredienti pasta di cacao e zucchero; SENZA GLUTINE; possono contenere tracce di latte, soia e frutta a guscio.
+- I fondenti "puri" (Single Origin 70%, Linea Blend Criollo 70/80/90/100%, Monovarietali Chuao 70%, Cubotti Napolitains, Confezione Single Origins Experience, Antologia 70/85/90% Criollo, Antologia Peperoncino, Cuor di Criollo, Quantum Fondente Tanzania e Quantum con tagliere): ingredienti pasta di cacao e zucchero; SENZA GLUTINE; possono contenere tracce di latte, soia e frutta a guscio.
 - Prodotti che CONTENGONO frutta a guscio (dichiarata): Antologia Nocciole Piemontesi, Antologia Mandorla e Miele (contiene anche LATTE), Antologia Bianco Caramello e Noci Pecan (LATTE e SOIA), Antologia Bianco e Pistacchi (LATTE e SOIA), Giandujotti Classici Domori (nocciole), Nocciole Supreme, Latta Cremini Classici (SOIA e LATTE), Quantum Latte e Nocciole (LATTE), Quantum Bianco e Pistacchi (LATTE e SOIA). Tutti SENZA GLUTINE.
 - Prodotti al latte: Antologia 50% e 38% al Latte contengono LATTE (tracce di soia e frutta a guscio); senza glutine.
 - Regola: NON dichiarare senza frutta a guscio i prodotti con nocciola/mandorla/pistacchio/pecan. Per dettagli non presenti qui, rimandare alla scheda del prodotto sul sito.
