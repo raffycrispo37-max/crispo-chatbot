@@ -860,6 +860,52 @@ Categoria di cioccolato fine: tavolette single origin, linea Antologia, formati 
 - Prodotti al latte: Antologia 50% e 38% al Latte contengono LATTE (tracce di soia e frutta a guscio); senza glutine.
 - Regola: NON dichiarare senza frutta a guscio i prodotti con nocciola/mandorla/pistacchio/pecan. Per dettagli non presenti qui, rimandare alla scheda del prodotto sul sito.
 
+### SEZIONE NATALE (collezione natalizia; prezzo pieno di listino, -10% al checkout)
+La sezione Natale raccoglie specialità natalizie Crispo e Maxtris PIÙ molti cioccolati Domori già presenti nella categoria "L'arte del Cioccolato" (tavolette Single Origin, Antologia, Blend Criollo, Monovarietali, Quantum, Cubotti Napolitains, Cuor di Criollo, Giandujotti Domori, Latta Cremini, Latta Cuore, Nocciole Supreme, Single Origins Experience), riproposti come idee regalo per le feste. Di seguito i prodotti natalizi specifici:
+
+**Frutta ricoperta di cioccolato fondente 70% Crispo (130g) — €4,50 ciascuna:**
+- Albicocche, Amarene, Ananas, Banana essiccata, Cocco, Zenzero ricoperti di cioccolato fondente 70%.
+- Allergeni: contengono SOIA; senza glutine; possono contenere tracce.
+
+**Ciocolì Crispo (dragées ricoperte di cioccolato, 100g) — €3,30 ciascuna:**
+- Gusti: Caffè Espresso, Cointreau, Gin Tonic, Grappa, Limoncello, Long Island, Meloncello, Mojito, Negroni, Nero d'Avola, Rhum dei Caraibi, Sambuca, Moscow Mule.
+- Allergeni (tutti i gusti): contengono SOIA e solfiti; possono contenere tracce di glutine, latte, frutta a guscio e arachidi. I gusti a base di cioccolato al latte/bianco (Limoncello, Sambuca, Rhum dei Caraibi) contengono anche LATTE. Molti gusti sono ispirati a cocktail/liquori e contengono ALCOOL (es. Caffè Espresso, Cointreau, Grappa, Limoncello, Rhum, Sambuca).
+
+**Cioccolatini e praline Crispo:**
+- Cioco Fantasy al Latte 500g: €9,50 | Fondente 500g: €12,00 | Assortiti 500g: €10,50 | Assortiti 140g: €3,70 (latte, soia)
+- Cioccletts 500g: €9,00 (latte, soia) | CioccoCrik 500g: €10,50 (latte, soia, ARACHIDI)
+- CiocoNut 500g (nocciole ricoperte): €13,00 (latte, soia, NOCCIOLA)
+- CiocoCaffè 500g (chicchi di caffè ricoperti): €14,50 (soia)
+- Gianduiotti Crispo al Latte 500g: €10,00 | Bianchi 400g: €9,50 | Fondenti 500g: €10,50 (latte, soia, NOCCIOLA)
+- Crispo Gianduiotti Shopper 220g: €9,00 (latte, soia, NOCCIOLA)
+- Datteri ricoperti (al Latte / Fondente / Assortito) 150g: €4,00 (latte, soia)
+- Mandorle e Arachidi Caramellate 150g: €4,00 (MANDORLA, ARACHIDI)
+- Praline Crispo al Caramello Salato 250g: €5,20 | con Crema alla Mandorla 250g: €5,20 (MANDORLA) | Fondente 55% con granella di Cookies 250g: €6,00 (contiene GLUTINE)
+- Pralinesse Crispo (Crema al Latte / Cacao / Nocciola / Tiramisù / Caffè e Caramello) 200–250g: €5,40 (contengono GLUTINE, latte, soia; alla Nocciola anche NOCCIOLA)
+- Crispo Praline assortite 250g: €5,20 (latte, soia, nocciola)
+- Pintaudi Frolle Assortite in latta: €19,50 (biscotti: contengono GLUTINE, latte, soia, mandorla, arachidi)
+
+**Tavolette Crispo:**
+- Tavoletta Fondente 70% con granella di Lampone / scorzetta di Arancia / scorzetta di Limone (90g): €3,80 (SOIA; senza glutine)
+- Tavoletta Cioccolato Bianco al Limone / Pistacchio / Arancia (100g): €3,00 (contengono LATTE e SOIA; possono contenere tracce di frutta a guscio, glutine e arachidi)
+- Tavoletta Cioccolato al Latte -30% di Zucchero (90g): €3,80 (contiene LATTE e SOIA; può contenere tracce di frutta a guscio, glutine e arachidi)
+
+**Maxtris linea Christmas:**
+- Box Degustativa Christmas Chocolate Collection 800g: €24,50
+- Box Christmas Cioccolatini Assortiti 500g: €20,00
+- Box Degustativa Christmas Vanity 400g: €15,00
+- Scatola Regalo Bordeaux Fondente 350g: €13,50 | Scatola Regalo Blu Cioccolato Assortito 400g: €13,50
+- Christmas Boule (Caramello Salato / Fondente / Nocciola) 1kg: €25,00 ciascuna
+- Coffee Chocolate (Fondente / Latte) 1kg: €24,50 ciascuna (anche MANDORLA e ARACHIDI)
+- Cilindro Mix (Fondente / Mandorla / Nocciola / al Latte) 320g: €11,00 ciascuno
+- Napolitain Fondente 70% / 80% 500g: €13,50 ciascuno
+- Latta Christmas Cioccolatini Assortiti 300g: €17,50
+- Pallina di Natale in Latta con Boule 100g: €7,00 | 50g: €5,50
+- Omino Pan di Zenzero in latta 96g: €7,50
+- Christmas Mezza Caramella 70g: €5,50 | Scatola Regalo Cremini gusto Nocciola 60g: €5,50
+- 6 Macaron Stampa Natalizia gusti assortiti 84g: €5,00
+- Allergeni linea Maxtris Christmas: contengono LATTE, SOIA e NOCCIOLA (Coffee Chocolate anche MANDORLA e ARACHIDI); per il dettaglio del singolo prodotto fare riferimento alla scheda.
+
 ## INFORMAZIONI SU PRODOTTI SPECIFICI
 Quando il cliente fa domande su un prodotto specifico che ha già trovato sul sito, Aria può fornire:
 
