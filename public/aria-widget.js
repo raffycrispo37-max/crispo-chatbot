@@ -17,49 +17,50 @@ var API = 'https://project-7g4zm.vercel.app/api/chat';
       { label: 'Nascita e Battesimo', menu: 'nascita' },
       { label: 'Comunione e Cresima', menu: 'comunione' },
       { label: 'Compleanno', menu: 'compleanno' },
-      { label: 'Solo confetti', menu: 'confetti' },
-      { label: 'Ordini e spedizioni', menu: 'ordini' },
+      { label: 'Confetti', menu: 'confetti' },
+      { label: 'Cioccolato', menu: 'cioccolato' },
+      { label: 'Spedizioni e Pagamenti', menu: 'ordini' },
       { label: 'Altre domande', menu: 'altre' }
     ],
     laurea: [
-      { label: 'Quali bomboniere per la laurea?', ask: 'Quali bomboniere consigliate per la laurea?' },
-      { label: 'Quanti kg di confetti mi servono?', ask: 'Quanti Kg di confetti devo acquistare per il mio evento?' },
-      { label: 'Riesco a riceverle in tempo?', ask: 'Riesco a ricevere in tempo un prodotto personalizzato per la laurea?' },
-      { label: 'Come funziona la personalizzazione?', ask: 'Come funziona la personalizzazione?' }
+      { label: 'Come funziona la personalizzazione?', ask: 'Come funziona la personalizzazione?' },
+      { label: 'Tempi di produzione e consegna', ask: 'Quali sono i tempi di produzione e consegna?' },
+      { label: 'Posso vedere un\'anteprima?', ask: 'Posso vedere un\'anteprima prima di ordinare?' }
     ],
     nascita: [
-      { label: 'Bomboniere per bimbo o bimba?', ask: 'Le bomboniere per nascita e battesimo sono disponibili sia per bimbo che per bimba?' },
-      { label: 'Quanti kg di confetti?', ask: 'Quanti Kg di confetti devo acquistare per il mio evento?' },
-      { label: 'Riesco a riceverle in tempo?', ask: 'Riesco a ricevere in tempo un prodotto personalizzato?' }
+      { label: 'Come funziona la personalizzazione?', ask: 'Come funziona la personalizzazione?' },
+      { label: 'Tempi di produzione e consegna', ask: 'Quali sono i tempi di produzione e consegna?' },
+      { label: 'Posso vedere un\'anteprima?', ask: 'Posso vedere un\'anteprima prima di ordinare?' }
     ],
     comunione: [
-      { label: 'Bomboniere per comunione', ask: 'Quali bomboniere consigliate per la comunione o cresima?' },
-      { label: 'Quanti kg di confetti?', ask: 'Quanti Kg di confetti devo acquistare per il mio evento?' },
-      { label: 'Riesco a riceverle in tempo?', ask: 'Riesco a ricevere in tempo un prodotto personalizzato?' }
+      { label: 'Come funziona la personalizzazione?', ask: 'Come funziona la personalizzazione?' },
+      { label: 'Tempi di produzione e consegna', ask: 'Quali sono i tempi di produzione e consegna?' },
+      { label: 'Posso vedere un\'anteprima?', ask: 'Posso vedere un\'anteprima prima di ordinare?' }
     ],
     compleanno: [
-      { label: 'Idee per un compleanno', ask: 'Che idee avete per un compleanno?' },
-      { label: 'Che colore mi consigliate?', ask: 'Che colore mi consigliate per un compleanno importante?' },
-      { label: 'Quanti kg di confetti?', ask: 'Quanti Kg di confetti devo acquistare per il mio evento?' }
+      { label: 'Come funziona la personalizzazione?', ask: 'Come funziona la personalizzazione?' },
+      { label: 'Tempi di produzione e consegna', ask: 'Quali sono i tempi di produzione e consegna?' },
+      { label: 'Posso vedere un\'anteprima?', ask: 'Posso vedere un\'anteprima prima di ordinare?' }
     ],
     confetti: [
       { label: 'Quanti kg mi servono?', ask: 'Quanti Kg di confetti devo acquistare per il mio evento?' },
-      { label: 'I confetti sono senza glutine?', ask: 'I confetti sono senza glutine?' },
-      { label: 'Che colori avete?', ask: 'Che colori di confetti avete disponibili?' },
-      { label: 'Come conservare i confetti?', ask: 'Come devo conservare i confetti?' }
+      { label: 'Quanti confetti in una confezione?', ask: 'Quanti confetti escono in una confezione?' },
+      { label: 'Quali confetti sono senza glutine?', ask: 'Quali confetti sono senza glutine?' }
+    ],
+    cioccolato: [
+      { label: 'Il cioccolato è senza glutine?', ask: 'Il cioccolato è senza glutine?' },
+      { label: 'Tempi di spedizione', ask: 'Quali sono i tempi di spedizione?' },
+      { label: 'Che tipi di cioccolato avete?', ask: 'Che tipi di cioccolato avete?' }
     ],
     ordini: [
-      { label: 'Dov\'è il mio ordine?', ask: 'Dov\'è il mio ordine? A che punto è?' },
-      { label: 'Costi di spedizione', ask: 'Quali sono i costi di spedizione?' },
-      { label: 'Tempi di produzione', ask: 'Quali sono i tempi di produzione?' },
-      { label: 'Non ho ricevuto l\'email di conferma', ask: 'Non ho ricevuto l\'email di conferma dell\'ordine' },
-      { label: 'Posso ritirare in negozio?', ask: 'Posso ritirare l\'ordine in negozio?' }
+      { label: 'Costi e tempi di spedizione', ask: 'Quali sono i costi e i tempi di spedizione?' },
+      { label: 'Metodi di pagamento', ask: 'Quali metodi di pagamento accettate?' },
+      { label: 'Posso ritirare in sede?', ask: 'Posso ritirare l\'ordine in sede?' }
     ],
     altre: [
-      { label: 'Posso pagare a rate?', ask: 'Posso pagare a rate?' },
-      { label: 'Posso vedere un\'anteprima?', ask: 'È possibile vedere un\'anteprima?' },
+      { label: 'Ordinare ora e ricevere più avanti', ask: 'Posso ordinare adesso e richiedere la consegna nei prossimi mesi?' },
       { label: 'Quando mi contatta l\'ufficio grafico?', ask: 'Quando mi contatta l\'ufficio grafico dopo l\'ordine?' },
-      { label: 'Ordinare ora per i prossimi mesi', ask: 'Posso ordinare adesso e richiedere la consegna nei prossimi mesi?' }
+      { label: 'Come funziona un reso o un reclamo?', ask: 'Come funziona un reso o un reclamo?' }
     ]
   };
 
@@ -189,9 +190,6 @@ var API = 'https://project-7g4zm.vercel.app/api/chat';
       history.push({role:'assistant', content: reply});
       if(history.length > 20) history = history.slice(-20);
       if(!isOpen){ badge.style.display = 'flex'; }
-      if(Array.isArray(data.suggestions) && data.suggestions.length){
-        renderSuggestions(data.suggestions);
-      }
     })
     .catch(function(){
       hideTyping();
