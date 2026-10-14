@@ -75,6 +75,30 @@ var API = 'https://project-7g4zm.vercel.app/api/chat';
   var quick  = document.getElementById('aria-quick');
   var badge  = document.getElementById('aria-badge');
 
+  var _scrollY = 0;
+  function isMobile(){ return window.matchMedia('(max-width:480px)').matches; }
+  function lockPage(lock){
+    if(!isMobile()) return;
+    var b = document.body;
+    if(lock){
+      _scrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+      b.style.position = 'fixed';
+      b.style.top = (-_scrollY) + 'px';
+      b.style.left = '0';
+      b.style.right = '0';
+      b.style.width = '100%';
+      b.style.overflow = 'hidden';
+    } else {
+      b.style.position = '';
+      b.style.top = '';
+      b.style.left = '';
+      b.style.right = '';
+      b.style.width = '';
+      b.style.overflow = '';
+      window.scrollTo(0, _scrollY);
+    }
+  }
+
   function toggle(){
     isOpen = !isOpen;
     panel.classList.toggle('open', isOpen);
@@ -82,6 +106,7 @@ var API = 'https://project-7g4zm.vercel.app/api/chat';
     document.getElementById('aria-ico-x').style.display   = isOpen ? 'block' : 'none';
     badge.style.display = 'none';
     var t = document.getElementById('aria-tip'); if(t) t.classList.remove('show');
+    lockPage(isOpen);
     if(isOpen){
       if(!greeted){ greet(); greeted = true; }
       setTimeout(function(){ inp.focus(); }, 300);
