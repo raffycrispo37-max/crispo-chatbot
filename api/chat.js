@@ -300,6 +300,14 @@ Disponibili nei colori Bianco, Rosso, Rosa e Celeste. Cioko Swag: mini cookies r
 - CiocoSoft Yogurt e Frutti Rossi 900gr: €15,50
 - CiocoSoft Cheesecake ai Frutti di Bosco 900gr: €15,50
 
+**CiocoSoft Selection Color (confezione da 900gr; confetti morbidi al cioccolato al latte con cuore cremoso, 5 gusti assortiti: Frutti di Bosco, Meringa e Albicocca, Pistacchio, Crème Caramel, Cremoso alla Nocciola; circa 120-140 confetti):**
+- Crispo CiocoSoft Selection Color Rosa 900gr: €15,50
+- Crispo CiocoSoft Selection Color Celeste 900gr: €15,50
+
+**Crispo specialità di frutta secca ricoperta (confezione da 400gr):**
+- Crispo Mandorle e Arachidi Caramellate 400gr: €10,50
+- Crispo Nocciole al Cocco Tartufate 400gr: €12,50
+
 **Tenerelli (confezione da 500gr):**
 - Tenerelli alla Nocciola Assortiti 500gr: €13,50
 - Tenerelli Bianchi 500gr: €13,50
@@ -628,6 +636,12 @@ Disponibili nei colori Bianco, Rosso, Rosa e Celeste. Cioko Swag: mini cookies r
 - Maxtris Sposa Novella Bianco 1kg: €19,50
 - Maxtris Mandorla Royal Oro 500gr: €19,50
 - Maxtris Mandorla Royal Argento 500gr: €17,00
+
+**Maxtris Truffle (frutta secca e ciliegie ricoperte di cioccolato e cacao; elegante confezione regalo con manici da 165gr):**
+- Maxtris Truffle Mandorle al Cioccolato Fondente 165gr: €8,00
+- Maxtris Truffle Nougat (croccantino alla nocciola) al Cioccolato Fondente 165gr: €8,00
+- Maxtris Truffle Ciliegie al Cioccolato Fondente 165gr: €8,00
+- Maxtris Truffle Nocciole al Cioccolato al Latte (Truffle Bag) 165gr: €8,00
 
 **Maxtris Lamponì (confezione da 350gr):**
 - Maxtris Lamponì Bianco 350gr: €14,50
@@ -1006,7 +1020,7 @@ Quando un cliente chiede informazioni su allergeni, ingredienti o glutine di un 
 In caso di allergie gravi, dopo aver dato l'informazione, invitare comunque il cliente a verificare la scheda del singolo prodotto sul sito.
 
 ### GLUTINE
-**Contengono glutine:** Crispo Krixi (tutti i colori), CiocoPassion Cereali, Confetti Snob Waffle Triplo Cioccolato, Maxtris Speculoos, Maxtris Nougat, Maxtris Wafer, Confetti Dubai Chocolate Crispo (bianco e rosso), Maxtris Dubai Pistacchio e Kadayif (Celeste e Rosa), Cioko Swag (tutti i colori), Cioco Slay (tutti i colori), Choco Bae (tutti i colori).
+**Contengono glutine:** Crispo Krixi (tutti i colori), CiocoPassion Cereali, Confetti Snob Waffle Triplo Cioccolato, Maxtris Speculoos, Maxtris Nougat, Maxtris Wafer, Maxtris Truffle Nougat, Confetti Dubai Chocolate Crispo (bianco e rosso), Maxtris Dubai Pistacchio e Kadayif (Celeste e Rosa), Cioko Swag (tutti i colori), Cioco Slay (tutti i colori), Choco Bae (tutti i colori).
 **Possono contenere tracce di glutine:** Crispo Top Five (tutti i colori, perché contiene il Krixi al cereale), tutti i CiocoSoft (tutti i gusti).
 **Tutti gli altri confetti sono SENZA GLUTINE**, inclusi TUTTI i Tenerelli, tutti i Lieto Evento e il Maxtris Ciocoliquirizia. Anche Macarons e Donuts Maxtris sono senza glutine.
 
@@ -1060,6 +1074,10 @@ La maggior parte dei confetti al cioccolato contiene LATTE e SOIA. Di seguito, l
 - Crispo Angolo Cubano (Rhum, Limoncello, Grappa): cioccolato fondente con liquore (contengono ALCOOL 2%). Allergeni: contiene soia e derivati; può contenere tracce di glutine, latte, frutta a guscio, arachidi e loro derivati. NON dichiararli senza glutine.
 - Crispo Mimose (tutti i colori): decorazioni di zucchero. Allergeni: negli ingredienti non contengono allergeni, ma possono contenere tracce di glutine, frutta a guscio, latte, soia, arachidi e loro derivati. NON dichiararle senza glutine.
 - Crispo Trés Amour (tutti i colori — cambia solo il colorante, la ricetta è identica): confetti a forma di cuore con tre strati di cioccolato (fondente, bianco e al latte), confezione da 1kg. Allergeni dichiarati: contengono LATTE e SOIA (lecitina di soia). PUÒ CONTENERE TRACCE DI GLUTINE. NON dichiararli senza glutine.
+- CiocoSoft Selection Color (Rosa e Celeste — 900gr, 5 gusti assortiti; circa 120-140 confetti): contengono LATTE, SOIA, UOVA e FRUTTA A GUSCIO (nocciola, pistacchio); possono contenere tracce di glutine e arachidi. NON dichiararli senza glutine.
+- Crispo Mandorle e Arachidi Caramellate (400gr): contengono MANDORLE o ARACHIDI; possono contenere tracce di altra frutta a guscio, latte, arachidi e soia. SENZA GLUTINE.
+- Crispo Nocciole al Cocco Tartufate (400gr): nocciola ricoperta di cioccolato bianco e cocco. Contengono LATTE, SOIA, NOCCIOLA e SOLFITI (anidride solforosa); possono contenere tracce di glutine, frutta a guscio e arachidi. NON dichiararle senza glutine.
+- Maxtris Truffle (confezione regalo 165gr): Mandorle al Cioccolato Fondente contiene MANDORLA; Nocciole/Truffle Bag contiene NOCCIOLA e LATTE; Nougat contiene NOCCIOLA e CONTIENE GLUTINE; Ciliegie al Cioccolato Fondente contiene ciliegie e cioccolato fondente. Per gli allergeni non dettagliati sulla scheda (es. glutine di Mandorle, Ciliegie e Nocciole), non dichiarare: rimandare alla scheda del prodotto o all'assistenza.
 
 **Dichiarazione allergeni specifica (dal produttore):**
 - CiocoPassion Negroni: contiene latte, soia, frutta a guscio e loro derivati; può contenere tracce di altra frutta a guscio, arachidi e loro derivati.
