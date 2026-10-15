@@ -2,6 +2,69 @@ const Anthropic = require("@anthropic-ai/sdk");
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 25000 });
 
+// --- Collegamento dati prodotti in tempo reale (Wix Stores) ---
+const WIX_API_KEY = process.env.WIX_API_KEY;
+const WIX_SITE_ID = process.env.WIX_SITE_ID;
+
+function stripHtml(h) {
+  return (h || "").replace(/<[^>]*>/g, " ").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
+}
+
+// Cerca prodotti reali sul sito per nome/parole chiave e restituisce dati essenziali
+async function cercaProdotti(q) {
+  if (!WIX_API_KEY || !WIX_SITE_ID) {
+    return { errore: "Collegamento Wix non configurato" };
+  }
+  try {
+    const resp = await fetch("https://www.wixapis.com/stores/v1/products/query", {
+      method: "POST",
+      headers: {
+        "Authorization": WIX_API_KEY,
+        "wix-site-id": WIX_SITE_ID,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ freeText: q, query: { paging: { limit: 5 } }, includeVariants: false }),
+    });
+    if (!resp.ok) return { errore: "Ricerca non riuscita (" + resp.status + ")" };
+    const data = await resp.json();
+    const prods = (data.products || []).filter(p => p.visible !== false);
+    return {
+      risultati: prods.map(p => {
+        const secs = {};
+        (p.additionalInfoSections || []).forEach(s => { secs[(s.title || "").trim()] = stripHtml(s.description).slice(0, 400); });
+        return {
+          nome: p.name,
+          sku: p.sku || null,
+          prezzo_listino: p.priceData ? p.priceData.price : (p.price ? p.price.price : null),
+          prezzo_scontato: p.priceData ? p.priceData.discountedPrice : (p.price ? p.price.discountedPrice : null),
+          disponibile: p.stock ? p.stock.inStock : null,
+          descrizione: stripHtml(p.description).slice(0, 500),
+          ingredienti: secs["Ingredienti"] || null,
+          allergeni: secs["Allergeni"] || null,
+        };
+      }),
+    };
+  } catch (e) {
+    console.error("cercaProdotti error:", e);
+    return { errore: "Errore durante la ricerca prodotti" };
+  }
+}
+
+const PRODUCT_TOOL = {
+  name: "cerca_prodotto",
+  description:
+    "Cerca i dati REALI e aggiornati di uno o più prodotti sul sito Crispo Home (nome esatto, prezzo di listino, prezzo scontato, disponibilità, descrizione, ingredienti e allergeni). " +
+    "USA SEMPRE questo strumento quando il cliente chiede di un prodotto specifico e ti serve un dato di catalogo: prezzo, disponibilità, ingredienti, allergeni, formato o cosa contiene/com'è confezionato. " +
+    "Non affidarti alla memoria per questi dati: cercali. Passa come query il nome del prodotto o le parole chiave del cliente (es. 'kit cremini', 'ciocosoft pistacchio', 'maxtris truffle nocciole').",
+  input_schema: {
+    type: "object",
+    properties: {
+      query: { type: "string", description: "Nome del prodotto o parole chiave da cercare." },
+    },
+    required: ["query"],
+  },
+};
+
 
 const SYSTEM_PROMPT = `Sei Aria, l'assistente virtuale di Crispo Home.
 
@@ -1368,7 +1431,11 @@ module.exports = async function handler(req, res) {
     }).format(new Date(shipMs));
 
     // Prompt caching: SYSTEM_PROMPT statico in cache, contesto dinamico (data + sessione) separato
-    const dynamicParts = [`## DATA E ORA ODIERNE\nOggi è ${oggi} e sono le ${oraAttuale} (orario italiano). Usa la data per calcolare i giorni lavorativi quando un cliente chiede se riuscirà a ricevere l'ordine entro una certa data.\n\n## GIORNO DI SPEDIZIONE GIÀ CALCOLATO (NON ricalcolarlo)\nPer un ordine di soli confetti, macarons, donuts o marshmallow (senza prodotti personalizzati) effettuato ORA, il primo giorno utile di spedizione è: ${partenzaTxt}. I prodotti vengono spediti entro 24 ore lavorative.\nUSA ESATTAMENTE questo dato quando il cliente chiede "se ordino oggi/adesso quando spedite/quando arriva": è già calcolato tenendo conto dei giorni in cui non si spedisce (sabato, domenica e, nel periodo estivo, giovedì e venerdì). NON esiste la spedizione in giornata e NON c'è alcuna regola delle 12:00: non promettere mai la spedizione "oggi stesso" né citare orari limite. NON fare calcoli sui giorni della settimana per conto tuo e non saltare giorni: limitati a comunicare questo giorno di partenza. Alla partenza aggiungi i tempi di consegna (24/48 ore lavorative; 48/72 per Basilicata, Puglia, Sardegna, Sicilia e zone disagiate). I prodotti personalizzati (scatoline, bomboniere) seguono invece i tempi di produzione di circa 12-15 giorni lavorativi + spedizione.`];
+    const dynamicParts = [`## DATA E ORA ODIERNE\nOggi è ${oggi} e sono le ${oraAttuale} (orario italiano). Usa la data per calcolare i giorni lavorativi quando un cliente chiede se riuscirà a ricevere l'ordine entro una certa data.\n\n## GIORNO DI SPEDIZIONE GIÀ CALCOLATO (NON ricalcolarlo)\nPer un ordine di soli confetti, macarons, donuts o marshmallow (senza prodotti personalizzati) effettuato ORA, il primo giorno utile di spedizione è: ${partenzaTxt}. I prodotti vengono spediti entro 24 ore lavorative.\nUSA ESATTAMENTE questo dato quando il cliente chiede "se ordino oggi/adesso quando spedite/quando arriva": è già calcolato tenendo conto dei giorni in cui non si spedisce (sabato, domenica e, nel periodo estivo, giovedì e venerdì). NON esiste la spedizione in giornata e NON c'è alcuna regola delle 12:00: non promettere mai la spedizione "oggi stesso" né citare orari limite. NON fare calcoli sui giorni della settimana per conto tuo e non saltare giorni: limitati a comunicare questo giorno di partenza. Alla partenza aggiungi i tempi di consegna (24/48 ore lavorative; 48/72 per Basilicata, Puglia, Sardegna, Sicilia e zone disagiate). I prodotti personalizzati (scatoline, bomboniere) seguono invece i tempi di produzione di circa 12-15 giorni lavorativi + spedizione.
+
+## DATI PRODOTTO IN TEMPO REALE (strumento cerca_prodotto)
+Hai a disposizione lo strumento "cerca_prodotto" che legge i dati REALI e aggiornati dal sito (nome esatto, prezzo di listino, prezzo scontato, disponibilità, descrizione, ingredienti, allergeni). Quando il cliente chiede di un prodotto specifico e ti serve uno di questi dati, USA lo strumento invece di affidarti al catalogo scritto nel prompt. Se i dati trovati dallo strumento differiscono dal catalogo scritto, FANNO FEDE quelli trovati dallo strumento (sono la verità aggiornata). Se lo strumento non trova il prodotto o un dato non è presente nella scheda, non inventare: dillo con onestà e rimanda alla scheda del prodotto sul sito o all'assistenza. Continua comunque a seguire le regole di comportamento e di spedizione/personalizzazione descritte sopra.
+IMPORTANTE: non rivelare MAI al cliente il meccanismo interno. Non dire frasi come "lo strumento non ha restituito", "la ricerca non ha trovato", "da catalogo", "ho i dati nel catalogo" o simili. Rispondi in modo naturale e diretto con le informazioni che hai, come farebbe una commessa: se un dato non ce l'hai, di' semplicemente che quel dettaglio non lo hai a disposizione e rimanda alla scheda del prodotto o all'assistenza, senza spiegare perché.`];
     if (sessionCtx) {
       dynamicParts.push(`## CONTESTO SESSIONE ATTUALE\nIl cliente ha già fornito queste informazioni durante questa conversazione — usale nelle risposte senza chiedere di nuovo:\n${sessionCtx}`);
     }
@@ -1385,14 +1452,42 @@ module.exports = async function handler(req, res) {
       }
     ];
 
-    const response = await client.messages.create({
-      model: "claude-opus-4-6",
-      max_tokens: 1024,
-      system: systemBlocks,
-      messages,
-    });
+    // Ciclo con tool-use: Aria può chiamare "cerca_prodotto" per leggere i dati reali dal sito
+    const convo = messages.slice();
+    let response;
+    let guard = 0;
+    while (true) {
+      response = await client.messages.create({
+        model: "claude-opus-4-6",
+        max_tokens: 1024,
+        system: systemBlocks,
+        tools: [PRODUCT_TOOL],
+        messages: convo,
+      });
 
-    const reply = response.content[0].text;
+      if (response.stop_reason !== "tool_use" || guard >= 3) break;
+      guard++;
+
+      // esegui le ricerche richieste
+      const toolResults = [];
+      for (const block of response.content) {
+        if (block.type === "tool_use" && block.name === "cerca_prodotto") {
+          const q = (block.input && block.input.query) ? String(block.input.query) : "";
+          const data = await cercaProdotti(q);
+          toolResults.push({
+            type: "tool_result",
+            tool_use_id: block.id,
+            content: JSON.stringify(data),
+          });
+        }
+      }
+      convo.push({ role: "assistant", content: response.content });
+      convo.push({ role: "user", content: toolResults });
+    }
+
+    // estrai il testo finale (ignora eventuali blocchi tool_use)
+    let reply = ((response.content.find(b => b.type === "text") || { text: "" }).text || "").trim();
+    if (!reply) reply = "Mi dispiace, non riesco a rispondere in questo momento. Scrivici su WhatsApp al 328 448 2654.";
 
     // Genera 3 domande di follow-up pertinenti, collegate a ciò che il cliente ha appena chiesto (modello veloce)
     let suggestions = [];
