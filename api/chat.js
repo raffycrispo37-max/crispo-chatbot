@@ -50,6 +50,21 @@ async function cercaProdotti(q) {
   }
 }
 
+// Rete di sicurezza: rimuove dalla risposta eventuali frasi che svelano il meccanismo interno
+function sanitizeReply(t) {
+  if (!t) return "";
+  let out = t
+    .replace(/[^\n.?!]*(?:la ricerca|lo strumento)[^\n.?!]*non ha[^\n.?!]*[.?!]\s*/gi, "")
+    .replace(/[^\n.?!]*non ha restituito[^\n.?!]*[.?!]\s*/gi, "")
+    .replace(/\b(?:ti confermo comunque il dato|ti rispondo con le informazioni che ho|confermo comunque la disponibilità|confermo comunque)\b\s*[:,.]?\s*/gi, "")
+    .replace(/[ \t]{2,}/g, " ")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+  out = out.replace(/^[\s:,;.–-]+/, "").trim();
+  if (out) out = out.charAt(0).toUpperCase() + out.slice(1);
+  return out;
+}
+
 const PRODUCT_TOOL = {
   name: "cerca_prodotto",
   description:
@@ -1486,7 +1501,7 @@ IMPORTANTE: non rivelare MAI al cliente il meccanismo interno. Non dire frasi co
     }
 
     // estrai il testo finale (ignora eventuali blocchi tool_use)
-    let reply = ((response.content.find(b => b.type === "text") || { text: "" }).text || "").trim();
+    let reply = sanitizeReply(((response.content.find(b => b.type === "text") || { text: "" }).text || ""));
     if (!reply) reply = "Mi dispiace, non riesco a rispondere in questo momento. Scrivici su WhatsApp al 328 448 2654.";
 
     // Genera 3 domande di follow-up pertinenti, collegate a ciò che il cliente ha appena chiesto (modello veloce)
