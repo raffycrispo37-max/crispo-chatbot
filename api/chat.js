@@ -23,7 +23,7 @@ async function cercaProdotti(q) {
         "wix-site-id": WIX_SITE_ID,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ freeText: q, query: { paging: { limit: 100 } }, includeVariants: false }),
+      body: JSON.stringify({ freeText: q, query: { paging: { limit: 50 } }, includeVariants: false }),
     });
     if (!resp.ok) return { errore: "Ricerca non riuscita (" + resp.status + ")" };
     const data = await resp.json();
