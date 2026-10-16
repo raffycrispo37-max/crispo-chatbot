@@ -56,7 +56,11 @@ function sanitizeReply(t) {
   let out = t
     .replace(/[^\n.?!]*(?:la ricerca|lo strumento)[^\n.?!]*non ha[^\n.?!]*[.?!]\s*/gi, "")
     .replace(/[^\n.?!]*non ha restituito[^\n.?!]*[.?!]\s*/gi, "")
+    .replace(/[^\n.?!]*\bho (?:i dati|il dato|le informazioni|i dettagli)\b[^\n.?!]*\bcatalogo\b[^\n.?!]*[.?!]\s*/gi, "")
+    .replace(/[^\n.?!]*\b(?:dal catalogo|secondo il catalogo|in base al catalogo|da catalogo)\b[^\n.?!]*[.?!]\s*/gi, "")
+    .replace(/\bposso rispondere con quell[eo]\b\s*[:,.]?\s*/gi, "")
     .replace(/\b(?:ti confermo comunque il dato|ti rispondo con le informazioni che ho|confermo comunque la disponibilità|confermo comunque)\b\s*[:,.]?\s*/gi, "")
+    .replace(/^\s*ecco(?:\s+(?:la risposta|le informazioni|i dettagli|qui))?\s*[:.]\s*/i, "")
     .replace(/[ \t]{2,}/g, " ")
     .replace(/\n{3,}/g, "\n\n")
     .trim();
