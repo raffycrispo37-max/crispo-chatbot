@@ -86,6 +86,66 @@ const PRODUCT_TOOL = {
 };
 
 
+// --- Calcolo giorni lavorativi fino a una data indicata dal cliente (deterministico, non lasciato al modello) ---
+function easterMondayUTC(y) {
+  const a = y % 19, b = Math.floor(y / 100), c = y % 100, d = Math.floor(b / 4), e = b % 4;
+  const f = Math.floor((b + 8) / 25), g = Math.floor((b - f + 1) / 3);
+  const h = (19 * a + b - d - g + 15) % 30, i = Math.floor(c / 4), k = c % 4;
+  const l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451);
+  const month = Math.floor((h + l - 7 * m + 114) / 31), day = ((h + l - 7 * m + 114) % 31) + 1;
+  return Date.UTC(y, month - 1, day) + 86400000; // lunedì dopo Pasqua
+}
+function isHolidayUTC(ms) {
+  const dt = new Date(ms), dd = dt.getUTCDate(), mm = dt.getUTCMonth() + 1, y = dt.getUTCFullYear();
+  const fissi = [[1, 1], [6, 1], [25, 4], [1, 5], [2, 6], [15, 8], [1, 11], [8, 12], [25, 12], [26, 12]];
+  for (const [d2, m2] of fissi) if (dd === d2 && mm === m2) return true;
+  return ms === easterMondayUTC(y);
+}
+function giorniLavorativiTra(fromMs, toMsInclusive) {
+  let count = 0, cur = fromMs + 86400000; // da domani
+  while (cur <= toMsInclusive) {
+    const dow = new Date(cur).getUTCDay();
+    if (dow !== 0 && dow !== 6 && !isHolidayUTC(cur)) count++;
+    cur += 86400000;
+  }
+  return count;
+}
+function estraiDataTarget(msg, Y, Mo, D) {
+  if (!msg) return null;
+  const s = msg.toLowerCase();
+  // Richiede un contesto di tempo/consegna, per evitare falsi positivi (es. misure, quantità)
+  if (!/(entro|per il|per la|per\s+le|ricever|consegn|arriv|in tempo|quando|scadenz|mi serv|mi occorr|data|spedi|fate in tempo|ce la fate)/.test(s)) return null;
+  const mesi = { gennaio: 1, gen: 1, febbraio: 2, feb: 2, marzo: 3, mar: 3, aprile: 4, apr: 4, maggio: 5, mag: 5, giugno: 6, giu: 6, luglio: 7, lug: 7, agosto: 8, ago: 8, settembre: 9, sett: 9, set: 9, ottobre: 10, ott: 10, novembre: 11, nov: 11, dicembre: 12, dic: 12 };
+  const todayMs = Date.UTC(Y, Mo - 1, D);
+  function build(day, mon, year) {
+    if (!(mon >= 1 && mon <= 12) || !(day >= 1 && day <= 31)) return null;
+    let yr = year;
+    if (!yr) { yr = Y; if (Date.UTC(yr, mon - 1, day) < todayMs) yr = Y + 1; }
+    else if (yr < 100) yr += 2000;
+    const ms = Date.UTC(yr, mon - 1, day);
+    const chk = new Date(ms);
+    if (chk.getUTCMonth() + 1 !== mon || chk.getUTCDate() !== day) return null;
+    return ms;
+  }
+  let m = s.match(/\b(\d{1,2})\s*(?:°|º)?\s*(?:di\s+)?(gennaio|gen|febbraio|feb|marzo|mar|aprile|apr|maggio|mag|giugno|giu|luglio|lug|agosto|ago|settembre|sett|set|ottobre|ott|novembre|nov|dicembre|dic)\b(?:\s+(?:del\s+)?(\d{4}))?/);
+  if (m) { const ms = build(parseInt(m[1], 10), mesi[m[2]], m[3] ? parseInt(m[3], 10) : null); if (ms) return ms; }
+  let n = s.match(/\b(\d{1,2})[\/\-.](\d{1,2})(?:[\/\-.](\d{2,4}))?\b/);
+  if (n) { const ms = build(parseInt(n[1], 10), parseInt(n[2], 10), n[3] ? parseInt(n[3], 10) : null); if (ms) return ms; }
+  return null;
+}
+
+// --- Rilevamento segnali di reclamo/problema o urgenza, per dare priorità a empatia + assistenza ---
+function rilevaSegnale(msg) {
+  if (!msg) return null;
+  const s = " " + msg.toLowerCase() + " ";
+  if (/nessun problema|senza problemi/.test(s)) return /(urgent|urgenz|al più presto|al piu presto|entro oggi|entro domani|per domani|ultimo minuto|last minute)/.test(s) ? "urgente" : null;
+  const reclamo = /(reclam|lamentel|deluso|delusa|insoddisfatt|arrabbiat|pessim|vergogn|truffa|rimbors|danneggiat|rovinat|\brotto\b|\brotti\b|\brotte\b|sciolt|difett|\berror|sbagliat|mancant|mai arrivat|non .{0,8}arrivat|in ritardo|\britardo\b|disservizio|inaccettabil|assurd|scandal|corpo estraneo|capello|muffa|voglio indietro|restituire|ho un problema|problema con|un problema con)/;
+  const urgenza = /(urgent|urgenz|\bsubito\b|al più presto|al piu presto|entro oggi|entro domani|per domani|di fretta|ultimo minuto|last minute|velocissim|mi serve urgent|ho fretta)/;
+  if (reclamo.test(s)) return "reclamo";
+  if (urgenza.test(s)) return "urgente";
+  return null;
+}
+
 const SYSTEM_PROMPT = `Sei Aria, l'assistente virtuale di Crispo Home.
 
 ## LINGUA
@@ -1245,7 +1305,7 @@ DATA VAGA O NON INDICATA: se il cliente parla di tempi ma NON indica una data pr
 
 Quando un cliente indica una data precisa e chiede se riesce a ricevere l'ordine entro quella data, Aria deve:
 1. Usare la data odierna (fornita nel blocco DATA ODIERNA) come punto di partenza
-2. Calcolare quanti giorni lavorativi mancano fino alla data richiesta (escludi sabato, domenica, festività nazionali italiane: 1 gen, 6 gen, Lunedì di Pasqua, 25 apr, 1 mag, 2 giu, 15 ago, 1 nov, 8 dic, 25 dic, 26 dic). Si spedisce dal lunedì al venerdì tutto l'anno (non ci sono più restrizioni estive su giovedì e venerdì).
+2. Per sapere quanti giorni lavorativi mancano fino alla data richiesta: se nel contesto è presente il blocco "GIORNI LAVORATIVI FINO ALLA DATA RICHIESTA (GIÀ CALCOLATO)", USA ESATTAMENTE quel numero e NON ricalcolare. Solo se quel blocco non c'è, stima tu i giorni lavorativi (escludi sabato, domenica e le festività nazionali italiane: 1 gen, 6 gen, Lunedì di Pasqua, 25 apr, 1 mag, 2 giu, 15 ago, 1 nov, 8 dic, 25 dic, 26 dic). Si spedisce dal lunedì al venerdì tutto l'anno.
 3. I tempi standard sono:
    - Prodotti personalizzati (scatoline, bomboniere, ecc.): circa 10 giorni lavorativi di produzione, più i tempi di spedizione
    - Solo confetti (senza personalizzazione): 1 giorno lavorativo per preparazione + 1–2 giorni lavorativi per spedizione = circa 2–3 giorni lavorativi totali
@@ -1458,6 +1518,15 @@ module.exports = async function handler(req, res) {
       timeZone: "UTC", weekday: "long", day: "numeric", month: "long"
     }).format(new Date(shipMs));
 
+    // Se il cliente ha indicato una data precisa, calcoliamo NOI i giorni lavorativi (il modello non deve contarli)
+    let dataTargetBlock = "";
+    const targetMs = estraiDataTarget(message, romeY, romeMo, romeD);
+    if (targetMs && targetMs >= baseMs) {
+      const gg = giorniLavorativiTra(baseMs, targetMs);
+      const dataTxt = new Intl.DateTimeFormat("it-IT", { timeZone: "UTC", weekday: "long", day: "numeric", month: "long", year: "numeric" }).format(new Date(targetMs));
+      dataTargetBlock = `## GIORNI LAVORATIVI FINO ALLA DATA RICHIESTA (GIÀ CALCOLATO — non ricalcolare, non mostrare il conteggio)\nIl cliente ha indicato come data di riferimento ${dataTxt}. Da oggi a quella data ci sono circa ${gg} giorni lavorativi (già esclusi sabato, domenica e le festività nazionali italiane). USA SOLO questo numero per valutare la fattibilità, NON contare i giorni per conto tuo e NON mostrare il calcolo.\nPromemoria tempi: prodotti personalizzati (scatoline, bomboniere, kit, ecc.) circa 10 giorni lavorativi di produzione + 1-2 di spedizione; soli confetti/macarons/donuts/marshmallow circa 2-3 giorni lavorativi totali.\nRispondi in 2-3 frasi con la sola conclusione: se i tempi sono comodi, stretti o non sufficienti, e il consiglio (ordinare subito, indicare la data al checkout, o scrivere all'assistenza WhatsApp 328 448 2654 per casi urgenti). Se non è chiaro che tipo di prodotto vuole, valuta per i personalizzati (caso più lungo) e ricorda che per i soli confetti i tempi sono molto più rapidi. NON fare domande.`;
+    }
+
     // Prompt caching: SYSTEM_PROMPT statico in cache, contesto dinamico (data + sessione) separato
     const dynamicParts = [`## DATA E ORA ODIERNE\nOggi è ${oggi} e sono le ${oraAttuale} (orario italiano). Usa la data per calcolare i giorni lavorativi quando un cliente chiede se riuscirà a ricevere l'ordine entro una certa data.\n\n## GIORNO DI SPEDIZIONE GIÀ CALCOLATO (NON ricalcolarlo)\nPer un ordine di soli confetti, macarons, donuts o marshmallow (senza prodotti personalizzati) effettuato ORA, il primo giorno utile di spedizione è: ${partenzaTxt}. I prodotti vengono spediti entro 24 ore lavorative.\nUSA ESATTAMENTE questo dato quando il cliente chiede "se ordino oggi/adesso quando spedite/quando arriva": è già calcolato tenendo conto dei giorni in cui non si spedisce (sabato e domenica; si spedisce dal lunedì al venerdì tutto l'anno). NON esiste la spedizione in giornata e NON c'è alcuna regola delle 12:00: non promettere mai la spedizione "oggi stesso" né citare orari limite. NON fare calcoli sui giorni della settimana per conto tuo e non saltare giorni: limitati a comunicare questo giorno di partenza. Alla partenza aggiungi i tempi di consegna (24/48 ore lavorative; 48/72 per Basilicata, Puglia, Sardegna, Sicilia e zone disagiate). I prodotti personalizzati (scatoline, bomboniere) seguono invece i tempi di produzione di circa 10 giorni lavorativi + spedizione.
 
@@ -1466,6 +1535,15 @@ Hai a disposizione lo strumento "cerca_prodotto" che legge i dati REALI e aggior
 REGOLA DI ESISTENZA/DISPONIBILITÀ: quando il cliente chiede SE un prodotto, una linea o una marca esiste o è disponibile sul sito (es. "ci sono prodotti La Suissa?", "avete i macarons?", "c'è il Prestige Natale?", "vendete X?"), devi SEMPRE usare cerca_prodotto per verificare PRIMA di rispondere — non rispondere mai basandoti solo sul catalogo scritto o sulla tua memoria. Se la ricerca restituisce dei prodotti, conferma che ci sono e cita qualche esempio concreto con il nome reale. Attenzione: il fatto che una marca sia citata nel prompt in un certo contesto (es. "i cioccolatini sono della marca La Suissa") NON significa che quella marca esista solo in quel contesto: cerca sempre sul sito, perché la stessa marca può avere anche prodotti singoli a sé stanti (es. confezioni natalizie La Suissa nella sezione Natale). Se al primo tentativo lo strumento non restituisce il prodotto che il cliente ha nominato, RIPROVA la ricerca con parole chiave più corte o diverse (es. se "La Suissa Prestige Natale Rossa" non dà risultati, cerca "Prestige Natale" o "Prestige"). MAI dire che un prodotto "non esiste" o "non è disponibile" o "non è nel catalogo" solo perché la ricerca non l'ha restituito: la ricerca può essere incompleta e il prodotto potrebbe esserci comunque. Se dopo uno o due tentativi non lo trovi, NON negarne l'esistenza: di' semplicemente che non riesci a trovarlo con quel nome e invita gentilmente il cliente a controllare la sezione del sito o a riprovare con il nome esatto, oppure a scrivere all'assistenza. Se invece manca solo un dato nella scheda (non il prodotto), non inventare: dillo con onestà e rimanda alla scheda del prodotto sul sito o all'assistenza. Continua comunque a seguire le regole di comportamento e di spedizione/personalizzazione descritte sopra.
 BREVITÀ CON LO STRUMENTO: lo strumento può restituire MOLTI prodotti in una volta. NON elencarli tutti al cliente. Prendi solo quello/i pertinente/i alla domanda e rispondi in modo sintetico (2-4 frasi), seguendo le REGOLE DI FORMA dello STILE. Se i risultati pertinenti sono diversi, cita 2-3 esempi e offri di approfondire ("dimmi quale ti interessa e ti do prezzo e dettagli"), senza scaricare l'intera lista.
 IMPORTANTE: non rivelare MAI al cliente il meccanismo interno. Non dire frasi come "lo strumento non ha restituito", "la ricerca non ha trovato", "da catalogo", "ho i dati nel catalogo" o simili. Rispondi in modo naturale e diretto con le informazioni che hai, come farebbe una commessa: se un dato non ce l'hai, di' semplicemente che quel dettaglio non lo hai a disposizione e rimanda alla scheda del prodotto o all'assistenza, senza spiegare perché.`];
+    if (dataTargetBlock) {
+      dynamicParts.push(dataTargetBlock);
+    }
+    const segnale = rilevaSegnale(message);
+    if (segnale === "reclamo") {
+      dynamicParts.push(`## SEGNALE: POSSIBILE RECLAMO O PROBLEMA\nIl messaggio del cliente sembra segnalare un problema, un disservizio o un disappunto. PRIORITÀ assoluta in questa risposta:\n- Apri con empatia sincera e un dispiacere autentico (es. "Mi dispiace davvero per l'accaduto"), senza minimizzare e senza essere fredda o burocratica.\n- Metti SUBITO in primo piano il contatto diretto con il team: WhatsApp 328 448 2654 (solo messaggi) ed email info@crispohome.it.\n- Invita (con una frase, non una domanda) a inviare le informazioni utili per risolvere in fretta: foto del problema, nome e cognome e numero d'ordine.\n- Se è un prodotto danneggiato/errato, ricorda con garbo che le richieste di cambio o rimborso vanno fatte entro 7 giorni dalla consegna.\n- Non promettere rimborsi o soluzioni che non puoi garantire: rassicura che il team sistemerà la cosa il prima possibile. Resta breve (2-4 frasi), calda e concreta.`);
+    } else if (segnale === "urgente") {
+      dynamicParts.push(`## SEGNALE: RICHIESTA URGENTE\nIl cliente ha un'urgenza. In questa risposta: rassicura con tono rapido e disponibile, dai l'informazione utile sui tempi (usa i tempi già calcolati se presenti) e metti in evidenza che, per gestire al meglio l'urgenza e verificare la fattibilità o dare priorità all'ordine, può scrivere al team su WhatsApp al 328 448 2654 (solo messaggi). Breve e rassicurante, senza fare domande.`);
+    }
     if (sessionCtx) {
       dynamicParts.push(`## CONTESTO SESSIONE ATTUALE\nIl cliente ha già fornito queste informazioni durante questa conversazione — usale nelle risposte senza chiedere di nuovo:\n${sessionCtx}`);
     }
