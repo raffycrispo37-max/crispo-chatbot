@@ -16,7 +16,9 @@ I dati di catalogo prima comparivano sia nel prompt sia nelle risposte Wix; inol
 
 Eseguire `npm test`. I test non richiedono chiavi né fanno richieste esterne. Coprono filtri Wix, dettagli oltre i vecchi limiti, sezioni con titoli ripetuti, dati mancanti, stock falso, errori HTTP e il passaggio dei risultati attraverso entrambi gli endpoint.
 
-I test del codice non misurano la qualità delle risposte del modello. Il confronto con 50 domande reali resta da eseguire quando le conversazioni Airtable sono leggibili o viene fornita un'esportazione CSV della tabella `Sessioni Aria`.
+I test del codice non misurano la qualità delle risposte del modello. È stato preparato un campione privato di 50 domande reali dalla tabella Airtable `Sessioni Aria`, con risposte originali, riferimenti ai record e criteri proposti. Il confronto dei modelli sui 50 casi resta da eseguire. Le risposte storiche non sono state trattate come soluzioni corrette.
+
+La lettura dello storico ha motivato due chiarimenti aggiuntivi: non compilare campi obbligatori con valori casuali se un selettore non funziona e non generare recapiti di assistenza diversi da quelli autorizzati.
 
 Il filtro è stato verificato anche sul catalogo reale di Crispo Home, in sola lettura: `kit cremini` ha restituito 6 prodotti e `Snob` 53 corrispondenze totali (50 nella prima pagina). Le schede reali includono sezioni lunghe fino a 1.320 caratteri e ingredienti di 856 caratteri: il vecchio limite di 400 eliminava quindi informazioni presenti sul sito.
 
