@@ -29,20 +29,7 @@ function sanitizeReply(t) {
   return out;
 }
 
-const PRODUCT_TOOL = {
-  name: "cerca_prodotto",
-  description:
-    "Cerca i dati REALI e aggiornati di uno o più prodotti sul sito Crispo Home (nome esatto, prezzo di listino, prezzo scontato, disponibilità, descrizione, ingredienti e allergeni). " +
-    "USA SEMPRE questo strumento quando il cliente chiede di un prodotto specifico e ti serve un dato di catalogo: prezzo, disponibilità, ingredienti, allergeni, formato o cosa contiene/com'è confezionato. " +
-    "Non affidarti alla memoria per questi dati: cercali. Passa come query il nome del prodotto o le parole chiave del cliente (es. 'kit cremini', 'ciocosoft pistacchio', 'maxtris truffle nocciole').",
-  input_schema: {
-    type: "object",
-    properties: {
-      query: { type: "string", description: "Nome del prodotto o parole chiave da cercare." },
-    },
-    required: ["query"],
-  },
-};
+const { PRODUCT_TOOL } = require("../lib/catalog-tool");
 
 
 // --- Calcolo giorni lavorativi fino a una data indicata dal cliente (deterministico, non lasciato al modello) ---
@@ -294,7 +281,7 @@ ${PRODUCT_CONTEXT}`];
       for (const block of response.content) {
         if (block.type === "tool_use" && block.name === "cerca_prodotto") {
           const q = (block.input && block.input.query) ? String(block.input.query) : "";
-          const data = await cercaProdotti(q);
+          const data = await cercaProdotti({ query: q, product_id: block.input?.product_id, choices: block.input?.choices });
           toolResults.push({
             type: "tool_result",
             tool_use_id: block.id,
@@ -344,4 +331,5 @@ ${PRODUCT_CONTEXT}`];
     });
   }
 };
+
 
