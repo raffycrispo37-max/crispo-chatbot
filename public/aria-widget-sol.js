@@ -3,10 +3,24 @@
   'use strict';
   if (document.getElementById('aria-sol-chat')) return;
   const script = document.currentScript;
+  const legacy = document.getElementById('aria-w');
+  if (legacy) {
+    if (document.getElementById('aria-panel')?.classList.contains('open')) document.getElementById('aria-x')?.click();
+    legacy.remove();
+    document.querySelectorAll('style').forEach(style => { if (style.textContent.includes('#aria-w{') && style.textContent.includes('#aria-panel{')) style.remove(); });
+  }
   const origin = new URL(script.src).origin;
   const assetRoot = new URL('./assets/aria/', script.src);
   const endpoint = script.dataset.endpoint || `${origin}/api/chat-sol`;
   const autoOpen = script.dataset.autoOpen === 'true';
+  if (typeof FontFace === 'function' && document.fonts) {
+    for (const [family, file] of [['AriaCormorant', 'cormorant-regular.woff2'], ['AriaRaleway', 'raleway-regular.woff2']]) {
+      if (![...document.fonts].some(font => font.family === family)) {
+        const face = new FontFace(family, `url("${new URL(file, assetRoot).href}")`, { style:'normal', weight:'400', display:'swap' });
+        document.fonts.add(face); face.load().catch(() => {});
+      }
+    }
+  }
   const icons = {
     chat: '<path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/>',
     arrow: '<path d="M12 19V5m-6 6 6-6 6 6"/>',
