@@ -88,6 +88,9 @@
   const messages = $('messages'), welcome = $('welcome'), conversation = $('conversation');
   const launcher = $('launcher'), status = $('reply-status'), menu = $('chat-menu');
   const cacheKey = 'crispohome.aria.sol.conversation.v1';
+  const newId = () => typeof crypto.randomUUID === 'function' ? crypto.randomUUID() : Array.from(crypto.getRandomValues(new Uint8Array(16)), n => n.toString(16).padStart(2, '0')).join('');
+  const validId = value => typeof value === 'string' && /^[a-zA-Z0-9_-]{8,100}$/.test(value);
+  let sessionId = newId(), turn = 0;
   let history = [], records = [], busy = false, opened = false, controller = null;
   let pageStyles = null, savedScrollY = 0, slowTimer = null;
   const mobile = () => matchMedia('(max-width: 480px)').matches;
@@ -95,7 +98,7 @@
   const time = () => new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
   const scroll = () => requestAnimationFrame(() => conversation.scrollTo({ top: conversation.scrollHeight, behavior: reducedMotion ? 'instant' : 'smooth' }));
   function persist() {
-    try { sessionStorage.setItem(cacheKey, JSON.stringify({ saved: Date.now(), history, records: records.slice(-40) })); } catch (_) { /* Storage can be disabled. */ }
+    try { sessionStorage.setItem(cacheKey, JSON.stringify({ saved: Date.now(), sessionId, turn, history, records: records.slice(-40) })); } catch (_) { /* Storage can be disabled. */ }
   }
   function lockPage(lock) {
     if (lock && mobile() && !pageStyles) {
@@ -244,16 +247,17 @@
     status.textContent = value ? 'Aria sta rispondendo' : '';
     panel.setAttribute('aria-busy', String(value));
   }
-  async function ask(text, retryRow = null) {
+  async function ask(text, retryRow = null, exchange = null) {
     if (busy || !text.trim()) return;
     closeMenu(); hideTopics(); $('contact-card').hidden = true;
+    if (!exchange) exchange = { sessionId, requestId: newId(), turn: ++turn };
     if (retryRow) retryRow.remove(); else addMessage(text, 'user');
     input.value = ''; resizeInput(); setBusy(true);
     controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 115000);
+    const timeout = setTimeout(() => controller.abort(), 140000);
     slowTimer = setTimeout(() => { if (busy) status.textContent = 'Aria sta verificando le informazioni'; }, 12000);
     try {
-      const response = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message: text, history }), signal: controller.signal });
+      const response = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message: text, history, ...exchange }), signal: controller.signal });
       if (!response.ok) throw new Error(`HTTP_${response.status}`);
       const data = await response.json();
       if (typeof data.response !== 'string' || !data.response.trim()) throw new Error('EMPTY_RESPONSE');
@@ -264,14 +268,14 @@
       const row = document.createElement('div'); row.className = 'error'; row.setAttribute('role', 'alert');
       const p = document.createElement('p'); p.textContent = 'Non riesco a rispondere in questo momento. Puoi riprovare o contattare il team.';
       const actions = document.createElement('div');
-      const retry = document.createElement('button'); retry.textContent = 'Riprova'; retry.addEventListener('click', () => ask(text, row));
+      const retry = document.createElement('button'); retry.textContent = 'Riprova'; retry.addEventListener('click', () => ask(text, row, exchange));
       const contact = document.createElement('button'); contact.textContent = 'Contatta il team'; contact.addEventListener('click', showContacts);
       actions.append(retry, contact); row.append(p, actions); messages.append(row); scroll();
     } finally { clearTimeout(timeout); clearTimeout(slowTimer); controller = null; setBusy(false); if (opened && !mobile()) input.focus({ preventScroll: true }); }
   }
   function reset() {
     if (busy) return;
-    history = []; records = []; messages.replaceChildren(); welcome.hidden = false;
+    history = []; records = []; sessionId = newId(); turn = 0; messages.replaceChildren(); welcome.hidden = false;
     topicRoot(); welcome.classList.remove('browsing'); $('footer-tools').hidden = true;
     $('topics-toggle').setAttribute('aria-expanded', 'false');
     $('contact-card').hidden = true; input.value = ''; resizeInput(); status.textContent = ''; closeMenu();
@@ -314,6 +318,8 @@
   try {
     const saved = JSON.parse(sessionStorage.getItem(cacheKey));
     if (saved && Date.now() - saved.saved < 2 * 60 * 60 * 1000 && Array.isArray(saved.records) && Array.isArray(saved.history)) {
+      if (validId(saved.sessionId)) sessionId = saved.sessionId;
+      if (Number.isSafeInteger(saved.turn) && saved.turn >= 0 && saved.turn <= 100000) turn = saved.turn;
       history = saved.history.filter(m => ['user', 'assistant'].includes(m.role) && typeof m.content === 'string').slice(-20);
       records = saved.records.filter(m => ['user', 'assistant'].includes(m.role) && typeof m.text === 'string').slice(-40);
       let lastRequest = '';
