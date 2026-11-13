@@ -143,7 +143,16 @@
       } else { list = null; listType = ''; const p = document.createElement('p'); inline(line.replace(/^#{1,4}\s+/, ''), p); target.append(p); }
     }
   }
-  function addMessage(text, role, stamp = time(), save = true) {
+  function whatsappURL(context = '') {
+    const request = typeof context === 'string' ? context.trim().slice(0, 1000) : '';
+    const url = new URL('https://wa.me/393284482654');
+    url.searchParams.set('text', request ? `Salve, ho appena parlato con Aria e vorrei assistenza per: ${request}` : 'Salve, vorrei ricevere assistenza.');
+    return url.href;
+  }
+  function mentionsSupport(text) {
+    return /(?:\+?39[\s().-]*)?328[\s().-]*448[\s().-]*2654\b/.test(text) || /https:\/\/wa\.me\/393284482654(?:[?\s/)\]]|$)/i.test(text);
+  }
+  function addMessage(text, role, stamp = time(), save = true, supportContext = '') {
     welcome.hidden = true;
     const row = document.createElement('article'); row.className = `message ${role}`;
     row.setAttribute('aria-label', role === 'user' ? 'Tu' : 'Aria');
@@ -151,6 +160,17 @@
     const bubble = document.createElement('div'); bubble.className = 'bubble';
     if (role === 'user') bubble.textContent = text; else richText(text, bubble);
     row.append(bubble);
+    if (role === 'assistant' && mentionsSupport(text)) {
+      const contact = document.createElement('a');
+      contact.className = 'whatsapp-button';
+      contact.href = whatsappURL(supportContext);
+      contact.target = '_blank'; contact.rel = 'noopener noreferrer';
+      contact.setAttribute('aria-label', 'Apri la chat WhatsApp dell’assistenza Crispo Home');
+      contact.innerHTML = svg('chat');
+      const label = document.createElement('span'); label.textContent = 'Scrivi su WhatsApp'; contact.append(label);
+      row.append(contact);
+      const note = document.createElement('small'); note.className = 'whatsapp-note'; note.textContent = 'Assistenza · Solo messaggi'; row.append(note);
+    }
     const meta = document.createElement('div'); meta.className = 'message-meta';
     const t = document.createElement('time'); t.textContent = stamp; meta.append(t);
     if (role === 'assistant') {
@@ -162,7 +182,7 @@
       meta.append(copy);
     }
     row.append(meta); messages.append(row);
-    if (save) { records.push({ text, role, time: stamp }); persist(); }
+    if (save) { records.push({ text, role, time: stamp, ...(role === 'assistant' && mentionsSupport(text) ? { supportContext: typeof supportContext === 'string' ? supportContext.slice(0, 1000) : '' } : {}) }); persist(); }
     scroll(); return row;
   }
   function resizeInput() { input.style.height = 'auto'; input.style.height = `${Math.min(input.scrollHeight, 120)}px`; send.disabled = busy || !input.value.trim(); }
@@ -188,7 +208,7 @@
       const data = await response.json();
       if (typeof data.response !== 'string' || !data.response.trim()) throw new Error('EMPTY_RESPONSE');
       history.push({ role: 'user', content: text }, { role: 'assistant', content: data.response }); history = history.slice(-20);
-      addMessage(data.response, 'assistant');
+      addMessage(data.response, 'assistant', time(), true, text);
       if (!opened) root.querySelector('.unread').hidden = false;
     } catch (_) {
       const row = document.createElement('div'); row.className = 'error'; row.setAttribute('role', 'alert');
@@ -206,7 +226,12 @@
     try { sessionStorage.removeItem(cacheKey); } catch (_) { /* No storage is required. */ }
     conversation.scrollTop = 0; if (!mobile()) input.focus({ preventScroll: true });
   }
-  function showContacts() { closeMenu(); $('contact-card').hidden = false; scroll(); }
+  function showContacts() {
+    closeMenu();
+    const lastRequest = [...records].reverse().find(message => message.role === 'user');
+    $('contact-card').querySelector('a').href = whatsappURL(lastRequest?.text);
+    $('contact-card').hidden = false; scroll();
+  }
   launcher.addEventListener('click', () => setOpen(!opened));
   $('minimize').addEventListener('click', () => setOpen(false));
   $('menu-toggle').addEventListener('click', () => { const open = menu.hidden; menu.hidden = !open; $('menu-toggle').setAttribute('aria-expanded', String(open)); $('menu-default').hidden = false; $('menu-confirm').hidden = true; });
@@ -236,7 +261,11 @@
     if (saved && Date.now() - saved.saved < 2 * 60 * 60 * 1000 && Array.isArray(saved.records) && Array.isArray(saved.history)) {
       history = saved.history.filter(m => ['user', 'assistant'].includes(m.role) && typeof m.content === 'string').slice(-20);
       records = saved.records.filter(m => ['user', 'assistant'].includes(m.role) && typeof m.text === 'string').slice(-40);
-      records.forEach(m => addMessage(m.text, m.role, m.time, false));
+      let lastRequest = '';
+      records.forEach(m => {
+        if (m.role === 'user') lastRequest = m.text;
+        addMessage(m.text, m.role, m.time, false, m.supportContext || lastRequest);
+      });
     }
   } catch (_) { /* The chat also works without session storage. */ }
   const mount = () => { document.body.append(host); viewport(); if (autoOpen) setOpen(true); };

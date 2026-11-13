@@ -54,3 +54,14 @@ Raffaele ha approvato i font e i colori e richiesto le misure della Aria già pr
 La pagina di anteprima non sovrascrive più la larghezza con430/400/350px. Il passaggio alla modalità smartphone avviene a480px anche nel codice che gestisce focus e scorrimento. L’altezza effettiva dipende dal contenuto della nuova interfaccia: lo script attuale non imposta un’altezza fissa da copiare. Font e palette approvati rimangono invariati.
 
 Discussione successiva: Raffaele chiede un parere su una chat smartphone meno invasiva. Proposta: larghezza quasi piena e altezza circa85%, angoli arrotondati e chiusura evidente, con adattamento alla tastiera. È una proposta di design; questa revisione applica ancora le misure attuali del sito.
+
+
+## Pulsante assistenza WhatsApp — 13 novembre2026
+
+Su richiesta di Raffaele è stato aggiunto «Scrivi su WhatsApp» sotto le risposte che riportano il numero dell’assistenza3284482654 o il relativo link ufficiale. Il collegamento è sempre diretto a https://wa.me/393284482654 e non usa numeri eventualmente proposti dal modello. La sola menzione di WhatsApp per la bozza grafica non attiva il pulsante.
+
+Il messaggio precompilato riprende la richiesta associata alla risposta, con un massimo di1000 caratteri. Il cliente apre la chat e decide se inviarlo. La chat non apre WhatsApp da sola e non invia messaggi. Il link resta associato alla richiesta originaria anche dopo ripristino della sessione; i contatti nel menu usano invece la richiesta più recente. Il canale è indicato come «Solo messaggi».
+
+Il numero coincide con la configurazione del widget attuale e con il recapito già comunicato da Raffaele. Controlli DOM:12 superati, inclusi destinatario, codifica della bozza, condizioni di comparsa e ripristino. Sono controlli locali; WhatsApp non è stato aperto e nessun messaggio è stato inviato durante le prove.
+
+Anteprima corrente: https://project-7g4zm-k22ioq65v-crispo-home.vercel.app/ . Deployment dpl_HWZr8wPHxTNqqhUcAaXBqkmGnUot, staging. L’anteprima resta protetta. Il file HTML autonomo aggiornato permette di vedere il pulsante scegliendo «Assistenza su un ordine» e usa risposte dimostrative.
