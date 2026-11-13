@@ -20,9 +20,17 @@
     copy: '<rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/>',
     check: '<path d="m5 12 4 4L19 6"/>',
     reset: '<path d="M3 10a9 9 0 1 1 1 8M3 4v6h6"/>',
-    mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>'
+    mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
+    confetti: '<ellipse cx="8" cy="8" rx="3" ry="4" transform="rotate(-25 8 8)"/><ellipse cx="16" cy="9" rx="3" ry="4" transform="rotate(25 16 9)"/><ellipse cx="12" cy="17" rx="3" ry="4" transform="rotate(-10 12 17)"/>',
+    topics: '<rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/>'
   };
   const svg = (name) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[name]}</svg>`;
+  const topics = {
+    customization: { title: 'Personalizzazione', description: 'Grafiche, colori e bozza', icon: 'gift', questions: ['Come funziona la personalizzazione?', 'Posso inviare una mia grafica o una foto?', 'Quando riceverò la bozza grafica?'] },
+    shipping: { title: 'Spedizioni e ritiro', description: 'Costi, tempi e ritiro in sede', icon: 'delivery', questions: ['Quanto costa la spedizione in Italia?', 'Quanto tempo richiede il trasporto dopo la spedizione?', 'Posso ritirare il mio ordine in sede?'] },
+    products: { title: 'Confetti e prodotti', description: 'Quantità, conservazione e allergeni', icon: 'confetti', questions: ['Come calcolo i confetti per i miei invitati?', 'Come devo conservare i prodotti?', 'Come posso verificare gli allergeni di un prodotto?'] },
+    assistance: { title: 'Assistenza ordini', description: 'Tracking, modifiche e contatti', icon: 'order', questions: ['Come ricevo il tracking?', 'Posso modificare quantità o indirizzo del mio ordine?', 'Come posso contattare l’assistenza?'] }
+  };
   const host = document.createElement('div');
   host.id = 'aria-sol-chat';
   const root = host.attachShadow({ mode: 'open' });
@@ -42,24 +50,22 @@
         </div>
       </header>
       <div class="menu" id="chat-menu" hidden>
-        <div id="menu-default"><button id="new-chat">${svg('reset')}Nuova conversazione</button><button id="contact-team">${svg('mail')}Contatta il team</button></div>
+        <div id="menu-default"><button id="open-topics">${svg('topics')}Argomenti e domande</button><button id="new-chat">${svg('reset')}Nuova conversazione</button><button id="contact-team">${svg('mail')}Contatta il team</button></div>
         <div id="menu-confirm" hidden><p>Vuoi iniziare una nuova conversazione?</p><div class="confirm-actions"><button id="cancel-reset">Annulla</button><button id="confirm-reset">Sì, ricomincia</button></div></div>
       </div>
       <div class="conversation" id="conversation">
         <div class="welcome" id="welcome">
           <div class="welcome-heading"><span class="small-rule"></span><p>IL PIACERE DI ACCOMPAGNARTI</p><h3>Ogni dettaglio<br>merita attenzione.</h3><p class="welcome-copy">Sono Aria. Ti aiuto a scegliere, personalizzare e trovare le informazioni che cerchi.</p></div>
-          <div class="topics" aria-label="Da dove vuoi iniziare?">
-            <button class="topic" data-question="Come funziona la personalizzazione di un prodotto?">${svg('gift')}<span><strong>Personalizzare un prodotto</strong><small>Grafiche, colori e dettagli</small></span>${svg('chevron')}</button>
-            <button class="topic" data-question="Quali sono i costi e i tempi di spedizione in Italia?">${svg('delivery')}<span><strong>Spedizioni e consegne</strong><small>Tempi, costi e ritiro</small></span>${svg('chevron')}</button>
-            <button class="topic" data-question="Come posso contattare il team per ricevere assistenza sul mio ordine?">${svg('order')}<span><strong>Assistenza su un ordine</strong><small>Come contattare il team</small></span>${svg('chevron')}</button>
-          </div>
+          <h3 class="browse-heading">Di cosa vuoi parlare?</h3>
+          <div class="topics" id="topic-list" aria-label="Scegli un argomento">${Object.entries(topics).map(([key, topic]) => `<button class="topic" data-topic="${key}" aria-controls="topic-detail">${svg(topic.icon)}<span><strong>${topic.title}</strong><small>${topic.description}</small></span>${svg('chevron')}</button>`).join('')}</div>
+          <div class="topic-detail" id="topic-detail" hidden><button class="topic-back" id="topic-back">${svg('chevron')}Tutti gli argomenti</button><h3 id="topic-title" tabindex="-1"></h3><p class="topic-hint">Scegli una domanda oppure scrivimi liberamente.</p><div id="topic-questions" class="questions" aria-labelledby="topic-title"></div></div>
           <p class="welcome-note">Oppure scrivimi direttamente qui sotto.</p>
         </div>
         <div class="messages" id="messages" role="log" aria-label="Conversazione con Aria" aria-live="polite" aria-relevant="additions text"></div>
         <div class="contact-card" id="contact-card" hidden><button id="contact-close" class="icon-button" aria-label="Chiudi i contatti">${svg('close')}</button><span class="eyebrow">IL TEAM CRISPO HOME</span><h3>Un contatto diretto.</h3><p>Per richieste sul tuo ordine puoi scriverci:</p><a href="https://wa.me/393284482654" target="_blank" rel="noopener noreferrer">WhatsApp <span>328 448 2654</span>${svg('chevron')}</a><small>Solo messaggi</small><a href="mailto:info@crispohome.it">Email <span>info@crispohome.it</span>${svg('chevron')}</a><p class="hours">Lun–ven 9:00–13:00 / 15:30–19:45<br>Sabato 9:00–13:00</p></div>
       </div>
       <div class="reply-status" id="reply-status" role="status" aria-live="polite"></div>
-      <footer class="footer"><form id="composer" class="composer"><label for="message" class="sr-only">Il tuo messaggio ad Aria</label><textarea id="message" rows="1" placeholder="Scrivi ad Aria…" maxlength="6000" enterkeyhint="send"></textarea><button id="send" class="send" type="submit" aria-label="Invia messaggio" disabled>${svg('arrow')}</button></form><div class="footer-note"><span class="fine-monogram" aria-hidden="true">A</span><span>Aria · Assistente virtuale di Crispo Home</span></div></footer>
+      <footer class="footer"><div class="footer-tools" id="footer-tools" hidden><button id="topics-toggle" type="button" aria-controls="welcome" aria-expanded="false">${svg('topics')}Argomenti</button></div><form id="composer" class="composer"><label for="message" class="sr-only">Il tuo messaggio ad Aria</label><textarea id="message" rows="1" placeholder="Scrivi ad Aria…" maxlength="6000" enterkeyhint="send"></textarea><button id="send" class="send" type="submit" aria-label="Invia messaggio" disabled>${svg('arrow')}</button></form><div class="footer-note"><span class="fine-monogram" aria-hidden="true">A</span><span>Aria · Assistente virtuale di Crispo Home</span></div></footer>
     </section>
     <button class="launcher" id="launcher" aria-label="Apri la chat con Aria" aria-expanded="false" aria-controls="aria-panel">${svg('chat')}<span>Parla con Aria</span><i class="unread" hidden></i></button>`;
   root.append(markup);
@@ -105,10 +111,39 @@
       root.querySelector('.unread').hidden = true;
       viewport();
       if (!mobile()) setTimeout(() => input.focus({ preventScroll: true }), 100);
-      scroll();
+      if (!welcome.hidden) conversation.scrollTop = 0; else scroll();
     } else { closeMenu(); lockPage(false); launcher.focus({ preventScroll: true }); }
   }
   function closeMenu() { menu.hidden = true; $('menu-toggle').setAttribute('aria-expanded', 'false'); }
+  function topicRoot() {
+    $('topic-list').hidden = false; $('topic-detail').hidden = true;
+    welcome.classList.remove('detail-open');
+  }
+  function showTopics() {
+    if (busy) return;
+    closeMenu(); $('contact-card').hidden = true; topicRoot();
+    welcome.hidden = false; welcome.classList.toggle('browsing', records.length > 0);
+    $('topics-toggle').setAttribute('aria-expanded', 'true');
+    conversation.scrollTop = 0;
+    $('topic-list').querySelector('button').focus({ preventScroll: true });
+  }
+  function hideTopics() {
+    welcome.hidden = true; $('topics-toggle').setAttribute('aria-expanded', 'false');
+  }
+  function showTopic(key) {
+    if (busy || !topics[key]) return;
+    const topic = topics[key];
+    $('topic-list').hidden = true; $('topic-detail').hidden = false;
+    welcome.classList.add('detail-open'); $('topic-title').textContent = topic.title;
+    $('topic-questions').replaceChildren();
+    for (const question of topic.questions) {
+      const button = document.createElement('button'); button.className = 'question';
+      const label = document.createElement('span'); label.textContent = question;
+      button.append(label); const icon = document.createElement('span'); icon.className = 'question-arrow'; icon.innerHTML = svg('chevron'); button.append(icon);
+      button.addEventListener('click', () => ask(question)); $('topic-questions').append(button);
+    }
+    conversation.scrollTop = 0; $('topic-title').focus({ preventScroll: true });
+  }
   function safeLink(url) {
     try { const parsed = new URL(url); return ['https:', 'http:', 'mailto:'].includes(parsed.protocol) ? parsed.href : null; } catch (_) { return null; }
   }
@@ -153,7 +188,7 @@
     return /(?:\+?39[\s().-]*)?328[\s().-]*448[\s().-]*2654\b/.test(text) || /https:\/\/wa\.me\/393284482654(?:[?\s/)\]]|$)/i.test(text);
   }
   function addMessage(text, role, stamp = time(), save = true, supportContext = '') {
-    welcome.hidden = true;
+    hideTopics(); $('footer-tools').hidden = false;
     const row = document.createElement('article'); row.className = `message ${role}`;
     row.setAttribute('aria-label', role === 'user' ? 'Tu' : 'Aria');
     if (role !== 'user') { const author = document.createElement('span'); author.className = 'author'; author.textContent = 'ARIA'; row.append(author); }
@@ -189,14 +224,15 @@
   function setBusy(value) {
     busy = value; send.disabled = value || !input.value.trim(); input.readOnly = value;
     $('new-chat').disabled = value;
-    root.querySelectorAll('.topic').forEach(b => { b.disabled = value; });
+    $('open-topics').disabled = value; $('topics-toggle').disabled = value;
+    root.querySelectorAll('.topic, .question').forEach(b => { b.disabled = value; });
     status.classList.toggle('typing', value);
     status.textContent = value ? 'Aria sta rispondendo' : '';
     panel.setAttribute('aria-busy', String(value));
   }
   async function ask(text, retryRow = null) {
     if (busy || !text.trim()) return;
-    closeMenu(); $('contact-card').hidden = true;
+    closeMenu(); hideTopics(); $('contact-card').hidden = true;
     if (retryRow) retryRow.remove(); else addMessage(text, 'user');
     input.value = ''; resizeInput(); setBusy(true);
     controller = new AbortController();
@@ -222,6 +258,8 @@
   function reset() {
     if (busy) return;
     history = []; records = []; messages.replaceChildren(); welcome.hidden = false;
+    topicRoot(); welcome.classList.remove('browsing'); $('footer-tools').hidden = true;
+    $('topics-toggle').setAttribute('aria-expanded', 'false');
     $('contact-card').hidden = true; input.value = ''; resizeInput(); status.textContent = ''; closeMenu();
     try { sessionStorage.removeItem(cacheKey); } catch (_) { /* No storage is required. */ }
     conversation.scrollTop = 0; if (!mobile()) input.focus({ preventScroll: true });
@@ -243,7 +281,10 @@
   $('composer').addEventListener('submit', event => { event.preventDefault(); ask(input.value.trim()); });
   input.addEventListener('input', resizeInput);
   input.addEventListener('keydown', event => { if (event.key === 'Enter' && !event.shiftKey && !event.isComposing) { event.preventDefault(); if (!busy) ask(input.value.trim()); } });
-  root.querySelectorAll('.topic').forEach(b => b.addEventListener('click', () => ask(b.dataset.question)));
+  root.querySelectorAll('.topic').forEach(b => b.addEventListener('click', () => showTopic(b.dataset.topic)));
+  $('topic-back').addEventListener('click', () => { topicRoot(); $('topic-list').querySelector('button').focus({ preventScroll: true }); });
+  $('open-topics').addEventListener('click', showTopics);
+  $('topics-toggle').addEventListener('click', () => { if (!welcome.hidden && records.length) { hideTopics(); scroll(); } else showTopics(); });
   root.addEventListener('keydown', event => {
     if (event.key === 'Escape' && opened) { event.preventDefault(); if (!menu.hidden) { closeMenu(); $('menu-toggle').focus(); } else setOpen(false); }
     if (event.key === 'Tab' && opened && mobile()) {

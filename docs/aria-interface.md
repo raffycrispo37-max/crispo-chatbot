@@ -65,3 +65,21 @@ Il messaggio precompilato riprende la richiesta associata alla risposta, con un 
 Il numero coincide con la configurazione del widget attuale e con il recapito già comunicato da Raffaele. Controlli DOM:12 superati, inclusi destinatario, codifica della bozza, condizioni di comparsa e ripristino. Sono controlli locali; WhatsApp non è stato aperto e nessun messaggio è stato inviato durante le prove.
 
 Anteprima corrente: https://project-7g4zm-k22ioq65v-crispo-home.vercel.app/ . Deployment dpl_HWZr8wPHxTNqqhUcAaXBqkmGnUot, staging. L’anteprima resta protetta. Il file HTML autonomo aggiornato permette di vedere il pulsante scegliendo «Assistenza su un ordine» e usa risposte dimostrative.
+
+
+## Menu iniziale e domande suggerite — 13 novembre2026
+
+Per orientare il cliente è stato introdotto un menu con quattro argomenti e tre domande ciascuno, insieme al campo libero sempre disponibile. La scelta di un argomento apre le domande senza effettuare chiamate al modello e senza aggiungere messaggi al dialogo. Soltanto la selezione della domanda la invia al normale percorso chat.
+
+| Argomento | Domande suggerite |
+|---|---|
+| Personalizzazione | Come funziona la personalizzazione? · Posso inviare una mia grafica o una foto? · Quando riceverò la bozza grafica? |
+| Spedizioni e ritiro | Quanto costa la spedizione in Italia? · Quanto tempo richiede il trasporto dopo la spedizione? · Posso ritirare il mio ordine in sede? |
+| Confetti e prodotti | Come calcolo i confetti per i miei invitati? · Come devo conservare i prodotti? · Come posso verificare gli allergeni di un prodotto? |
+| Assistenza ordini | Come ricevo il tracking? · Posso modificare quantità o indirizzo del mio ordine? · Come posso contattare l’assistenza? |
+
+Il comando «Argomenti» permette di riaprire il menu senza cancellare la conversazione; «Tutti gli argomenti» torna al livello iniziale. Anche le opzioni della chat includono il collegamento agli argomenti. Durante l’attesa di una risposta non partono domande concorrenti. Il pulsante WhatsApp resta disponibile nelle risposte di assistenza pertinenti.
+
+15 controlli DOM locali superati. I nuovi controlli verificano che la navigazione non chiami il provider, che venga inviata soltanto la domanda scelta, che la conversazione resti disponibile e che il testo libero funzioni anche dentro un argomento. Il file HTML autonomo è stato verificato con risposte dimostrative e senza chiamate esterne. Restano da completare la verifica visiva nel browser autenticato e le nuove prove live Sol.
+
+Anteprima corrente: https://project-7g4zm-n5tfsdwju-crispo-home.vercel.app/ . Deployment dpl_5BWSkBsQPk4Zeou7duQv9e2CZfGx, staging READY. Il widget del sito pubblico non è modificato; font, colori, dimensioni e protezione dell’anteprima sono conservati.
