@@ -105,6 +105,7 @@ for (const filename of ["chat.js", "chat-live.js"]) {
       require: name => {
         if (name === "@anthropic-ai/sdk") return MockAnthropic;
         if (name === "../lib/knowledge") return knowledge;
+        if (name === "../lib/catalog-tool") return require("../lib/catalog-tool");
         if (name === "../lib/product-data") return { createProductSearch: options => productData.createProductSearch({ ...options, fetchImpl: fakeFetch }) };
         throw new Error("Unexpected dependency " + name);
       },
@@ -124,3 +125,4 @@ for (const filename of ["chat.js", "chat-live.js"]) {
     assert.equal(details.disponibile, false);
   });
 }
+
