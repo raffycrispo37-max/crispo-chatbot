@@ -70,7 +70,7 @@
   const cacheKey = 'crispohome.aria.sol.conversation.v1';
   let history = [], records = [], busy = false, opened = false, controller = null;
   let pageStyles = null, savedScrollY = 0, slowTimer = null;
-  const mobile = () => matchMedia('(max-width: 600px)').matches;
+  const mobile = () => matchMedia('(max-width: 480px)').matches;
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const time = () => new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
   const scroll = () => requestAnimationFrame(() => conversation.scrollTo({ top: conversation.scrollHeight, behavior: reducedMotion ? 'instant' : 'smooth' }));

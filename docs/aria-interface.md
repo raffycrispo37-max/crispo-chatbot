@@ -8,7 +8,7 @@
 - Cormorant Garamond per i titoli, Raleway per il testo; font locali derivati dagli asset del sito, con licenze OFL incluse.
 - Widget in Shadow DOM: lo stile non modifica il sito ospitante.
 - Tre argomenti iniziali, testo libero, stato di risposta, riduzione e riapertura, copia della risposta, contatti facoltativi e nuova conversazione con conferma.
-- Su schermi fino a600px la chat occupa il viewport; gestisce safe area e visual viewport. Il selettore nel foglio di anteprima mostra anche un formato stretto, senza sostituire una verifica su un dispositivo reale.
+- Su schermi fino a480px la chat occupa il viewport; gestisce safe area e visual viewport. Il selettore nel foglio di anteprima mostra anche un formato stretto, senza sostituire una verifica su un dispositivo reale.
 - Nessuna emoji, allegato o comando vocale fittizio, presenza umana dichiarata o inoltro automatico all’assistenza.
 
 ## Collegamento
@@ -23,9 +23,9 @@ Le risposte sono inserite come nodi di testo; grassetto, elenchi e collegamenti 
 
 ## Anteprima protetta
 
-URL: https://project-7g4zm-8qhyizvsf-crispo-home.vercel.app/
+URL: https://project-7g4zm-11f0otk58-crispo-home.vercel.app/
 
-Deployment: `dpl_FsNfWnRdZ6YPcUt239tjLEyoXp8U`, staging, READY. Pacchetto con il prompt0.20 e le45 regole approvate. La route resta disabilitata in produzione senza attivazione esplicita. Il dominio e lo script del sito pubblico non cambiano.
+Deployment: `dpl_98Vs1hzrTJ8vh6C5F2UvDpjqqLWL`, staging, READY. Pacchetto con il prompt0.20 e le45 regole approvate. La route resta disabilitata in produzione senza attivazione esplicita. Il dominio e lo script del sito pubblico non cambiano.
 
 Le route statiche sono consentite esplicitamente per pagina, widget e font; `/lib/*` e gli altri percorsi non previsti ricevono404. Il prompt non è un asset dell’interfaccia.
 
@@ -38,3 +38,19 @@ La verifica automatica ha rifiutato la creazione di un link temporaneo di condiv
 I controlli DOM non misurano layout, resa dei font, tastiera su smartphone o qualità delle risposte Sol. Il cambiamento del prompt non ha ancora una nuova valutazione50+15. La verifica visiva sul browser autenticato e i messaggi live sono da completare prima del rilascio pubblico.
 
 Per consentire una revisione immediata è stata prodotta anche un’anteprima HTML autonoma, `Aria_Anteprima_Chat.html`. Include solo grafica e risposte dimostrative, dichiarate nell’interfaccia; non contiene credenziali, prompt o collegamento al modello. Non è il widget da installare sul sito.
+
+
+## Dimensioni approvate — aggiornamento13 novembre2026
+
+Raffaele ha approvato i font e i colori e richiesto le misure della Aria già presente sul sito. Verifica effettuata direttamente sullo script pubblico https://project-7g4zm.vercel.app/aria-widget.js .
+
+| Elemento | Desktop | Smartphone fino a480px |
+|---|---|---|
+| Pannello | Larghezza370px; destra24px; fondo98px | Larghezza e altezza del viewport |
+| Altezza | Automatica, massimo viewport meno120px | Viewport visibile, con adattamento alla tastiera |
+| Pulsante di apertura | Cerchio52×52px; destra24px; fondo24px | Cerchio40×40px; destra16px; fondo16px più safe area |
+| Angoli del pannello | Raggio20px | Nessun raggio |
+
+La pagina di anteprima non sovrascrive più la larghezza con430/400/350px. Il passaggio alla modalità smartphone avviene a480px anche nel codice che gestisce focus e scorrimento. L’altezza effettiva dipende dal contenuto della nuova interfaccia: lo script attuale non imposta un’altezza fissa da copiare. Font e palette approvati rimangono invariati.
+
+Discussione successiva: Raffaele chiede un parere su una chat smartphone meno invasiva. Proposta: larghezza quasi piena e altezza circa85%, angoli arrotondati e chiusura evidente, con adattamento alla tastiera. È una proposta di design; questa revisione applica ancora le misure attuali del sito.
