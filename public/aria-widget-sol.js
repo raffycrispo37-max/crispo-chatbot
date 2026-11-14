@@ -13,6 +13,7 @@
   const assetRoot = new URL('./assets/aria/', script.src);
   const endpoint = script.dataset.endpoint || `${origin}/api/chat-sol`;
   const autoOpen = script.dataset.autoOpen === 'true';
+  const reviewURL = 'https://g.page/r/CQ9h1M02Bt5uEAI/review';
   if (typeof FontFace === 'function' && document.fonts) {
     for (const [family, file] of [['AriaCormorant', 'cormorant-regular.woff2'], ['AriaRaleway', 'raleway-regular.woff2']]) {
       if (![...document.fonts].some(font => font.family === family)) {
@@ -176,7 +177,14 @@
         const trim = token.startsWith('http') ? token.replace(/[.,;!?]+$/, '') : token;
         const url = md ? md[2] : trim.includes('@') && !trim.startsWith('http') ? `mailto:${trim}` : trim;
         const href = safeLink(url);
-        if (href) { const a = document.createElement('a'); a.href = href; a.textContent = md ? md[1] : trim; a.target = '_blank'; a.rel = 'noopener noreferrer'; target.append(a); if (!md && trim.length < token.length) target.append(document.createTextNode(token.slice(trim.length))); }
+        if (href) {
+          const a = document.createElement('a'); a.href = href; a.textContent = md ? md[1] : trim; a.target = '_blank'; a.rel = 'noopener noreferrer';
+          if (href === reviewURL) {
+            a.className = 'review-button'; a.textContent = 'Lascia una recensione su Google';
+            a.setAttribute('aria-label', 'Scrivi una recensione di Crispo Home su Google, si apre in una nuova scheda');
+          }
+          target.append(a); if (!md && trim.length < token.length) target.append(document.createTextNode(token.slice(trim.length)));
+        }
         else target.append(document.createTextNode(token));
       }
       previous = match.index + token.length;
