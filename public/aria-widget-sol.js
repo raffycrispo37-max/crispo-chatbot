@@ -69,7 +69,7 @@
       </div>
       <div class="conversation" id="conversation">
         <div class="welcome" id="welcome">
-          <div class="welcome-heading"><span class="small-rule"></span><p>IL PIACERE DI ACCOMPAGNARTI</p><h3>Ogni dettaglio<br>merita attenzione.</h3><p class="welcome-copy">Sono Aria. Ti aiuto a scegliere, personalizzare e trovare le informazioni che cerchi.</p></div>
+          <div class="welcome-heading"><p class="welcome-copy">Sono Aria. Ti aiuto a scegliere, personalizzare e trovare le informazioni che cerchi.</p></div>
           <h3 class="browse-heading">Di cosa vuoi parlare?</h3>
           <div class="topics" id="topic-list" aria-label="Scegli un argomento">${Object.entries(topics).map(([key, topic]) => `<button class="topic" data-topic="${key}" aria-controls="topic-detail">${svg(topic.icon)}<span><strong>${topic.title}</strong><small>${topic.description}</small></span>${svg('chevron')}</button>`).join('')}</div>
           <div class="topic-detail" id="topic-detail" hidden><button class="topic-back" id="topic-back">${svg('chevron')}Tutti gli argomenti</button><h3 id="topic-title" tabindex="-1"></h3><p class="topic-hint">Scegli una domanda oppure scrivimi liberamente.</p><div id="topic-questions" class="questions" aria-labelledby="topic-title"></div></div>
